@@ -1,0 +1,3364 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+/* ==========================================
+   ATUL TOMAR FITNESS
+   EXERCISE STYLESHEET
+========================================== */
+/* ==========================================================
+   EXERCISE TEMPLATE V1.0 (FROZEN)
+
+   This stylesheet is shared by all exercise pages.
+   Modify components carefully to avoid affecting
+   the entire exercise library.
+========================================================== */
+
+/* 1. Google Font */
+
+/* 2. Table of Contents */
+
+
+/* ==========================================================
+   1. EXERCISE HERO
+========================================================== */
+
+
+/* ==========================================================
+   2. HERO CONTENT
+========================================================== */
+
+
+/* ==========================================================
+   3. HERO HIGHLIGHTS
+========================================================== */
+
+
+/* ==========================================================
+   4. EXERCISE IMAGE CARD
+========================================================== */
+
+
+/* ==========================================================
+   5. EXERCISE SPECIFICATIONS
+========================================================== */
+
+
+/* ==========================================================
+   6. MUSCLES WORKED
+========================================================== */
+
+
+/* ==========================================================
+   7. BENEFITS
+========================================================== */
+
+
+/* ==========================================================
+   8. HOW TO PERFORM
+========================================================== */
+
+
+/* ==========================================================
+   9. COMMON MISTAKES
+========================================================== */
+
+
+/* ==========================================================
+   10. COACH TIPS
+========================================================== */
+
+
+/* ==========================================================
+   11. VARIATIONS
+========================================================== */
+
+
+/* ==========================================================
+   12. FAQ
+========================================================== */
+
+
+/* ==========================================================
+   13. RELATED EXERCISES
+========================================================== */
+
+
+/* ==========================================================
+   14. CTA
+========================================================== */
+
+
+/* ==========================================================
+   15. RESPONSIVE DESIGN
+========================================================== */
+
+/* ---------- 1024px ---------- */
+
+
+/* ---------- 768px ---------- */
+
+
+/* ---------- 576px ---------- */
+
+
+/* ---------- 390px ---------- */   
+
+
+/* ==========================================================
+   1. EXERCISE HERO
+========================================================== */
+
+
+img{
+
+    max-width:100%;
+
+    height:auto;
+
+    display:block;
+
+}
+.muscle-details,
+.timeline-content,
+.benefit-content,
+.related-exercise-content,
+.progression-card{
+
+    min-width:0;
+
+}
+.btn{
+
+    min-width:min(180px,100%);
+
+}
+.btn:focus-visible,
+a:focus-visible,
+button:focus-visible,
+summary:focus-visible{
+
+    outline:3px solid var(--primary);
+
+    outline-offset:4px;
+
+}
+html{
+
+    scroll-behavior:smooth;
+
+}
+::selection{
+
+    background:var(--primary);
+
+    color:var(--white);
+
+}
+.flex-center{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:1rem;
+
+}
+/* ==========================================
+   HERO SECTION
+========================================== */
+
+.exercise-hero{
+
+    position:relative;
+
+    overflow:hidden;
+
+    padding:clamp(4rem,7vw,7rem) 0;
+
+}
+
+
+/* ==========================================
+   HERO WRAPPER
+========================================== */
+
+.exercise-hero-wrapper{
+
+    display:grid;
+
+    grid-template-columns:minmax(0,1.1fr) minmax(420px,.9fr);
+
+    align-items:start;
+
+    gap:clamp(3rem,5vw,6rem);
+
+}
+
+
+/* ==========================================
+   HERO LEFT COLUMN
+========================================== */
+
+.exercise-hero-left{
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:flex-start;
+
+    gap:clamp(1.5rem,2vw,2.5rem);
+
+}
+
+
+/* ==========================================
+   HERO RIGHT COLUMN
+========================================== */
+
+.exercise-showcase{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:2rem;
+
+}
+
+
+/* ==========================================
+   BREADCRUMB
+========================================== */
+
+.exercise-breadcrumb{
+
+    margin:0;
+
+    font-size:.95rem;
+
+    line-height:1.5;
+
+    opacity:.9;
+
+}
+
+
+/* ==========================================
+   HERO BADGE
+========================================== */
+
+.exercise-badge{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    gap:.75rem;
+
+    padding:.9rem 1.6rem;
+
+    background:rgba(255,255,255,.03);
+
+    border:1px solid var(--border);
+
+    border-radius:999px;
+
+    backdrop-filter:blur(10px);
+
+   transition:
+
+transform .25s ease,
+
+box-shadow .25s ease,
+
+border-color .25s ease;
+
+}
+
+.exercise-badge:hover{
+
+    background:rgba(37,99,235,.08);
+
+    border-color:var(--primary);
+
+}
+
+
+/* ==========================================
+   HERO CONTENT WRAPPER
+========================================== */
+
+.exercise-content{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:1.75rem;
+
+}
+/* ==========================================================
+   2. HERO CONTENT
+========================================================== */
+
+
+/* ==========================================
+   HERO TITLE
+========================================== */
+
+.exercise-content h1{
+
+    margin:0;
+
+    max-width:10ch;
+
+    line-height:1.05;
+
+}
+
+
+/* ==========================================
+   HERO TAGLINE
+========================================== */
+
+.hero-tagline{
+
+    margin:0;
+
+    max-width:28ch;
+
+    font-size:1.4rem;
+
+    font-weight:600;
+
+    line-height:1.5;
+
+    color:var(--primary);
+
+}
+
+
+/* ==========================================
+   HERO DESCRIPTION
+========================================== */
+
+.hero-description{
+
+    margin:0;
+
+    max-width:60ch;
+
+    color:var(--gray);
+
+    line-height:1.8;
+
+}
+
+
+/* ==========================================
+   HERO BUTTONS
+========================================== */
+
+.exercise-buttons{
+
+    display:flex;
+
+    flex-wrap:wrap;
+
+    align-items:center;
+
+    gap:1rem;
+
+    margin-top:.5rem;
+
+}
+
+.exercise-buttons .btn{
+
+    transition:
+        transform var(--transition),
+        box-shadow var(--transition),
+        background var(--transition),
+        border-color var(--transition);
+
+}
+
+.exercise-buttons .btn:hover{
+
+    transform:translateY(-2px);
+
+}
+
+
+/* ==========================================================
+   3. HERO HIGHLIGHTS
+========================================================== */
+
+.hero-highlights{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:1rem;
+
+    margin:2rem 0;
+       padding:.35rem 0;
+
+       align-items:center;
+}
+
+
+.hero-highlight{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:1rem;
+
+   transition:
+
+transform .25s ease,
+
+box-shadow .25s ease,
+
+border-color .25s ease;
+
+}
+
+
+.hero-highlight:hover{
+
+    transform:translateX(4px);
+
+}
+
+
+.hero-highlight .icon-circle{
+
+    width:52px;
+
+    height:52px;
+
+    flex-shrink:0;
+
+transition:
+
+transform .25s ease,
+
+box-shadow .25s ease,
+
+border-color .25s ease;
+
+}
+
+
+.hero-highlight:hover .icon-circle{
+
+    transform:translateY(-2px);
+
+}
+
+
+.hero-highlight span{
+
+    color:var(--white);
+
+    font-size:1rem;
+
+    font-weight:600;
+
+    line-height:1.5;
+
+}
+/* ==========================================================
+   4. EXERCISE IMAGE CARD
+========================================================== */
+
+.exercise-image-card{
+
+    padding:1rem;
+
+    background:var(--card);
+
+    border:1px solid var(--border);
+
+    border-radius:var(--radius-medium);
+
+    overflow:hidden;
+
+    box-shadow:0 20px 50px rgba(0,0,0,.18);
+transition:
+
+transform .25s ease,
+
+box-shadow .25s ease,
+
+border-color .25s ease;
+
+}
+
+.exercise-image-card:hover{
+
+    transform:translateY(-6px);
+
+    border-color:var(--primary);
+
+    box-shadow:0 28px 60px rgba(37,99,235,.15);
+
+}
+
+.exercise-image-card img{
+
+    display:block;
+
+    width:100%;
+
+    height:auto;
+
+    border-radius:var(--radius-small);
+
+    transition:transform .5s ease;
+
+}
+
+.exercise-image-card:hover img{
+
+    transform:scale(1.03);
+
+}
+
+
+
+/* ==========================================================
+   5. EXERCISE SPECIFICATIONS
+========================================================== */
+
+.exercise-specifications{
+
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:1rem;
+
+    margin-top:1.5rem;
+
+}
+
+
+.specification-card{
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:flex-start;
+
+    gap:1rem;
+
+    padding:1.25rem;
+
+    background:var(--card);
+
+    border:1px solid var(--border);
+
+    border-radius:var(--radius-medium);
+
+    transition:
+
+transform .25s ease,
+
+box-shadow .25s ease,
+
+border-color .25s ease;
+
+}
+
+
+.specification-card:hover{
+
+   transform:translateY(-6px);
+
+will-change:transform;
+
+    border-color:var(--primary);
+
+    box-shadow:0 16px 40px rgba(37,99,235,.12);
+
+}
+
+
+.specification-card .icon-circle{
+
+    width:56px;
+
+    height:56px;
+
+    flex-shrink:0;
+
+    transition:
+
+transform .25s ease,
+
+box-shadow .25s ease,
+
+border-color .25s ease;
+
+}
+
+
+.specification-card:hover .icon-circle{
+
+    transform:translateY(-2px);
+
+}
+
+
+.specification-card h4{
+
+    margin:0;
+
+    font-size:.85rem;
+
+    font-weight:600;
+
+    letter-spacing:.08em;
+
+    text-transform:uppercase;
+
+    color:var(--gray);
+
+}
+
+
+.specification-card p{
+
+    margin:0;
+
+    font-size:1.05rem;
+
+    font-weight:700;
+
+    color:var(--white);
+
+}
+
+/* ==========================================================
+   MUSCLES WORKED
+========================================================== */
+
+.muscles-worked{
+
+    padding:clamp(5rem,8vw,7rem) 0;
+
+}
+
+.muscles-worked-grid{
+
+    display:grid;
+
+    grid-template-columns:minmax(340px,.9fr) minmax(0,1.1fr);
+
+    gap:clamp(3rem,5vw,5rem);
+
+    align-items:start;
+     justify-content:center;
+
+}
+/* ==========================================
+   ANATOMY CARD
+========================================== */
+
+.anatomy-card{
+
+    padding:1rem;
+
+    background:var(--card);
+
+    border:1px solid var(--border);
+
+    border-radius:var(--radius-medium);
+
+    overflow:hidden;
+
+    transition:
+
+transform .25s ease,
+
+box-shadow .25s ease,
+
+border-color .25s ease;
+
+}
+
+.anatomy-card:hover{
+
+    transform:translateY(-6px);
+
+    border-color:var(--primary);
+
+}
+
+.anatomy-card img{
+
+    display:block;
+
+    width:100%;
+
+    height:auto;
+
+    border-radius:var(--radius-small);
+    object-fit:contain;
+
+}
+/* ==========================================
+   MUSCLE CONTENT
+========================================== */
+
+.muscles-content{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:2.5rem;
+
+}
+/* ==========================================
+   MUSCLE GROUP
+========================================== */
+
+.muscle-group{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:1.25rem;
+
+}
+
+.muscle-group h3{
+
+    margin:0;
+
+}
+/* ==========================================
+   MUSCLE ITEM
+========================================== */
+
+.muscle-item{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:1.25rem;
+
+    background:var(--card);
+
+    border:1px solid var(--border);
+
+    border-radius:var(--radius-medium);
+
+    transition:
+
+transform .25s ease,
+
+box-shadow .25s ease,
+
+border-color .25s ease;
+
+}
+
+.muscle-item:hover{
+
+   transform:translateY(-6px);
+
+will-change:transform;
+
+    border-color:var(--primary);
+
+    box-shadow:0 16px 40px rgba(37,99,235,.12);
+
+}
+.meter-fill{
+
+    display:block;
+
+    height:100%;
+
+    border-radius:999px;
+
+    background:linear-gradient(
+        90deg,
+        var(--primary),
+        var(--accent)
+    );
+
+    transition:width .4s ease;
+    
+}
+/* ==========================================
+   MUSCLE INFO
+========================================== */
+
+.muscle-info{
+
+    display:flex;
+
+    align-items:flex-start;
+
+    gap:1.25rem;
+
+}
+
+.muscle-details{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:.45rem;
+
+    flex:1;
+
+     min-width:0;
+
+}
+
+.muscle-details h4{
+
+    margin:0;
+
+    font-size:1.15rem;
+
+    font-weight:700;
+
+    color:var(--white);
+
+}
+
+.muscle-details p{
+
+    margin:0;
+
+    color:var(--gray);
+
+    font-size:.95rem;
+
+}
+
+
+/* ==========================================
+   ACTIVATION METER
+========================================== */
+
+.activation-meter{
+
+   width:100%;
+
+    max-width:220px;
+
+    height:8px;
+
+    margin-top:.35rem;
+
+    background:rgba(255,255,255,.08);
+
+    border-radius:999px;
+
+    overflow:hidden;
+
+}
+
+
+.level-5{ width:100%; }
+
+.level-4{ width:80%; }
+
+.level-3{ width:60%; }
+
+.level-2{ width:40%; }
+
+.level-1{ width:20%; }
+
+.activation-label{
+
+    font-size:.82rem;
+
+    font-weight:600;
+
+    color:var(--gray);
+
+}
+/* ==========================================================
+   BENEFITS
+========================================================== */
+
+.exercise-benefits{
+
+    padding:clamp(5rem,8vw,7rem) 0;
+
+}
+
+.benefits-list{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:1.5rem;
+
+    max-width:900px;
+
+    margin:0 auto;
+
+}
+/* ==========================================
+   BENEFIT ITEM
+========================================== */
+
+.benefit-item{
+
+    display:flex;
+
+    align-items:flex-start;
+
+    gap:1.5rem;
+
+    padding:1.5rem 0;
+
+    border-bottom:1px solid var(--border);
+
+   transition:
+
+transform .25s ease,
+
+box-shadow .25s ease,
+
+border-color .25s ease;
+
+}
+
+.benefit-item:last-child{
+
+    border-bottom:none;
+
+}
+
+.benefit-item:hover{
+
+     transform:translateX(10px);
+
+    border-color:rgba(37,99,235,.25);
+
+}
+/* ==========================================
+   BENEFIT CONTENT
+========================================== */
+
+.benefit-content{
+
+    flex:1;
+
+}
+
+.benefit-content h3{
+
+    margin:0 0 .5rem;
+
+    font-size:1.2rem;
+
+    font-weight:700;
+
+    color:var(--white);
+
+}
+
+.benefit-content p{
+
+    margin:0;
+
+    color:var(--gray);
+
+    line-height:1.75;
+
+}
+.benefit-item .icon-circle{
+
+    flex-shrink:0;
+
+}
+.benefit-item:hover .icon-circle{
+
+    transform:scale(1.05);
+
+}
+/* ==========================================================
+   HOW TO PERFORM
+========================================================== */
+
+.exercise-steps{
+
+    padding:clamp(5rem,8vw,7rem) 0;
+
+}
+
+.exercise-timeline{
+
+    position:relative;
+
+    max-width:900px;
+
+    margin:0 auto;
+
+}
+/* ==========================================
+   TIMELINE STEP
+========================================== */
+
+.timeline-step{
+
+    display:grid;
+
+    grid-template-columns:80px 1fr;
+
+    gap:2rem;
+
+    position:relative;
+
+    padding-bottom:3rem;
+
+}
+.timeline-step::before{
+
+    content:"";
+
+    position:absolute;
+
+    left:39px;
+
+    top:0;
+
+    bottom:0;
+
+    width:2px;
+
+   background:linear-gradient(
+    to bottom,
+    rgba(37,99,235,.35),
+    rgba(255,255,255,.08)
+);
+
+}
+
+.timeline-step:last-child::before{
+
+    display:none;
+
+}
+/* ==========================================
+   TIMELINE MARKER
+========================================== */
+
+.timeline-marker{
+
+    position:relative;
+
+    z-index:2;
+
+    width:80px;
+
+    display:flex;
+
+    justify-content:center;
+
+}
+
+.timeline-marker span{
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    width:56px;
+
+    height:56px;
+
+    border-radius:50%;
+
+    background:var(--primary);
+
+    color:var(--white);
+
+    font-size:1.15rem;
+
+    font-weight:700;
+
+}
+/* ==========================================
+   TIMELINE CONTENT
+========================================== */
+
+.timeline-content{
+
+    padding:1.75rem;
+
+    background:var(--card);
+
+    border:1px solid var(--border);
+
+    border-radius:var(--radius-medium);
+
+  transition:
+
+transform .25s ease,
+
+box-shadow .25s ease,
+
+border-color .25s ease;
+
+}
+
+.timeline-content:hover{
+
+    transform:translateY(-6px);
+
+will-change:transform;
+
+    border-color:var(--primary);
+
+    box-shadow:0 18px 40px rgba(37,99,235,.12);
+
+}
+.timeline-content h3{
+
+    margin:0 0 .75rem;
+
+}
+
+.timeline-content > p{
+
+    margin:0;
+
+    color:var(--gray);
+
+    line-height:1.8;
+
+}
+.timeline-step:hover .timeline-marker span{
+
+    transform:scale(1.06);
+
+}
+/* ==========================================================
+   COMMON MISTAKES
+========================================================== */
+
+.common-mistakes{
+
+    padding:clamp(5rem,8vw,7rem) 0;
+
+}
+
+
+/* ==========================================
+   MISTAKES GRID
+========================================== */
+
+.mistakes-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(2,minmax(0,1fr));
+
+    gap:2rem;
+
+    margin-top:clamp(3rem,5vw,4rem);
+
+}
+
+
+/* ==========================================
+   MISTAKE CARD
+========================================== */
+
+.mistake-card{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:2rem;
+
+    padding:2rem;
+
+    background:var(--card);
+
+    border:1px solid var(--border);
+
+    border-radius:var(--radius-medium);
+transition:
+
+transform .25s ease,
+
+box-shadow .25s ease,
+
+border-color .25s ease;
+       max-width:850px;
+
+    margin:0 auto;
+
+}
+
+.mistake-card:hover{
+
+    transform:translateY(-6px);
+
+    border-color:var(--primary);
+
+    box-shadow:0 18px 40px rgba(37,99,235,.12);
+
+}
+
+
+/* ==========================================
+   CARD HEADER
+========================================== */
+
+.mistake-header{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:1rem;
+
+}
+
+.mistake-header h3{
+
+    margin:0 0 .45rem;
+
+    color:var(--white);
+
+}
+
+.mistake-level{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    padding:.35rem .75rem;
+
+    border-radius:999px;
+
+    background:rgba(37,99,235,.10);
+
+    color:var(--primary-light);
+
+    font-size:.8rem;
+
+    font-weight:600;
+
+}
+
+
+/* ==========================================
+   CARD BODY
+========================================== */
+
+.mistake-body{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:1.5rem;
+
+}
+
+.mistake-section{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:.65rem;
+
+    padding-top:1rem;
+
+    border-top:1px solid var(--border);
+
+}
+
+.mistake-section:first-child{
+
+    padding-top:0;
+
+    border-top:none;
+
+}
+
+
+/* ==========================================
+   LABEL
+========================================== */
+
+.mistake-label{
+
+    display:inline-flex;
+
+    align-self:flex-start;
+
+    padding:.35rem .75rem;
+
+    border-radius:999px;
+
+    background:rgba(255,255,255,.05);
+
+    color:var(--white);
+
+    font-size:.8rem;
+
+    font-weight:600;
+
+    letter-spacing:.02em;
+
+}
+
+
+/* ==========================================
+   TEXT
+========================================== */
+
+.mistake-section p{
+
+    margin:0;
+
+    color:var(--gray);
+
+    line-height:1.8;
+
+}
+/* ==========================================================
+   COACH'S TIPS
+========================================================== */
+
+.coach-tips{
+
+    padding:clamp(5rem,8vw,7rem) 0;
+
+}
+
+
+/* ==========================================
+   COACH CARD
+========================================== */
+
+.coach-card{
+
+    max-width:900px;
+
+    margin:0 auto;
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:2rem;
+
+    padding:2.5rem;
+
+    background:var(--card);
+
+    border:1px solid var(--border);
+
+    border-radius:var(--radius-large);
+
+   transition:
+
+transform .25s ease,
+
+box-shadow .25s ease,
+
+border-color .25s ease;
+
+}
+
+.coach-card:hover{
+
+    transform:translateY(-6px);
+
+    border-color:var(--primary);
+
+    box-shadow:0 20px 50px rgba(37,99,235,.12);
+
+}
+
+
+/* ==========================================
+   COACH QUOTE
+========================================== */
+
+.coach-quote{
+
+    display:flex;
+
+    align-items:flex-start;
+
+    gap:1.25rem;
+
+    padding-bottom:2rem;
+
+    border-bottom:1px solid var(--border);
+
+}
+
+.coach-quote blockquote{
+
+    margin:0;
+
+    font-size:1.35rem;
+
+    font-weight:600;
+
+    line-height:1.7;
+
+    color:var(--white);
+
+    font-style:italic;
+
+}
+
+
+/* ==========================================
+   TIPS LIST
+========================================== */
+
+.coach-tips-list{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:1.25rem;
+
+}
+
+
+/* ==========================================
+   SINGLE TIP
+========================================== */
+
+.coach-tip{
+
+    display:flex;
+
+    align-items:flex-start;
+
+    gap:1rem;
+
+}
+
+.coach-tip p{
+
+    margin:0;
+
+    color:var(--gray);
+
+    line-height:1.8;
+
+}
+
+
+/* ==========================================
+   FOOTER
+========================================== */
+
+.coach-footer{
+
+    padding-top:2rem;
+
+    border-top:1px solid var(--border);
+
+}
+
+.coach-signature h3{
+
+    margin:0 0 .4rem;
+
+    color:var(--white);
+
+    font-size:1.2rem;
+
+}
+
+.coach-signature p{
+
+    margin:0;
+
+    color:var(--primary-light);
+
+    font-weight:500;
+
+}
+/* ==========================================================
+   EXERCISE PROGRESSION
+========================================================== */
+
+.exercise-progression{
+
+    padding:clamp(5rem,8vw,7rem) 0;
+
+}
+
+.progression-roadmap{
+
+    max-width:900px;
+
+    margin:0 auto;
+
+}
+
+
+/* ==========================================
+   STEP
+========================================== */
+
+.progression-step{
+
+    display:grid;
+
+    grid-template-columns:90px 1fr;
+
+    gap:2rem;
+
+    align-items:start;
+
+}
+
+
+/* ==========================================
+   STEP NUMBER
+========================================== */
+
+.step-number{
+
+    display:flex;
+
+    justify-content:center;
+
+}
+
+.step-number span{
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    width:64px;
+
+    height:64px;
+
+    border-radius:50%;
+
+    background:var(--primary);
+
+    color:var(--white);
+
+    font-size:1.25rem;
+
+    font-weight:700;
+
+}
+
+
+/* ==========================================
+   PROGRESSION CARD
+========================================== */
+
+.progression-card{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:1.5rem;
+
+    padding:2rem;
+
+    background:var(--card);
+
+    border:1px solid var(--border);
+
+    border-radius:var(--radius-medium);
+
+  transition:
+
+transform .25s ease,
+
+box-shadow .25s ease,
+
+border-color .25s ease;
+
+}
+
+.progression-card:hover{
+
+    transform:translateY(-6px);
+
+    border-color:var(--primary);
+
+    box-shadow:0 20px 45px rgba(37,99,235,.12);
+
+}
+
+
+/* ==========================================
+   LEVEL BADGE
+========================================== */
+
+.progression-level{
+
+    display:inline-flex;
+
+    align-self:flex-start;
+
+    padding:.55rem 1.2rem;
+
+    border-radius:999px;
+
+    font-size:.82rem;
+
+    font-weight:700;
+
+    letter-spacing:.04em;
+
+}
+
+.progression-level.beginner{
+
+    background:rgba(34,197,94,.12);
+
+    color:#4ADE80;
+
+}
+
+.progression-level.intermediate{
+
+    background:rgba(59,130,246,.12);
+
+    color:#60A5FA;
+
+}
+
+.progression-level.advanced{
+
+    background:rgba(239,68,68,.12);
+
+    color:#F87171;
+
+}
+
+
+/* ==========================================
+   CONTENT
+========================================== */
+
+.progression-card h3{
+
+    margin:0;
+
+    font-size:1.6rem;
+
+    color:var(--white);
+
+}
+
+.progression-card p{
+
+    margin:0;
+
+    color:var(--gray);
+
+    line-height:1.8;
+
+}
+
+
+/* ==========================================
+   SPECS
+========================================== */
+
+.progression-specs{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:1.25rem;
+
+    padding-top:1.5rem;
+
+    border-top:1px solid var(--border);
+
+}
+
+.progression-spec{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:.35rem;
+
+}
+
+.progression-spec span{
+
+    font-size:.8rem;
+
+    text-transform:uppercase;
+
+    letter-spacing:.08em;
+
+    color:var(--gray);
+
+}
+
+.progression-spec strong{
+
+    color:var(--white);
+
+    font-size:1rem;
+
+}
+
+
+/* ==========================================
+   CONNECTOR
+========================================== */
+
+.progression-arrow{
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    padding:1.5rem 0;
+
+}
+
+.progression-arrow img{
+
+    width:34px;
+
+    height:34px;
+
+    opacity:.9;
+
+}
+
+
+/* ==========================================
+   HOVER
+========================================== */
+
+.progression-card:hover h3{
+
+    color:var(--primary-light);
+
+}
+
+.progression-card:hover .step-number span{
+
+    transform:scale(1.05);
+
+}
+/* ==========================================================
+   QUESTIONS ANSWERED
+========================================================== */
+
+.exercise-faq{
+
+    padding:clamp(5rem,8vw,7rem) 0;
+
+}
+
+
+/* ==========================================
+   FAQ LIST
+========================================== */
+
+.faq-list{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:1rem;
+
+    max-width:900px;
+
+    margin:0 auto;
+
+}
+
+
+/* ==========================================
+   FAQ ITEM
+========================================== */
+
+.faq-item{
+
+    background:var(--card);
+
+    border:1px solid var(--border);
+
+    border-radius:var(--radius-medium);
+
+    overflow:hidden;
+
+   transition:
+
+transform .25s ease,
+
+box-shadow .25s ease,
+
+border-color .25s ease;
+
+}
+
+.faq-item:hover{
+
+    border-color:var(--primary);
+
+    box-shadow:0 16px 40px rgba(37,99,235,.10);
+
+}
+
+
+/* ==========================================
+   QUESTION
+========================================== */
+
+.faq-question{
+
+    width:100%;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    gap:1.5rem;
+
+    padding:1.5rem;
+
+    border:none;
+
+    background:none;
+
+    color:var(--white);
+
+    cursor:pointer;
+
+    text-align:left;
+
+    font:inherit;
+
+}
+
+.faq-question span{
+
+    font-size:1.1rem;
+
+    font-weight:600;
+
+    line-height:1.6;
+
+}
+
+
+/* ==========================================
+   ICON
+========================================== */
+
+.faq-question .icon-circle{
+
+    flex-shrink:0;
+
+    transition:transform .35s ease;
+
+}
+
+
+/* ==========================================
+   ANSWER
+========================================== */
+
+.faq-answer{
+
+    max-height:0;
+
+    overflow:hidden;
+
+    transition:max-height .35s ease;
+
+}
+
+.faq-answer p{
+
+    margin:0;
+
+    padding:0 1.5rem 1.5rem;
+
+    color:var(--gray);
+
+    line-height:1.8;
+
+}
+
+
+/* ==========================================
+   ACTIVE STATE
+========================================== */
+
+.faq-item.active{
+
+    border-color:var(--primary);
+
+}
+
+.faq-item.active .faq-question .icon-circle{
+
+    transform:rotate(45deg);
+
+}
+
+.faq-item.active .faq-answer{
+
+    max-height:300px;
+
+}
+/* ==========================================================
+   EXPLORE MORE EXERCISES
+========================================================== */
+
+.related-exercises{
+
+    padding:clamp(5rem,8vw,7rem) 0;
+
+}
+
+
+/* ==========================================
+   GRID
+========================================== */
+
+.related-exercises-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:2rem;
+
+}
+
+
+/* ==========================================
+   CARD
+========================================== */
+
+.related-exercise-card{
+
+    display:flex;
+
+    flex-direction:column;
+
+    background:var(--card);
+
+    border:1px solid var(--border);
+
+    border-radius:var(--radius-medium);
+
+    overflow:hidden;
+
+    cursor:pointer;
+
+    transition:
+
+transform .25s ease,
+
+box-shadow .25s ease,
+
+border-color .25s ease;
+
+}
+
+.related-exercise-card:hover{
+
+    transform:translateY(-8px);
+
+    border-color:var(--primary);
+
+    box-shadow:0 20px 45px rgba(37,99,235,.12);
+
+}
+
+
+/* ==========================================
+   IMAGE
+========================================== */
+
+.related-exercise-image{
+
+    overflow:hidden;
+
+    aspect-ratio:16/10;
+
+}
+
+.related-exercise-image img{
+
+    display:block;
+
+    width:100%;
+
+    height:100%;
+
+    object-fit:cover;
+
+    transition:transform .45s ease;
+
+}
+
+.related-exercise-card:hover img{
+
+    transform:scale(1.05);
+
+}
+
+
+/* ==========================================
+   CONTENT
+========================================== */
+
+.related-exercise-content{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:1rem;
+
+    padding:1.5rem;
+
+    flex:1;
+
+}
+
+.related-exercise-content h3{
+
+    margin:0;
+
+    font-size:1.3rem;
+
+    color:var(--white);
+
+}
+
+.related-exercise-content p{
+
+    margin:0;
+
+    color:var(--gray);
+
+    line-height:1.75;
+
+}
+
+
+/* ==========================================
+   META
+========================================== */
+
+/* ==========================================
+   META
+========================================== */
+
+.related-exercise-meta{
+
+    display:flex;
+
+    flex-wrap:wrap;
+
+    gap:.75rem;
+
+    padding-top:1rem;
+
+    border-top:1px solid var(--border);
+
+}
+
+.meta-pill{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    padding:.45rem .9rem;
+
+    border:1px solid var(--border);
+
+    border-radius:999px;
+
+    background:rgba(255,255,255,.03);
+
+    color:var(--gray);
+
+    font-size:.82rem;
+
+    font-weight:600;
+
+  transition:
+
+transform .25s ease,
+
+box-shadow .25s ease,
+
+border-color .25s ease;
+
+}
+
+.related-exercise-card:hover .meta-pill{
+
+    border-color:var(--primary);
+
+    color:var(--white);
+
+}
+
+.related-exercise-meta span{
+
+    font-size:.85rem;
+
+    color:var(--gray);
+
+    font-weight:600;
+
+}
+
+
+/* ==========================================
+   LINK
+========================================== */
+
+.related-link{
+
+    margin-top:auto;
+
+    color:var(--primary-light);
+
+    font-weight:600;
+
+    transition:
+
+transform .25s ease,
+
+box-shadow .25s ease,
+
+border-color .25s ease;
+
+}
+
+.related-exercise-card:hover .related-link{
+
+    transform:translateX(6px);
+
+}
+
+/* ==========================================================
+   JOURNEY CTA
+========================================================== */
+
+.exercise-cta{
+
+    padding:clamp(5rem,8vw,7rem) 0;
+
+}
+
+
+/* ==========================================
+   CTA CARD
+========================================== */
+
+.exercise-cta-card{
+
+    max-width:1000px;
+
+    margin:0 auto;
+
+    padding:clamp(2.5rem,4vw,4rem);
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:center;
+
+    text-align:center;
+
+    gap:2rem;
+
+    background:var(--card);
+
+    border:1px solid var(--border);
+
+    border-radius:var(--radius-large);
+
+    transition:
+
+transform .25s ease,
+
+box-shadow .25s ease,
+
+border-color .25s ease;
+
+}
+
+.exercise-cta-card:hover{
+
+    border-color:var(--primary);
+
+    box-shadow:0 24px 60px rgba(37,99,235,.12);
+
+}
+
+
+/* ==========================================
+   CONTENT
+========================================== */
+
+.exercise-cta-card h2{
+
+    margin:0;
+
+    max-width:18ch;
+
+}
+
+.exercise-cta-card p{
+
+    max-width:65ch;
+
+    margin:0;
+
+    color:var(--gray);
+
+    line-height:1.8;
+
+}
+
+
+/* ==========================================
+   BUTTONS
+========================================== */
+
+.exercise-cta-buttons{
+
+    display:flex;
+
+    flex-wrap:wrap;
+
+    justify-content:center;
+
+    gap:1rem;
+
+}
+
+
+/* ==========================================
+   HIGHLIGHTS
+========================================== */
+
+.exercise-cta-highlights{
+
+    display:flex;
+
+    flex-wrap:wrap;
+
+    justify-content:center;
+
+    gap:1.5rem;
+
+    width:100%;
+
+    padding-top:2rem;
+
+    border-top:1px solid var(--border);
+
+}
+
+
+.cta-highlight{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:.85rem;
+
+}
+
+
+.cta-highlight span{
+
+    font-weight:600;
+
+    color:var(--white);
+
+}
+
+
+/* ==========================================
+   HOVER
+========================================== */
+
+.cta-highlight:hover .icon-circle{
+
+    transform:scale(1.08);
+
+}
+
+.exercise-cta-card:hover .section-badge{
+
+    border-color:var(--primary);
+
+}
+
+
+/* ==========================================================
+   RESPONSIVE DESIGN
+========================================================== */
+
+
+/* ==========================================================
+   1024px - Large Tablets & Small Laptops
+========================================================== */
+
+@media (max-width:1024px){
+
+    /* ==========================================
+       HERO
+    ========================================== */
+
+    .hero-highlight{
+
+        gap:.85rem;
+
+    }
+
+    .hero-highlight .icon-circle{
+
+        width:46px;
+        height:46px;
+
+    }
+
+
+    /* ==========================================
+       MUSCLES WORKED
+    ========================================== */
+
+    .muscles-worked-grid{
+
+        grid-template-columns:1fr;
+
+        gap:2.5rem;
+
+    }
+
+    .anatomy-card{
+
+        max-width:650px;
+
+        width:100%;
+
+        margin:0 auto;
+
+    }
+
+    .muscles-content{
+
+        gap:2rem;
+
+    }
+
+    .muscle-group{
+
+        gap:1rem;
+
+    }
+
+    .muscle-item{
+
+        padding:1.25rem;
+
+    }
+
+    .muscle-info{
+
+        gap:1rem;
+
+        align-items:center;
+
+    }
+
+    .muscle-details{
+
+        width:100%;
+
+    }
+
+    .activation-meter{
+
+        width:100%;
+
+        max-width:220px;
+
+    }
+
+
+    /* ==========================================
+       BENEFITS
+    ========================================== */
+
+    .benefits-list{
+
+        gap:1.5rem;
+
+    }
+
+    .benefit-item{
+
+        gap:1.25rem;
+
+    }
+
+
+    /* ==========================================
+       HOW TO PERFORM
+    ========================================== */
+
+    .timeline-step{
+
+        grid-template-columns:72px 1fr;
+
+        gap:1.5rem;
+
+    }
+
+    .timeline-content{
+
+        padding:1.75rem;
+
+    }
+
+
+    /* ==========================================
+       COMMON MISTAKES
+    ========================================== */
+
+    .mistakes-grid{
+
+        gap:1.5rem;
+
+    }
+
+
+    /* ==========================================
+       COACH TIPS
+    ========================================== */
+
+    .coach-card{
+
+        padding:2rem;
+
+    }
+
+
+    /* ==========================================
+       EXERCISE PROGRESSION
+    ========================================== */
+
+    .progression-roadmap{
+
+        max-width:100%;
+
+    }
+
+    .progression-specs{
+
+        grid-template-columns:repeat(2,1fr);
+
+    }
+
+
+    /* ==========================================
+       FAQ
+    ========================================== */
+
+    .faq-question{
+
+        padding:1.25rem 1.5rem;
+
+    }
+
+    .faq-answer p{
+
+        padding:0 1.5rem 1.5rem;
+
+    }
+
+
+    /* ==========================================
+       RELATED EXERCISES
+    ========================================== */
+
+    .related-exercises-grid{
+
+        grid-template-columns:repeat(2,1fr);
+
+        gap:1.75rem;
+
+    }
+
+
+    /* ==========================================
+       CTA
+    ========================================== */
+
+    .exercise-cta-card{
+
+        padding:2.75rem;
+
+    }
+
+}
+
+
+
+/* ==========================================================
+   768px - Tablets
+========================================================== */
+
+@media (max-width:768px){
+
+    /* ==========================================
+       HERO
+    ========================================== */
+
+    .hero-highlights{
+
+        gap:1rem;
+
+    }
+
+    .hero-highlight{
+
+        gap:.75rem;
+
+    }
+
+    .hero-highlight .icon-circle{
+
+        width:44px;
+        height:44px;
+
+    }
+
+    .hero-highlight span{
+
+        font-size:.95rem;
+
+        line-height:1.5;
+
+    }
+
+
+    /* ==========================================
+       MUSCLES WORKED
+    ========================================== */
+
+    .muscles-worked{
+
+        padding:4.5rem 0;
+
+    }
+
+    .muscles-worked-grid{
+
+        gap:2rem;
+
+    }
+
+    .anatomy-card{
+
+        padding:.85rem;
+
+    }
+
+    .muscles-content{
+
+        gap:1.75rem;
+
+    }
+
+    .muscle-group{
+
+        gap:1rem;
+
+    }
+
+    .muscle-item{
+
+        padding:1rem;
+
+    }
+
+    .muscle-info{
+
+        align-items:flex-start;
+
+    }
+
+    .muscle-details h4{
+
+        font-size:1.05rem;
+
+    }
+
+    .activation-meter{
+
+        width:100%;
+
+        max-width:220px;
+
+    }
+
+
+    /* ==========================================
+       BENEFITS
+    ========================================== */
+
+    .benefits-list{
+
+        gap:1.25rem;
+
+    }
+
+    .benefit-item{
+
+        gap:1rem;
+
+    }
+
+    .benefit-content h3{
+
+        font-size:1.1rem;
+
+    }
+
+
+    /* ==========================================
+       HOW TO PERFORM
+    ========================================== */
+
+    .timeline-step{
+
+        grid-template-columns:64px 1fr;
+
+        gap:1.25rem;
+
+    }
+
+    .timeline-marker{
+
+        width:64px;
+
+    }
+
+    .timeline-marker span{
+
+        width:48px;
+
+        height:48px;
+
+        font-size:1rem;
+
+    }
+
+    .timeline-content{
+
+        padding:1.5rem;
+
+    }
+
+
+    /* ==========================================
+       COMMON MISTAKES
+    ========================================== */
+
+    .mistakes-grid{
+
+        gap:1.25rem;
+
+    }
+
+    .mistake-card{
+
+        max-width:none;
+
+    }
+
+
+    /* ==========================================
+       COACH TIPS
+    ========================================== */
+
+    .coach-card{
+
+        padding:1.75rem;
+
+    }
+
+    .coach-quote{
+
+        gap:1rem;
+
+    }
+
+    .coach-quote blockquote{
+
+        font-size:1.15rem;
+
+    }
+
+
+    /* ==========================================
+       EXERCISE PROGRESSION
+    ========================================== */
+
+    .progression-step{
+
+        grid-template-columns:1fr;
+
+        gap:1.25rem;
+
+    }
+
+    .step-number{
+
+        justify-content:flex-start;
+
+    }
+
+    .progression-card{
+
+        padding:1.75rem;
+
+    }
+
+    .progression-specs{
+
+        grid-template-columns:1fr;
+
+    }
+
+
+    /* ==========================================
+       FAQ
+    ========================================== */
+
+    .faq-question{
+
+        padding:1.25rem;
+
+    }
+
+    .faq-question span{
+
+        font-size:1rem;
+
+    }
+
+    .faq-answer p{
+
+        padding:0 1.25rem 1.25rem;
+
+    }
+
+
+    /* ==========================================
+       RELATED EXERCISES
+    ========================================== */
+
+    .related-exercises-grid{
+
+        gap:1.5rem;
+
+    }
+
+    .related-exercise-content{
+
+        padding:1.25rem;
+
+    }
+
+
+    /* ==========================================
+       CTA
+    ========================================== */
+
+    .exercise-cta-card{
+
+        padding:2.5rem 2rem;
+
+    }
+
+    .exercise-cta-buttons{
+
+        width:100%;
+
+    }
+
+    .exercise-cta-buttons .btn{
+
+        flex:1;
+
+        min-width:220px;
+
+    }
+
+    .exercise-cta-highlights{
+
+        gap:1rem;
+
+    }
+
+}
+/* ==========================================================
+   576px - Large Mobile
+========================================================== */
+
+@media (max-width:576px){
+
+    /* ==========================================
+       GLOBAL
+    ========================================== */
+
+    section{
+
+        padding:4rem 0;
+
+    }
+
+    .section-header{
+
+        margin-bottom:2.5rem;
+
+    }
+
+    .section-header p{
+
+        font-size:.95rem;
+
+    }
+
+
+    /* ==========================================
+       HERO
+    ========================================== */
+
+    .hero-highlights{
+
+        gap:.85rem;
+
+    }
+
+    .hero-highlight{
+
+        gap:.75rem;
+
+        align-items:flex-start;
+
+    }
+
+    .hero-highlight .icon-circle{
+
+        width:40px;
+        height:40px;
+
+        flex-shrink:0;
+
+    }
+
+    .hero-highlight span{
+
+        font-size:.9rem;
+
+        line-height:1.5;
+
+    }
+
+
+    /* ==========================================
+       MUSCLES WORKED
+    ========================================== */
+
+    .muscles-worked-grid{
+
+        gap:1.75rem;
+
+    }
+
+    .anatomy-card{
+
+        padding:.75rem;
+
+    }
+
+    .muscle-item{
+
+        padding:1rem;
+
+    }
+
+    .muscle-info{
+
+        gap:.85rem;
+
+    }
+
+    .muscle-details h4{
+
+        font-size:1rem;
+
+    }
+
+    .muscle-details p{
+
+        font-size:.9rem;
+
+    }
+
+    .activation-meter{
+
+        width:100%;
+
+        max-width:220;
+
+    }
+
+    .activation-label{
+
+        font-size:.8rem;
+
+    }
+
+
+    /* ==========================================
+       BENEFITS
+    ========================================== */
+
+    .benefits-list{
+
+        gap:1rem;
+
+    }
+
+    .benefit-item{
+
+        gap:1rem;
+
+    }
+
+    .benefit-content h3{
+
+        font-size:1.05rem;
+
+    }
+
+
+    /* ==========================================
+       HOW TO PERFORM
+    ========================================== */
+
+    .timeline-step{
+
+        grid-template-columns:56px 1fr;
+
+        gap:1rem;
+
+    }
+
+    .timeline-marker{
+
+        width:56px;
+
+    }
+
+    .timeline-marker span{
+
+        width:42px;
+
+        height:42px;
+
+        font-size:.95rem;
+
+    }
+
+    .timeline-content{
+
+        padding:1.25rem;
+
+    }
+
+
+    /* ==========================================
+       COMMON MISTAKES
+    ========================================== */
+
+    .mistakes-grid{
+
+        gap:1rem;
+
+    }
+
+
+    /* ==========================================
+       COACH TIPS
+    ========================================== */
+
+    .coach-card{
+
+        padding:1.5rem;
+
+    }
+
+    .coach-quote{
+
+        flex-direction:column;
+
+        align-items:flex-start;
+
+    }
+
+    .coach-quote blockquote{
+
+        font-size:1.05rem;
+
+        line-height:1.7;
+
+    }
+
+    .coach-footer{
+
+        text-align:center;
+
+    }
+
+
+    /* ==========================================
+       EXERCISE PROGRESSION
+    ========================================== */
+
+    .progression-card{
+
+        padding:1.5rem;
+
+    }
+
+    .progression-card h3{
+
+        font-size:1.25rem;
+
+    }
+
+    .progression-arrow img{
+
+        width:28px;
+
+        height:28px;
+
+    }
+
+
+    /* ==========================================
+       QUESTIONS ANSWERED
+    ========================================== */
+
+    .faq-question{
+
+        gap:.75rem;
+
+        padding:1rem;
+
+    }
+
+    .faq-question span{
+
+        font-size:.95rem;
+
+    }
+
+    .faq-answer p{
+
+        padding:0 1rem 1rem;
+
+    }
+
+
+    /* ==========================================
+       EXPLORE MORE EXERCISES
+    ========================================== */
+
+    .related-exercises-grid{
+
+        grid-template-columns:1fr;
+
+        gap:1.25rem;
+
+    }
+
+    .related-exercise-content{
+
+        padding:1.25rem;
+
+    }
+
+    .related-exercise-content h3{
+
+        font-size:1.1rem;
+
+    }
+
+    .related-exercise-meta{
+
+        gap:.5rem;
+
+    }
+
+
+    /* ==========================================
+       JOURNEY CTA
+    ========================================== */
+
+    .exercise-cta-card{
+
+        padding:2rem 1.5rem;
+
+    }
+
+    .exercise-cta-buttons{
+
+        flex-direction:column;
+
+    }
+
+    .exercise-cta-buttons .btn{
+
+        width:100%;
+
+        min-width:0;
+
+    }
+
+    .exercise-cta-highlights{
+
+        flex-direction:column;
+
+        align-items:flex-start;
+
+        gap:.75rem;
+
+    }
+
+    .cta-highlight{
+
+        width:100%;
+
+    }
+
+}
+
+
+/* ==========================================================
+   390px - Small Mobile
+========================================================== */
+
+@media (max-width:390px){
+
+    /* ==========================================
+       HERO
+    ========================================== */
+
+    .hero-highlight{
+
+        gap:.6rem;
+
+    }
+
+    .hero-highlight .icon-circle{
+
+        width:36px;
+
+        height:36px;
+
+    }
+
+    .hero-highlight span{
+
+        font-size:.85rem;
+
+    }
+
+
+    /* ==========================================
+       MUSCLES WORKED
+    ========================================== */
+
+    .muscle-item{
+
+        padding:.9rem;
+
+    }
+
+    .muscle-info{
+
+        gap:.75rem;
+
+    }
+
+    .muscle-details h4{
+
+        font-size:.95rem;
+
+    }
+
+    .muscle-details p{
+
+        font-size:.85rem;
+
+    }
+
+    .activation-label{
+
+        font-size:.75rem;
+
+    }
+
+
+    /* ==========================================
+       BENEFITS
+    ========================================== */
+
+    .benefit-content h3{
+
+        font-size:1rem;
+
+    }
+
+
+    /* ==========================================
+       HOW TO PERFORM
+    ========================================== */
+
+    .timeline-content{
+
+        padding:1rem;
+
+    }
+
+
+    /* ==========================================
+       COACH TIPS
+    ========================================== */
+
+    .coach-card{
+
+        padding:1.25rem;
+
+    }
+
+    .coach-quote blockquote{
+
+        font-size:1rem;
+
+    }
+
+
+    /* ==========================================
+       EXERCISE PROGRESSION
+    ========================================== */
+
+    .progression-card{
+
+        padding:1.25rem;
+
+    }
+
+
+    /* ==========================================
+       QUESTIONS ANSWERED
+    ========================================== */
+
+    .faq-question{
+
+        padding:.9rem;
+
+    }
+
+
+    /* ==========================================
+       EXPLORE MORE EXERCISES
+    ========================================== */
+
+    .related-exercise-content{
+
+        padding:1rem;
+
+    }
+
+
+    /* ==========================================
+       JOURNEY CTA
+    ========================================== */
+
+    .exercise-cta-card{
+
+        padding:1.75rem 1.25rem;
+
+    }
+
+}
+
+

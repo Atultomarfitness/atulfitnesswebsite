@@ -1,374 +1,2006 @@
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth">
+<html lang="en">
+
 <head>
+
     <meta charset="UTF-8">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ATUL TOMAR FITNESS | Train Smarter. Grow Faster.</title>
-    
-    <meta name="description" content="Helping beginners build muscle, improve exercise form, and avoid common gym mistakes through practical fitness education by Coach Atul Tomar.">
-    <meta name="keywords" content="Atul Tomar, Atul Tomar Fitness, Train Smarter Grow Faster, Exercise Library, Gym Mistakes, Beginner Fitness, Workout Plans">
-    
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        darkBg: '#0A0A0A',
-                        darkCard: '#121214',
-                        primaryBlue: '#0066FF',
-                        accentBlue: '#00C2FF',
-                    },
-                    boxShadow: {
-                        'glow-blue': '0 0 20px rgba(0, 102, 255, 0.35)',
-                        'glow-cyan': '0 0 25px rgba(0, 194, 255, 0.5)',
-                    }
-                }
-            }
-        }
-    </script>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <title>Atul Tomar Fitness</title>
 
-    <style>
-        body { font-family: 'Inter', sans-serif; background-color: #0A0A0A; color: #FFFFFF; }
-        ::-webkit-scrollbar { width: 8px; }
-        ::-webkit-scrollbar-track { background: #0A0A0A; }
-        ::-webkit-scrollbar-thumb { background: #0066FF; border-radius: 4px; }
-        ::-webkit-scrollbar-thumb:hover { background: #00C2FF; }
-        .glow-btn:hover { box-shadow: 0 0 20px rgba(0, 194, 255, 0.6); transform: translateY(-2px); transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); }
-    </style>
+    <link rel="stylesheet" href="css/style.css">
+
 </head>
-<body class="overflow-x-hidden antialiased">
+<body>
+<!-- ===================================
+     HEADER / NAVIGATION
+==================================== -->
 
-    <nav class="fixed top-0 left-0 w-full z-50 bg-darkBg/90 backdrop-blur-md border-b border-white/5 transition-all duration-300">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
-            <a href="#home" class="flex flex-col">
-                <span class="text-xl font-black tracking-wider text-white">ATUL TOMAR <span class="text-primaryBlue">FITNESS</span></span>
-                <span class="text-[9px] tracking-widest text-accentBlue uppercase font-bold">Train Smarter. Grow Faster.</span>
+<header class="site-header">
+
+    <nav class="main-nav">
+
+        <!-- Logo -->
+
+        <div class="nav-logo">
+
+            <a href="index.html">
+
+                <img
+                    src="images/horizontal-logo.png"
+                    alt="Atul Tomar Fitness Logo"
+                    class="logo-image">
+
             </a>
-            
-            <div class="hidden lg:flex space-x-8 text-xs font-semibold tracking-wider uppercase">
-                <a href="#home" class="text-white hover:text-accentBlue transition">Home</a>
-                <a href="#library" class="text-gray-400 hover:text-accentBlue transition">Exercise Library</a>
-                <a href="#mistakes" class="text-gray-400 hover:text-accentBlue transition">Biggest Mistakes</a>
-                <a href="#youtube" class="text-gray-400 hover:text-accentBlue transition">Videos</a>
-                <a href="#about" class="text-gray-400 hover:text-accentBlue transition">About Coach</a>
-                <a href="#train" class="text-gray-400 hover:text-accentBlue transition">Train With Atul</a>
-                <a href="#contact" class="text-gray-400 hover:text-accentBlue transition">Contact</a>
-            </div>
 
-            <button id="menu-btn" class="lg:hidden text-white focus:outline-none" aria-label="Toggle Menu">
-                <i class="fa-solid fa-bars text-2xl"></i>
+        </div>
+
+        <!-- Desktop Navigation -->
+
+        <ul class="nav-menu">
+
+            <li class="nav-item">
+                <a href="index.html" class="nav-link active">
+                    Home
+                </a>
+            </li>
+
+            <li class="nav-item">
+                <a href="workouts.html" class="nav-link">
+                    Workouts
+                </a>
+            </li>
+
+            <li class="nav-item">
+                <a href=nutrition.html" class="nav-link">
+                    Nutrition
+                </a>
+            </li>
+
+            <li class="nav-item">
+    <a href="calculators.html" class="nav-link">Calculators</a>
+</li>
+
+            <li class="nav-item">
+                <a href="learn.html" class="nav-link">
+                    Learn
+                </a>
+            </li>
+
+            <li class="nav-item">
+                <a href="about.html" class="nav-link">
+                    About
+                </a>
+            </li>
+
+            <li class="nav-item">
+                <a href="contact.html" class="nav-link">
+                    Contact
+                </a>
+            </li>
+
+        </ul>
+
+        <!-- Navigation Right -->
+
+        <div class="nav-actions">
+
+            <a
+                href="https://www.youtube.com/@AtulTomarFitness"
+                target="_blank"
+                class="subscribe-btn">
+              ▶  Subscribe
+
+            </a>
+
+            <button
+                class="menu-toggle"
+                aria-label="Open Navigation">
+
+                ☰
+
             </button>
+
         </div>
 
-        <div id="mobile-menu" class="hidden lg:hidden bg-darkCard border-b border-white/10 px-6 py-6 space-y-4">
-            <a href="#home" class="block text-white font-medium mobile-link">Home</a>
-            <a href="#library" class="block text-gray-400 font-medium mobile-link">Exercise Library</a>
-            <a href="#mistakes" class="block text-gray-400 font-medium mobile-link">Biggest Mistakes</a>
-            <a href="#youtube" class="block text-gray-400 font-medium mobile-link">Videos</a>
-            <a href="#about" class="block text-gray-400 font-medium mobile-link">About Coach</a>
-            <a href="#train" class="block text-gray-400 font-medium mobile-link">Train With Atul</a>
-            <a href="#contact" class="block text-gray-400 font-medium mobile-link">Contact</a>
-        </div>
     </nav>
 
-    <section id="home" class="min-h-screen flex items-center pt-24 lg:pt-20 bg-[radial-gradient(ellipse_at_top_left,_var(--tw-gradient-stops))] from-primaryBlue/10 via-darkBg to-darkBg relative overflow-hidden">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full grid grid-cols-1 lg:grid-cols-12 gap-12 items-center relative z-10">
-            
-            <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
-                <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-primaryBlue/10 border border-primaryBlue/30 text-xs font-bold tracking-widest text-accentBlue uppercase">
-                    <i class="fa-solid fa-circle-check"></i> PERSONAL FITNESS BRAND
-                </div>
-                <h1 class="text-4xl sm:text-6xl font-black tracking-tight text-white leading-none">
-                    ATUL TOMAR FITNESS<br>
-                    <span class="text-transparent bg-clip-text bg-gradient-to-r from-primaryBlue to-accentBlue text-2xl sm:text-4xl tracking-wider block mt-2 font-bold">
-                        TRAIN SMARTER. GROW FASTER.
-                    </span>
-                </h1>
-                <p class="text-gray-300 text-base sm:text-lg max-w-xl mx-auto lg:mx-0 leading-relaxed">
-                    Helping beginners build muscle, improve exercise form, and avoid common gym mistakes through practical fitness education.
+</header>
+                                 <!-- ==========================================
+                                    SECTION 01 : NAVIGATION
+                                      STATUS : COMPLETE
+                                    ========================================== -->
+
+
+<!-- =====================================================
+     SECTION 02 : HERO
+     PURPOSE : Introduce the brand and encourage users
+               to explore workouts and fitness content.
+
+     CONTENT :
+     ✓ Hero Badge
+     ✓ Hero Headline
+     ✓ Hero Description
+     ✓ Call-To-Action Buttons
+     ✓ Hero Highlights
+     ✓ Professional Hero Image
+
+     STATUS : COMPLETE
+===================================================== -->
+
+<section id="home" class="hero-section">
+
+    <div class="container">
+
+        <div class="hero-content">
+
+            <!-- ==========================
+                 Hero Left
+            ========================== -->
+
+            <div class="hero-left">
+
+                <!-- Hero Badge -->
+
+<div class="hero-badge">
+
+    <img
+        src="images/icons/rocket.svg"
+        alt="Rocket Icon"
+        class="badge-icon">
+
+    <span>Personal Fitness Brand</span>
+
+</div>
+
+                <!-- Hero Heading -->
+
+                <h1 class="hero-title">
+
+    Build Muscle.<br>
+
+    Train Smarter.<br>
+
+    <span>Live Healthier.</span>
+
+</h1>
+
+                <!-- Hero Description -->
+
+                <p class="hero-description">
+
+                    Helping beginners build muscle, lose fat, and master proper training through science-based fitness education, practical workout guidance, and sustainable nutrition.
+
                 </p>
-                
-                <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start pt-2">
-                    <a href="https://www.youtube.com/@AtultomarFitness" class="glow-btn px-8 py-4 bg-primaryBlue text-white font-bold rounded-lg shadow-glow-blue text-center tracking-wider text-xs uppercase">WATCH VIDEOS</a>
-                    <a href="#library" class="px-8 py-4 bg-transparent border border-white/20 text-white font-bold rounded-lg hover:bg-white/5 transition text-center tracking-wider text-xs uppercase">EXPLORE EXERCISES</a>
+
+                <!-- Hero Buttons -->
+
+                <div class="hero-buttons">
+
+                    <a href="workouts.html" class="primary-btn">
+
+                        Start Training
+
+                    </a>
+
+                    <a href="https://www.youtube.com/@AtulTomarFitness"
+                       target="_blank"  rel="noopener noreferrer"
+                       class="secondary-btn">
+
+                        ▶ Watch YouTube
+
+                    </a>
+
                 </div>
 
-                <div class="pt-6 border-t border-white/5 max-w-sm mx-auto lg:mx-0 flex items-center justify-center lg:justify-start gap-6">
-                    <span class="text-xs uppercase font-bold text-gray-500 tracking-wider">Follow Channels:</span>
-                    <a href="https://youtube.com/@AtultomarFitness" target="_blank" rel="noopener" class="text-gray-400 hover:text-red-500 text-xl transition" aria-label="YouTube Channel"><i class="fa-brands fa-youtube"></i></a>
-                    <a href="https://instagram.com/atulfitness84" target="_blank" rel="noopener" class="text-gray-400 hover:text-pink-500 text-xl transition" aria-label="Instagram Profile"><i class="fa-brands fa-instagram"></i></a>
-                    <a href="https://facebook.com/Atul Singh Tomar" target="_blank" rel="noopener" class="text-gray-400 hover:text-blue-600 text-xl transition" aria-label="Facebook Page"><i class="fa-brands fa-facebook"></i></a>
-                </div>
-            </div>
-            
-            <div class="lg:col-span-5 flex justify-center items-center">
-                <div class="relative w-full max-w-[700px] aspect-[16/9] rounded-2xl overflow-hidden border border-white/10 shadow-2xl bg-darkCard">
-                    <img src="images/hero-banner.jpeg" alt="Atul Tomar Fitness Banner Image" class="w-full h-full object-cover opacity-90 transition duration-500 hover:scale-102" loading="eager">
-                    <div class="absolute inset-0 bg-gradient-to-t from-darkBg via-transparent to-transparent"></div>
-                </div>
-            </div>
+               <!-- Hero Highlights -->
+
+<div class="hero-highlights">
+
+    <div class="highlight-card card-hover">
+
+ <span class="highlight-icon icon-circle">
+
+    <img
+        src="images/icons/dumbbell.svg"
+        alt="Exercise Library">
+
+</span>
+
+        <div class="highlight-content">
+
+            <h3>Exercise Library</h3>
+
+            <p>Step-by-step workout tutorials.</p>
+
         </div>
-    </section>
 
-    <section class="bg-darkCard border-y border-white/5 py-12 relative z-20">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
-                <div class="space-y-1 p-2 border-r border-white/5 last:border-0">
-                    <h3 class="text-4xl font-black text-transparent bg-clip-text bg-gradient-to-r from-primaryBlue to-accentBlue">80+</h3>
-                    <p class="text-[11px] uppercase font-bold tracking-wider text-gray-400">Fitness Videos</p>
-                </div>
-                <div class="space-y-1 p-2 md:border-r border-white/5 last:border-0">
-                    <h3 class="text-4xl font-black text-transparent bg-clip-text bg-gradient-to-r from-primaryBlue to-accentBlue">10</h3>
-                    <p class="text-[11px] uppercase font-bold tracking-wider text-gray-400">Exercise Mistakes</p>
-                </div>
-                <div class="space-y-1 p-2 border-r border-white/5 last:border-0">
-                    <h3 class="text-4xl font-black text-transparent bg-clip-text bg-gradient-to-r from-primaryBlue to-accentBlue">3</h3>
-                    <p class="text-[11px] uppercase font-bold tracking-wider text-gray-400">Social Platforms</p>
-                </div>
-                <div class="space-y-1 p-2 last:border-0">
-                    <h3 class="text-4xl font-black text-transparent bg-clip-text bg-gradient-to-r from-primaryBlue to-accentBlue">Daily</h3>
-                    <p class="text-[11px] uppercase font-bold tracking-wider text-gray-400">Fitness Content</p>
-                </div>
-            </div>
+    </div>
+
+    <div class="highlight-card card-hover">
+
+        <span class="highlight-icon icon-circle">
+
+    <img
+        src="images/icons/apple.svg"
+        alt="Nutrition Tips">
+
+</span>
+
+        <div class="highlight-content">
+
+            <h3>Nutrition Tips</h3>
+
+            <p>Science-based nutrition guidance.</p>
+
         </div>
-    </section>
 
-    <section id="library" class="py-24 bg-darkBg">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center max-w-2xl mx-auto mb-16">
-                <span class="text-xs font-bold text-accentBlue uppercase tracking-widest block mb-2">// Anatomy Vault</span>
-                <h2 class="text-3xl font-black text-white uppercase tracking-tight">Personalized Exercise Library</h2>
-                <div class="w-12 h-1 bg-primaryBlue mx-auto mt-4"></div>
-            </div>
-            
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8" id="library-grid">
-                </div>
+    </div>
+
+    <div class="highlight-card card-hover">
+
+        <span class="highlight-icon icon-circle">
+
+    <img
+        src="images/icons/target.svg"
+        alt="Beginner Friendly">
+
+</span>
+
+        <div class="highlight-content">
+
+            <h3>Beginner Friendly</h3>
+
+            <p>Simple guidance for every fitness level.</p>
+
         </div>
-    </section>
 
-    <section id="mistakes" class="py-24 bg-darkCard border-y border-white/5">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center max-w-2xl mx-auto mb-16">
-                <span class="text-xs font-bold text-red-500 uppercase tracking-widest block mb-2">// Critical Corrections</span>
-                <h2 class="text-3xl font-black text-white uppercase tracking-tight">The 10 Biggest Mistake Series</h2>
-                <div class="w-12 h-1 bg-red-500 mx-auto mt-4"></div>
+    </div>
+
+</div>
+
             </div>
-            
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8" id="mistakes-grid">
+
+            <!-- ==========================
+                 Hero Right
+            ========================== -->
+
+            <div class="hero-right">
+
+                <div class="hero-image-card">
+
+                    <img
+                        src="images/hero-image.jpeg"
+                        alt="Coach Atul Tomar"
+                        class="hero-image">
+
                 </div>
+
+            </div>
+
         </div>
-    </section>
 
-    <section id="youtube" class="py-24 bg-darkBg">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center max-w-2xl mx-auto mb-16">
-                <span class="text-xs font-bold text-primaryBlue uppercase tracking-widest block mb-2">// Video Broadcast Ecosystem</span>
-                <h2 class="text-3xl font-black text-white uppercase tracking-tight">Featured Educational Videos</h2>
-                <div class="w-12 h-1 bg-primaryBlue mx-auto mt-4"></div>
-            </div>
+    </div>
 
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <div class="bg-darkCard border border-white/5 rounded-xl overflow-hidden flex flex-col justify-between p-4 group hover:border-primaryBlue/30 transition">
-                    <div class="space-y-4">
-                        <div class="relative aspect-video rounded-lg overflow-hidden bg-zinc-900 border border-white/10 flex items-center justify-center">
-                            <div class="absolute inset-0 bg-gradient-to-tr from-black to-primaryBlue/30 opacity-70"></div>
-                            <i class="fa-brands fa-youtube text-5xl text-red-600 relative z-10 group-hover:scale-110 transition duration-300"></i>
-                        </div>
-                        <h3 class="font-bold text-white text-base px-1">How to Eliminate Shoulder Pain on Chest Flyes</h3>
-                    </div>
-                    <div class="pt-6">
-                        <a href="https://www.youtube.com/shorts/we5hr-__Ayc" target="_blank" rel="noopener" class="w-full inline-flex items-center justify-center gap-2 py-3 bg-white/5 border border-white/10 text-white hover:bg-primaryBlue hover:border-transparent rounded-lg text-xs font-bold uppercase tracking-wider transition">
-                            Watch On YouTube <i class="fa-solid fa-arrow-up-right-from-square text-[10px]"></i>
-                        </a>
-                    </div>
-                </div>
+</section>        
 
-                <div class="bg-darkCard border border-white/5 rounded-xl overflow-hidden flex flex-col justify-between p-4 group hover:border-primaryBlue/30 transition">
-                    <div class="space-y-4">
-                        <div class="relative aspect-video rounded-lg overflow-hidden bg-zinc-900 border border-white/10 flex items-center justify-center">
-                            <div class="absolute inset-0 bg-gradient-to-tr from-black to-primaryBlue/30 opacity-70"></div>
-                            <i class="fa-brands fa-youtube text-5xl text-red-600 relative z-10 group-hover:scale-110 transition duration-300"></i>
-                        </div>
-                        <h3 class="font-bold text-white text-base px-1">The Proper Way to Setup Lat Pulldown Pads for Growth</h3>
-                    </div>
-                    <div class="pt-6">
-                        <a href="https://www.youtube.com/shorts/_tEfdjzNAFk" target="_blank" rel="noopener" class="w-full inline-flex items-center justify-center gap-2 py-3 bg-white/5 border border-white/10 text-white hover:bg-primaryBlue hover:border-transparent rounded-lg text-xs font-bold uppercase tracking-wider transition">
-                            Watch On YouTube <i class="fa-solid fa-arrow-up-right-from-square text-[10px]"></i>
-                        </a>
-                    </div>
-                </div>
+<!--=====================================================
+             STATUS : COMPLETE
+===================================================== -->
 
-                <div class="bg-darkCard border border-white/5 rounded-xl overflow-hidden flex flex-col justify-between p-4 group hover:border-primaryBlue/30 transition">
-                    <div class="space-y-4">
-                        <div class="relative aspect-video rounded-lg overflow-hidden bg-zinc-900 border border-white/10 flex items-center justify-center">
-                            <div class="absolute inset-0 bg-gradient-to-tr from-black to-primaryBlue/30 opacity-70"></div>
-                            <i class="fa-brands fa-youtube text-5xl text-red-600 relative z-10 group-hover:scale-110 transition duration-300"></i>
-                        </div>
-                        <h3 class="font-bold text-white text-base px-1">Bicep Curls: Stop Rocking and Fix Muscle Isolation</h3>
-                    </div>
-                    <div class="pt-6">
-                        <a href="https://youtube.com/watch?v=OfAtg04i-jE&list=PLVWr0qya6yHoufjWp9T3tiajJDy-xpGxI" target="_blank" rel="noopener" class="w-full inline-flex items-center justify-center gap-2 py-3 bg-white/5 border border-white/10 text-white hover:bg-primaryBlue hover:border-transparent rounded-lg text-xs font-bold uppercase tracking-wider transition">
-                            Watch On YouTube <i class="fa-solid fa-arrow-up-right-from-square text-[10px]"></i>
-                        </a>
-                    </div>
-                </div>
-            </div>
+<!-- =====================================================
+     SECTION 03 : WHY CHOOSE ATUL TOMAR FITNESS
+
+     PURPOSE :
+     Build trust by highlighting the core pillars of
+     Atul Tomar Fitness.
+
+     CONTENT :
+     ✓ Section Badge
+     ✓ Section Heading
+     ✓ Section Description
+     ✓ Four Feature Cards
+
+     STATUS : IN DEVELOPMENT
+===================================================== -->
+
+<section id="why-choose" class="why-choose-section">
+
+    <div class="container">
+
+        <!-- Section Header -->
+
+        <div class="section-header">
+
+            <span class="section-badge">
+
+    <img
+        src="images/icons/trophy.svg"
+        alt="Trophy"
+        class="badge-icon">
+
+    Trusted Fitness Education
+
+</span>
+
+            <h2 class="section-title">
+                WHY CHOOSE <br>
+                <span>ATUL TOMAR FITNESS</span>
+            </h2>
+
+            <p class="section-description">
+                Everything you need to build muscle, improve nutrition,
+                and become stronger through practical, science-based fitness education.
+            </p>
+
         </div>
-    </section>
 
-    <section id="about" class="py-24 bg-darkCard border-t border-white/5">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
-            
-            <div class="lg:col-span-5 relative">
-                <div class="absolute -inset-1 bg-gradient-to-tr from-primaryBlue to-accentBlue rounded-2xl blur opacity-25"></div>
-                <div class="relative bg-darkBg rounded-2xl overflow-hidden border border-white/10 shadow-2xl">
-                    <img src="images/coach-atul.jpeg" alt="Coach Atul Tomar Portrait Presentation" class="w-full object-cover aspect-[4/5] opacity-95" loading="lazy">
-                </div>
-            </div>
-            
-            <div class="lg:col-span-7 space-y-6">
-                <span class="text-xs font-bold text-accentBlue uppercase tracking-widest block">// Behind The Philosophy</span>
-                <h2 class="text-3xl sm:text-4xl font-black text-white uppercase tracking-tight">ABOUT COACH ATUL</h2>
-                <p class="text-gray-300 text-base leading-relaxed">
-                    I help beginners train smarter through exercise correction, proper technique, and practical fitness education.
+        <!-- Feature Cards -->
+
+        <div class="feature-grid">
+
+            <!-- Card 1 -->
+
+            <div class="feature-card card-hover">
+
+              <div class="feature-icon icon-circle">
+
+    <img
+        src="images/icons/dumbbell.svg"
+        alt="Science-Based Workouts">
+
+</div>
+
+                <h3>Science-Based Workouts</h3>
+
+                <p>
+                    Learn proper exercise technique,
+                    effective training methods,
+                    and build muscle the right way.
                 </p>
-                
-                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2">
-                    <div class="flex items-center gap-3 text-sm font-semibold text-gray-200">
-                        <i class="fa-solid fa-circle-play text-primaryBlue text-lg"></i> 80+ educational videos.
-                    </div>
-                    <div class="flex items-center gap-3 text-sm font-semibold text-gray-200">
-                        <i class="fa-solid fa-triangle-exclamation text-accentBlue text-lg"></i> 10 exercise mistake tutorials.
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
 
-    <section id="train" class="py-24 bg-darkBg relative overflow-hidden">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
-            
-            <div class="lg:col-span-7 space-y-6 lg:order-1 order-2">
-                <span class="px-3 py-1 rounded-md bg-accentBlue/10 text-accentBlue border border-accentBlue/20 text-xs font-black uppercase tracking-wider inline-block">Direct Brand Integration</span>
-                <h2 class="text-3xl sm:text-4xl font-black text-white uppercase tracking-tight">Train With Coach Atul</h2>
-                <p class="text-gray-300 text-base leading-relaxed">
-                    Upgrade from random movement paths to calculated muscle loading schedules. Tap into evidence-driven protocols designed to maximize muscle hypertrophy safely.
+              <a href="workouts.html" class="feature-link">
+
+    <span>Learn More</span>
+
+    <img
+        src="images/icons/arrow-right.svg"
+        alt="Arrow"
+        class="link-arrow">
+
+</a>
+
+            </div>
+
+            <!-- Card 2 -->
+
+            <div class="feature-card card-hover">
+
+               <div class="feature-icon icon-circle">
+
+    <img
+        src="images/icons/apple.svg"
+        alt="Nutrition Guidance">
+
+</div>
+
+                <h3>Nutrition Guidance</h3>
+
+                <p>
+                    Simple nutrition advice to help you
+                    gain muscle, lose fat,
+                    and stay healthy.
                 </p>
-                
-                <div class="grid grid-cols-2 gap-4 max-w-md pt-2">
-                    <div class="flex items-center gap-2 text-sm font-bold text-white"><span class="text-accentBlue text-lg">✓</span> Exercise Guidance</div>
-                    <div class="flex items-center gap-2 text-sm font-bold text-white"><span class="text-accentBlue text-lg">✓</span> Workout Plans</div>
-                    <div class="flex items-center gap-2 text-sm font-bold text-white"><span class="text-accentBlue text-lg">✓</span> Future Coaching</div>
-                    <div class="flex items-center gap-2 text-sm font-bold text-white"><span class="text-accentBlue text-lg">✓</span> Fitness Education</div>
-                </div>
-            </div>
-            
-            <div class="lg:col-span-5 lg:order-2 order-1 flex justify-center">
-                <div class="relative w-full max-w-[380px] rounded-2xl overflow-hidden border border-white/10 shadow-2xl bg-darkCard">
-                    <img src="images/train-with-atul.jpeg" alt="Train with Coach Atul Action Visual" class="w-full object-cover aspect-[4/5] opacity-90">
-                    <div class="absolute inset-0 bg-gradient-to-t from-darkBg via-transparent to-transparent"></div>
-                </div>
-            </div>
-        </div>
-    </section>
 
-    <section id="contact" class="py-24 bg-darkCard border-t border-white/5">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-8">
-            <div class="max-w-xl mx-auto space-y-3">
-                <span class="text-xs font-bold text-primaryBlue uppercase tracking-widest block">// Let's Connect</span>
-                <h2 class="text-3xl font-black text-white uppercase tracking-tight">Start Your Transformation</h2>
-                <p class="text-gray-400 text-sm">Have inquiries regarding private platform configurations? Connect using our secure channel.</p>
-            </div>
+                <a href="nutrition.html" class="feature-link">
 
-            <div class="inline-flex flex-col sm:flex-row items-center justify-center gap-4 bg-darkBg border border-white/10 p-4 rounded-xl shadow-xl max-w-lg mx-auto w-full">
-                <div class="w-10 h-10 rounded-lg bg-primaryBlue/10 flex items-center justify-center text-accentBlue shrink-0">
-                    <i class="fa-solid fa-envelope"></i>
-                </div>
-               <a href="mailto:atultomarfitness@gmail.com" class="hover:text-blue-400 transition">
-    atultomarfitness@gmail.com
+    <span>Learn More</span>
+
+    <img
+        src="images/icons/arrow-right.svg"
+        alt="Arrow"
+        class="link-arrow">
+
 </a>
             </div>
 
-            <div class="flex items-center justify-center gap-6 pt-4">
-                <a href="https://www.youtube.com/@AtultomarFitness" target="_blank" rel="noopener" class="w-12 h-12 rounded-xl bg-darkBg border border-white/10 flex items-center justify-center text-gray-400 hover:text-red-500 hover:border-red-500/30 transition text-lg"><i class="fa-brands fa-youtube"></i></a>
-                <a href="https://instagram.com/atulfitness84" target="_blank" rel="noopener" class="w-12 h-12 rounded-xl bg-darkBg border border-white/10 flex items-center justify-center text-gray-400 hover:text-pink-500 hover:border-pink-500/30 transition text-lg"><i class="fa-brands fa-instagram"></i></a>
-                <a href="https://facebook.com/Atul Singh Tomar" target="_blank" rel="noopener" class="w-12 h-12 rounded-xl bg-darkBg border border-white/10 flex items-center justify-center text-gray-400 hover:text-blue-500 hover:border-blue-500/30 transition text-lg"><i class="fa-brands fa-facebook"></i></a>
+            <!-- Card 3 -->
+
+            <div class="feature-card card-hover">
+
+                <div class="feature-icon icon-circle">
+
+    <img
+        src="images/icons/book-open.svg"
+        alt="Fitness Education">
+
+</div>
+
+                <h3>Fitness Education</h3>
+
+                <p>
+                    Understand the science behind
+                    training, recovery,
+                    and long-term fitness success.
+                </p>
+
+                <a href="learn.html" class="feature-link">
+
+    <span>Learn More</span>
+
+    <img
+        src="images/icons/arrow-right.svg"
+        alt="Arrow"
+        class="link-arrow">
+
+</a>
+
             </div>
+
+            <!-- Card 4 -->
+
+            <div class="feature-card card-hover">
+
+               <div class="feature-icon icon-circle">
+
+    <img
+        src="images/icons/target.svg"
+        alt="Beginner Friendly">
+
+</div>
+
+                <h3>Beginner Friendly</h3>
+
+                <p>
+                    Easy-to-follow workouts and guidance
+                    designed specifically
+                    for beginners.
+                </p>
+
+             <a href="workouts.html" class="feature-link">
+
+    <span>Learn More</span>
+
+    <img
+        src="images/icons/arrow-right.svg"
+        alt="Arrow"
+        class="link-arrow">
+
+</a>
+            </div>
+
         </div>
-    </section>
 
-    <footer class="bg-darkBg border-t border-white/10 py-12 text-center">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-2">
-            <p class="font-black text-white tracking-widest text-base">ATUL TOMAR <span class="text-primaryBlue">FITNESS</span></p>
-            <p class="text-[10px] text-gray-600 uppercase tracking-widest font-bold">Train Smarter. Grow Faster.</p>
-            <p class="text-[11px] text-gray-500 pt-4">&copy; 2026 ATUL TOMAR FITNESS. All Rights Reserved.</p>
+    </div>
+
+    <!-- Section Divider -->
+
+<div class="section-divider"></div>
+
+</section>
+
+<!-- ==========================================================
+     SECTION 03 : WHY CHOOSE ATUL TOMAR FITNESS
+     ----------------------------------------------------------
+     Purpose:
+     • Showcase the core value of the brand.
+     • Highlight the main benefits of learning with Atul Tomar Fitness.
+     • Build trust through practical, science-based fitness education.
+
+     Components:
+     ✓ Section Badge
+     ✓ Main Heading
+     ✓ Section Description
+     ✓ Feature Cards Grid
+         - Science-Based Workouts
+         - Nutrition Guidance
+         - Fitness Education
+         - Beginner Friendly
+     ✓ Learn More Links
+     ✓ Section Divider
+
+     Theme:
+     • Dark Premium UI
+     • Electric Blue Accent
+     • Responsive Grid Layout
+     • Modern Card Design
+
+     Status : ✅ Completed
+=========================================================== -->
+
+
+<!-- ==========================================================
+     SECTION 04 : EXERCISE LIBRARY
+     ----------------------------------------------------------
+     Purpose:
+     • Showcase major workout categories.
+     • Help visitors quickly find exercises.
+     • Encourage exploration of the exercise library.
+
+     Components:
+     ✓ Section Badge
+     ✓ Section Heading
+     ✓ Section Description
+     ✓ Exercise Category Cards (8)
+     ✓ Explore Button
+     ✓ Section Divider
+
+     Status : ✅ Completed
+=========================================================== -->
+
+<section class="exercise-section" id="workouts">
+
+    <div class="container">
+
+        <!-- Section Badge -->
+
+      <div class="section-badge">
+
+    <img
+        src="images/icons/dumbbell.svg"
+        alt="Exercise Library"
+        class="badge-icon">
+
+    Exercise Library
+
+</div>
+
+        <!-- Section Heading -->
+
+        <h2 class="section-title">
+            EXPLORE OUR
+            <span>WORKOUT CATEGORIES</span>
+        </h2>
+
+        <!-- Section Description -->
+
+        <p class="section-description">
+            Discover step-by-step exercise guides for every major muscle group.
+            Learn proper form, avoid common mistakes, and train smarter.
+        </p>
+
+        <!-- Exercise Grid -->
+
+        <div class="exercise-grid">
+
+            <!-- Chest -->
+
+            <div class="exercise-card card-hover">
+            <div class="exercise-icon icon-circle">
+
+    <img
+        src="images/icons/dumbbell.svg"
+        alt="Chest">
+
+</div>
+
+                <h3>Chest</h3>
+
+                <p>
+                    Build a stronger chest with effective presses, flyes,
+                    and beginner-friendly workouts.
+                </p>
+
+              <a href="workouts.html" class="exercise-link">
+
+    <span>Explore Exercises</span>
+
+    <img
+        src="images/icons/arrow-right.svg"
+        alt="Arrow"
+        class="icon-arrow">
+
+</a>
+            </div>
+
+            <!-- Back -->
+
+            <div class="exercise-card card-hover">
+               <div class="exercise-icon icon-circle">
+
+    <img
+        src="images/icons/rows-3.svg"
+        alt="Chest">
+
+</div>
+
+                <h3>Back</h3>
+
+                <p>
+                    Improve posture and strength with rows,
+                    pull-ups, and back-building exercises.
+                </p>
+
+               <a href="workouts.html" class="exercise-link">
+
+    <span>Explore Exercises</span>
+
+    <img
+        src="images/icons/arrow-right.svg"
+        alt="Arrow"
+        class="icon-arrow">
+
+</a>
+            </div>
+
+            <!-- Shoulders -->
+
+            <div class="exercise-card card-hover">
+             <div class="exercise-icon icon-circle">
+
+    <img
+        src="images/icons/activity.svg"
+        alt="Chest">
+
+</div>
+
+                <h3>Shoulders</h3>
+
+                <p>
+                    Build wider shoulders using presses,
+                    lateral raises, and rear delt exercises.
+                </p>
+
+              <a href="workouts.html" class="exercise-link">
+
+    <span>Explore Exercises</span>
+
+    <img
+        src="images/icons/arrow-right.svg"
+        alt="Arrow"
+        class="icon-arrow">
+
+</a>
+            </div>
+
+            <!-- Arms -->
+
+            <div class="exercise-card card-hover">
+               <div class="exercise-icon icon-circle">
+
+    <img
+        src="images/icons/dumbbell.svg"
+        alt="Chest">
+
+</div>
+
+                <h3>Arms</h3>
+
+                <p>
+                    Train biceps, triceps, and forearms with
+                    proven muscle-building movements.
+                </p>
+<a href="workouts.html" class="exercise-link">
+
+    <span>Explore Exercises</span>
+
+    <img
+        src="images/icons/arrow-right.svg"
+        alt="Arrow"
+        class="icon-arrow">
+
+</a>
+            </div>
+
+            <!-- Legs -->
+
+            <div class="exercise-card card-hover">
+           <div class="exercise-icon icon-circle">
+
+    <img
+        src="images/icons/footprints.svg"
+        alt="Chest">
+
+</div>
+
+                <h3>Legs</h3>
+
+                <p>
+                    Develop stronger quads, hamstrings, calves,
+                    and glutes through complete leg workouts.
+                </p>
+
+             <a href="workouts.html" class="exercise-link">
+
+    <span>Explore Exercises</span>
+
+    <img
+        src="images/icons/arrow-right.svg"
+        alt="Arrow"
+        class="icon-arrow">
+
+</a>
+            </div>
+
+            <!-- Core -->
+
+            <div class="exercise-card card-hover">
+             <div class="exercise-icon icon-circle">
+
+    <img
+        src="images/icons/circle-dot.svg"
+        alt="Chest">
+
+</div>
+
+                <h3>Core</h3>
+
+                <p>
+                    Strengthen your abs and core for better
+                    stability, posture, and athletic performance.
+                </p>
+
+             <a href="workouts.html" class="exercise-link">
+
+    <span>Explore Exercises</span>
+
+    <img
+        src="images/icons/arrow-right.svg"
+        alt="Arrow"
+        class="icon-arrow">
+
+</a>
+            </div>
+
+            <!-- Cardio -->
+
+            <div class="exercise-card card-hover">
+               <div class="exercise-icon icon-circle">
+
+    <img
+        src="images/icons/heart-pulse.svg"
+        alt="Chest">
+
+</div>
+
+                <h3>Cardio</h3>
+
+                <p>
+                    Improve endurance, burn calories,
+                    and boost heart health with cardio workouts.
+                </p>
+
+               <a href="workouts.html" class="exercise-link">
+
+    <span>Explore Exercises</span>
+
+    <img
+        src="images/icons/arrow-right.svg"
+        alt="Arrow"
+        class="icon-arrow">
+
+</a>
+            </div>
+
+            <!-- Full Body -->
+
+            <div class="exercise-card card-hover">
+            <div class="exercise-icon icon-circle">
+
+    <img
+        src="images/icons/person-standing.svg"
+        alt="Chest">
+
+</div>
+
+                <h3>Full Body</h3>
+
+                <p>
+                    Complete full-body routines designed for
+                    muscle gain, fat loss, and overall fitness.
+                </p>
+<a href="workouts.html" class="exercise-link">
+
+    <span>Explore Exercises</span>
+
+    <img
+        src="images/icons/arrow-right.svg"
+        alt="Arrow"
+        class="icon-arrow">
+
+</a>
+            </div>
+
         </div>
-    </footer>
 
-    <script>
-        // Custom Styled Object Matrix targeting Personal Branding Blue/Black Layout Theme
-        const brandLibrary = [
-            { title: 'Flat Barbell Bench Press', cat: 'Chest Focus' },
-            { title: 'Incline Dumbbell Flyes', cat: 'Chest Focus' },
-            { title: 'Conventional Deadlift', cat: 'Back Focus' },
-            { title: 'Chest Supported Lat Rows', cat: 'Back Focus' },
-            { title: 'Seated Dumbbell Shoulder Press', cat: 'Shoulder Focus' },
-            { title: 'Standing Incline Bicep Curls', cat: 'Arm Focus' }
-        ];
+    </div>
 
-        const brandMistakes = [
-            { title: 'Bench Press', error: 'Flaring elbows outward excessively at sharp 90-degree lines.', fix: 'Tuck elbow paths inside 75-degree angles dynamically.' },
-            { title: 'Cable Fly', error: 'Collapsing forearm hinges during horizontal movement loops.', fix: 'Keep custom fixed elbow tracking values throughout paths.' },
-            { title: 'Lateral Raise', error: 'Throwing weights up via lower lumbar swinging acceleration.', fix: 'Lean torso slightly forward and strictly isolate mid-delts.' }
-        ];
+    <!-- Section Divider -->
 
-        document.addEventListener('DOMContentLoaded', () => {
-            // Populate Exercise Library Cards
-            const libGrid = document.getElementById('library-grid');
-            brandLibrary.forEach((item, index) => {
-                libGrid.innerHTML += `
-                    <div class="bg-darkCard border-b-4 border-primaryBlue border-x border-t border-white/5 rounded-xl p-6 hover:border-accentBlue transition duration-300 space-y-4">
-                        <div class="flex justify-between items-center">
-                            <span class="text-[9px] font-black uppercase text-accentBlue tracking-widest bg-primaryBlue/10 px-2 py-1 rounded border border-primaryBlue/20">${item.cat}</span>
-                            <span class="text-xs text-gray-600 font-bold">0${index + 1}</span>
-                        </div>
-                        <h4 class="font-bold text-white text-lg tracking-wide">${item.title}</h4>
-                        <p class="text-xs text-gray-400">Premium form metrics dashboard with biomechanics breakdown instructions attached below.</p>
-                        <div class="pt-2 text-[11px] text-accentBlue font-bold flex items-center gap-1 cursor-pointer hover:underline">
-                            View Execution Steps <i class="fa-solid fa-chevron-right text-[8px]"></i>
-                        </div>
+    <div class="section-divider"></div>
+
+</section>
+
+<!-- ======================================================
+     SECTION 05 - FEATURED WORKOUT VIDEOS
+     Showcase popular workout tutorials from YouTube.
+     Includes section heading, featured video cards,
+     CTA button, and section divider.
+======================================================= -->
+
+<section class="featured-videos-section">
+
+    <div class="container">
+
+        <!-- Section Badge -->
+
+        <div class="section-badge">
+
+    <img
+        src="images/icons/video.svg"
+        alt="Featured Workouts"
+        class="badge-icon">
+
+    Featured Workouts
+
+</div>
+
+        <!-- Section Heading -->
+
+        <h2 class="section-title">
+            WATCH. LEARN.<br>
+            <span>TRAIN SMARTER.</span>
+        </h2>
+
+        <!-- Section Description -->
+
+        <p class="section-description">
+            Discover step-by-step workout tutorials designed to help you
+            build muscle, improve technique, and avoid common gym mistakes.
+        </p>
+
+        <!-- Featured Videos Grid -->
+
+        <div class="video-grid">
+
+            <!-- Video Card 01 -->
+
+            <div class="video-card card-hover">
+
+                <div class="video-thumbnail">
+
+                    <img src="images/bench-press.jpeg" alt="Bench Press Tutorial">
+
+                   <div class="play-button">
+
+    <img
+        src="images/icons/play.svg"
+        alt="Play Video"
+        class="play-icon">
+
+</div>
+                      <span class="video-duration">12:35</span>
+
+                </div>
+
+                <div class="video-content">
+
+                    <h3>Bench Press</h3>
+
+                    <p>
+                        Master proper bench press technique and
+                        build a stronger chest safely.
+                    </p>
+
+                 <a href="https://www.youtube.com/@AtulTomarFitness"
+   target="_blank"
+   rel="noopener noreferrer"
+   class="video-link">
+
+    <span>Watch Video</span>
+
+    <img
+        src="images/icons/arrow-right.svg"
+        alt="Arrow"
+        class="icon-arrow">
+
+</a>
+                </div>
+
+            </div>
+
+            <!-- Video Card 02 -->
+
+            <div class="video-card card-hover">
+
+                <div class="video-thumbnail">
+
+                    <img src="images/lateral-raise.jpeg" alt="Lateral Raise Tutorial">
+
+                    <div class="play-button">
+
+    <img
+        src="images/icons/play.svg"
+        alt="Play Video"
+        class="play-icon">
+
+</div>
+
+                      <span class="video-duration">04:35</span>
+
+                </div>
+
+                <div class="video-content">
+
+                    <h3>Lateral Raise</h3>
+
+                    <p>
+                        Learn perfect shoulder form for
+                        wider, stronger delts.
+                    </p>
+
+                   <a href="https://www.youtube.com/@AtulTomarFitness"
+   target="_blank"
+   rel="noopener noreferrer"
+   class="video-link">
+
+    <span>Watch Video</span>
+
+    <img
+        src="images/icons/arrow-right.svg"
+        alt="Arrow"
+        class="icon-arrow">
+
+</a>
+
+                </div>
+
+            </div>
+
+            <!-- Video Card 03 -->
+
+            <div class="video-card card-hover">
+
+                <div class="video-thumbnail">
+
+                    <img src="images/squats.jpeg" alt="Squat Tutorial">
+
+                 <div class="play-button">
+
+    <img
+        src="images/icons/play.svg"
+        alt="Play Video"
+        class="play-icon">
+
+</div>
+
+                      <span class="video-duration">08:25</span>
+
+                </div>
+
+                <div class="video-content">
+
+                    <h3>Squats</h3>
+
+                    <p>
+                        Build stronger legs with proper
+                        squat technique and posture.
+                    </p>
+
+                  <a href="https://www.youtube.com/@AtulTomarFitness"
+   target="_blank"
+   rel="noopener noreferrer"
+   class="video-link">
+
+    <span>Watch Video</span>
+
+    <img
+        src="images/icons/arrow-right.svg"
+        alt="Arrow"
+        class="icon-arrow">
+
+</a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- View All Videos Button -->
+
+        <div class="videos-button">
+
+          <a href="https://www.youtube.com/@AtulTomarFitness"
+   target="_blank"
+   rel="noopener noreferrer"
+   class="primary-btn">
+
+    View All Videos
+
+</a>
+
+        </div>
+
+        <!-- Section Divider -->
+
+        <div class="section-divider"></div>
+
+    </div>
+
+</section>
+<!-- ==========================================
+        SECTION 06 - NUTRITION & DIET
+========================================== -->
+
+<section class="nutrition-section">
+
+    <div class="container">
+
+        <div class="section-header">
+
+          <span class="section-tag">
+
+    <img
+        src="images/icons/apple.svg"
+        alt="Nutrition & Diet"
+        class="badge-icon">
+
+    Nutrition & Diet
+
+</span> 
+
+            <h2>
+                EAT SMART.
+                <span>BUILD STRONG.</span>
+            </h2>
+
+            <p>
+                Discover practical nutrition advice, protein-rich foods,
+                healthy meal ideas, and science-backed tips to help you
+                build muscle, lose fat, and stay healthy.
+            </p>
+
+        </div>
+
+        <div class="nutrition-grid">
+
+            <!-- Card 1 -->
+
+            <div class="nutrition-card card-hover">
+
+              <div class="nutrition-icon icon-circle">
+
+    <img
+        src="images/icons/beef.svg"
+        alt="High Protein Foods">
+
+</div>
+
+                <h3>High Protein Foods</h3>
+
+                <p>
+                    Learn about the best vegetarian and non-vegetarian
+                    protein sources for muscle growth.
+                </p>
+
+              <a href="nutrition.html" class="nutrition-link">
+
+    <span>Read More</span>
+
+    <img
+        src="images/icons/arrow-right.svg"
+        alt="Arrow"
+        class="icon-arrow">
+
+</a>
+
+            </div>
+
+            <!-- Card 2 -->
+
+            <div class="nutrition-card card-hover">
+<div class="nutrition-icon icon-circle">
+
+    <img
+        src="images/icons/utensils.svg"
+        alt="Healthy Meal Plans">
+
+</div>
+
+                <h3>Healthy Meal Plans</h3>
+
+                <p>
+                    Simple meal plans for beginners to gain muscle,
+                    lose fat, and improve overall health.
+                </p>
+
+              <a href="nutrition.html" class="nutrition-link">
+
+    <span>Read More</span>
+
+    <img
+        src="images/icons/arrow-right.svg"
+        alt="Arrow"
+        class="icon-arrow">
+
+</a>
+
+            </div>
+
+            <!-- Card 3 -->
+
+            <div class="nutrition-card card-hover">
+
+              <div class="nutrition-icon icon-circle">
+
+    <img
+        src="images/icons/pill.svg"
+        alt="Supplements Guide">
+
+</div>
+
+                <h3>Supplements Guide</h3>
+
+                <p>
+                    Understand creatine, protein powder, vitamins,
+                    and which supplements actually work.
+                </p>
+<a href="nutrition.html" class="nutrition-link">
+
+    <span>Read More</span>
+
+    <img
+        src="images/icons/arrow-right.svg"
+        alt="Arrow"
+        class="icon-arrow">
+
+</a>
+
+            </div>
+
+        </div>
+
+        <div class="section-button">
+
+           <a href="nutrition.html" class="primary-btn">
+
+    Explore Nutrition
+
+</a>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ==========================================
+        END OF SECTION 06
+========================================== -->
+<!-- ==========================================
+        SECTION 07 - FITNESS TOOLS
+========================================== -->
+
+<section class="tools-section">
+
+    <div class="container">
+
+        <!-- Section Header -->
+
+        <div class="section-header">
+
+           <div class="hero-badge">
+
+    <img
+        src="images/icons/calculator.svg"
+        alt="Fitness Tools"
+        class="badge-icon">
+
+    <span>Fitness Tools</span>
+
+</div>
+
+            <h2>
+                FITNESS
+                <span>CALCULATORS</span>
+            </h2>
+
+            <p>
+                Use our free fitness calculators to estimate your BMI,
+                daily calories, protein intake, and water requirements.
+                Make smarter fitness decisions in just a few seconds.
+            </p>
+
+        </div>
+
+        <!-- Tools Grid -->
+
+        <div class="tools-grid">
+
+            <!-- BMI Calculator -->
+
+            <div class="tool-card card-hover">
+
+                <div class="tool-icon icon-circle">
+
+    <img
+        src="images/icons/scale.svg"
+        alt="BMI Calculator">
+
+</div>
+
+                <h3>BMI Calculator</h3>
+
+                <p>
+                    Check whether your body weight falls within a healthy range.
+                </p>
+
+              <a href="calculators.html" class="tool-link">
+
+    <span>Open Tool</span>
+
+    <img
+        src="images/icons/arrow-right.svg"
+        alt="Arrow"
+        class="icon-arrow">
+
+</a>
+
+            </div>
+
+            <!-- Calories Calculator -->
+
+            <div class="tool-card card-hover">
+
+                <div class="tool-icon icon-circle">
+
+    <img
+        src="images/icons/flame.svg"
+        alt="Calorie Calculator">
+
+</div>
+
+                <h3>Calorie Calculator</h3>
+
+                <p>
+                    Estimate your daily calorie needs for muscle gain or fat loss.
+                </p>
+
+               <a href="calculators.html" class="tool-link">
+
+    <span>Open Tool</span>
+
+    <img
+        src="images/icons/arrow-right.svg"
+        alt="Arrow"
+        class="icon-arrow">
+
+</a>
+
+            </div>
+
+            <!-- Protein Calculator -->
+
+            <div class="tool-card card-hover">
+
+               <div class="tool-icon icon-circle">
+
+    <img
+        src="images/icons/beef.svg"
+        alt="Protein Calculator">
+
+</div>
+
+                <h3>Protein Calculator</h3>
+
+                <p>
+                    Calculate your ideal daily protein intake based on your goals.
+                </p>
+
+               <a href="calculators.html" class="tool-link">
+
+    <span>Open Tool</span>
+
+    <img
+        src="images/icons/arrow-right.svg"
+        alt="Arrow"
+        class="icon-arrow">
+
+</a>
+
+            </div>
+
+            <!-- Water Calculator -->
+
+            <div class="tool-card card-hover">
+
+                <div class="tool-icon icon-circle">
+
+    <img
+        src="images/icons/droplets.svg"
+        alt="Water Calculator">
+
+</div>
+
+                <h3>Water Calculator</h3>
+
+                <p>
+                    Find out how much water you should drink every day.
+                </p>
+
+               <a href="calculators.html" class="tool-link">
+
+    <span>Open Tool</span>
+
+    <img
+        src="images/icons/arrow-right.svg"
+        alt="Arrow"
+        class="icon-arrow">
+
+</a>
+
+            </div>
+
+        </div>
+
+        <!-- Section Button -->
+
+        <div class="section-button">
+
+           <a href="calculators.html" class="primary-btn">
+
+    Explore All Tools
+
+</a>
+
+        </div>
+
+        <!-- Divider -->
+
+        <div class="section-divider"></div>
+
+    </div>
+
+</section>
+
+<!-- ==========================================
+        END OF SECTION 07
+========================================== -->
+
+<!-- ==========================================
+        SECTION 08 - SUCCESS STORIES
+========================================== -->
+
+<section class="testimonials-section">
+
+    <div class="container">
+
+        <!-- Section Header -->
+
+        <div class="section-header">
+
+           <div class="hero-badge">
+
+    <img
+        src="images/icons/trophy.svg"
+        alt="Success Stories"
+        class="badge-icon">
+
+    <span>Success Stories</span>
+
+</div>
+
+            <h2>
+                REAL PEOPLE.
+                <span>REAL RESULTS.</span>
+            </h2>
+
+            <p>
+                Join thousands of fitness enthusiasts learning smarter,
+                building stronger bodies, and creating healthier lifestyles
+                through science-based fitness education.
+            </p>
+
+        </div>
+
+        <!-- Testimonials -->
+
+        <div class="testimonial-grid">
+
+            <!-- Testimonial 01 -->
+
+            <div class="testimonial-card card-hover">
+
+                <div class="stars">
+                    ⭐⭐⭐⭐⭐
+                </div>
+
+                <p class="review">
+
+                    "The workout tutorials are incredibly easy to understand.
+                    I finally learned proper exercise form."
+
+                </p>
+
+                <div class="user">
+
+                    <div class="user-avatar">
+
+    <img
+        src="images/icons/user-round.svg"
+        alt="User">
+
+</div>
+
+                    <div>
+
+                        <h4>Rahul Sharma ✔</h4>
+
+                        <span>Beginner Fitness Learner</span>
+
                     </div>
-                `;
-            });
 
-            // Populate Mistakes Diagnostics Cards
-            const misGrid = document.getElementById('mistakes-grid');
-            brandMistakes.forEach(m => {
-                misGrid.innerHTML += `
-                    <div class="bg-darkBg border border-white/10 rounded-xl p-6 hover:border-red-500/40 transition duration-300 space-y-4">
-                        <h4 class="font-bold text-white text-base border-b border-white/5 pb-2 uppercase tracking-wide flex items-center gap-2">
-                            <span class="w-2 h-2 rounded-full bg-red-500"></span> ${m.title} Protocol
-                        </h4>
-                        <div class="space-y-2">
-                            <p class="text-xs text-red-400 font-medium leading-relaxed"><strong class="uppercase text-[10px] tracking-wider block text-red-500">❌ Critical Error:</strong> ${m.error}</p>
-                            <p class="text-xs text-emerald-400 font-medium leading-relaxed"><strong class="uppercase text-[10px] tracking-wider block text-emerald-500">✅ Dynamic Fix:</strong> ${m.fix}</p>
-                        </div>
+                </div>
+
+            </div>
+
+            <!-- Testimonial 02 -->
+
+            <div class="testimonial-card card-hover">
+
+                <div class="stars">
+                    ⭐⭐⭐⭐⭐
+                </div>
+
+                <p class="review">
+
+                    "The nutrition videos helped me understand protein and
+                    healthy eating without confusion."
+
+                </p>
+
+                <div class="user">
+
+                  <div class="user-avatar">
+
+    <img
+        src="images/icons/user-round.svg"
+        alt="User">
+
+</div>
+
+                    <div>
+
+                        <h4>Priya Patel ✔</h4>
+
+                        <span>Nutrition Learner</span>
+
                     </div>
-                `;
-            });
 
-            // Navigation Menu Operations
-            const menuBtn = document.getElementById('menu-btn');
-            const mobileMenu = document.getElementById('mobile-menu');
-            menuBtn.addEventListener('click', () => mobileMenu.classList.toggle('hidden'));
-            document.querySelectorAll('.mobile-link').forEach(link => link.addEventListener('click', () => mobileMenu.classList.add('hidden')));
-        });
-    </script>
+                </div>
+
+            </div>
+
+            <!-- Testimonial 03 -->
+
+            <div class="testimonial-card card-hover">
+
+                <div class="stars">
+                    ⭐⭐⭐⭐⭐
+                </div>
+
+                <p class="review">
+
+                    "Simple explanations, beautiful visuals,
+                    and practical advice. Highly recommended."
+
+                </p>
+
+                <div class="user">
+
+                   <div class="user-avatar">
+
+    <img
+        src="images/icons/user-round.svg"
+        alt="User">
+
+</div>
+
+                    <div>
+
+                        <h4>Aman Verma ✔</h4>
+
+                        <span>Fitness Enthusiast</span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- Community CTA -->
+
+        <div class="community-box">
+
+            <h3>
+                Become Part of the
+                <span>ATUL TOMAR FITNESS</span> Community
+            </h3>
+
+            <p>
+
+                Subscribe for free workout tutorials, nutrition guides,
+                fitness calculators, and beginner-friendly education.
+
+            </p>
+
+            <a
+    href="https://www.youtube.com/@AtulTomarFitness"
+    target="_blank"
+    class="primary-btn">
+
+    Subscribe on YouTube
+
+</a>
+
+        </div>
+
+        <!-- Section Divider -->
+
+        <div class="section-divider"></div>
+
+    </div>
+
+</section>
+
+<!-- ==========================================
+        END SECTION 08
+========================================== -->
+<!-- ===================================================== -->
+<!-- SECTION 09 - LATEST ARTICLES & FITNESS GUIDES -->
+<!-- ===================================================== -->
+
+<section class="articles-section">
+
+    <div class="container">
+
+        <!-- Section Badge -->
+        <div class="hero-badge">
+
+    <img
+        src="images/icons/book-open.svg"
+        alt="Latest Articles"
+        class="badge-icon">
+
+    <span>Latest Articles</span>
+
+</div>
+
+        <!-- Section Heading -->
+        <h2 class="section-title">
+            BUILD KNOWLEDGE.<br>
+            <span>BUILD RESULTS.</span>
+        </h2>
+
+        <!-- Section Description -->
+        <p class="section-description">
+            Explore science-backed fitness articles, nutrition guides, workout tips,
+            beginner tutorials, and downloadable resources to help you achieve
+            better results both inside and outside the gym.
+        </p>
+
+        <!-- Articles Grid -->
+        <div class="articles-grid">
+
+            <!-- Article 1 -->
+            <div class="article-card card-hover">
+
+                <div class="article-image image-hover">
+                    <img src="images/100gmprotein.jpeg" alt="100g Protein Foods">
+                </div>
+
+                <div class="article-content">
+
+                    <div class="article-category">
+                        Nutrition
+                    </div>
+
+                    <h3>
+                        100g Protein Foods for Muscle Growth
+                    </h3>
+
+                    <p>
+                        Discover high-protein vegetarian and non-vegetarian foods to
+                        build muscle naturally.
+                    </p>
+
+                  <a href="learn.html" class="read-more">
+
+    <span>Read Article</span>
+
+    <img
+        src="images/icons/arrow-right.svg"
+        alt="Arrow"
+        class="icon-arrow">
+
+</a>
+
+                </div>
+
+            </div>
+
+            <!-- Article 2 -->
+            <div class="article-card card-hover">
+
+                <div class="article-image image-hover">
+                    <img src="images/beginner-workout.jpeg" alt="Beginner Workout Guide">
+                </div>
+
+                <div class="article-content">
+
+                    <div class="article-category">
+                        Workout
+                    </div>
+
+                    <h3>
+                        Beginner Workout Guide
+                    </h3>
+
+                    <p>
+                        Learn proper exercise form, avoid injuries, and build a
+                        strong foundation.
+                    </p>
+
+                   <a href="learn.html" class="read-more">
+
+    <span>Read Article</span>
+
+    <img
+        src="images/icons/arrow-right.svg"
+        alt="Arrow"
+        class="icon-arrow">
+
+</a>
+
+                </div>
+
+            </div>
+
+            <!-- Article 3 -->
+            <div class="article-card card-hover">
+
+                <div class="article-image image-hover">
+                    <img src="images/fat-loss.jpeg" alt="Fat Loss Mistakes">
+                </div>
+
+                <div class="article-content">
+
+                    <div class="article-category">
+                        Fat Loss
+                    </div>
+
+                    <h3>
+                        10 Fat Loss Mistakes Beginners Make
+                    </h3>
+
+                    <p>
+                        Avoid the most common mistakes that slow down fat loss and
+                        muscle growth.
+                    </p>
+
+                    <a href="learn.html" class="read-more">
+
+    <span>Read Article</span>
+
+    <img
+        src="images/icons/arrow-right.svg"
+        alt="Arrow"
+        class="icon-arrow">
+
+</a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- View All Articles Button -->
+        <div class="articles-button">
+
+         <a href="learn.html" class="primary-btn">
+
+    Explore All Articles
+
+</a>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ===================================================== -->
+<!-- END OF SECTION 09 -->
+<!-- ===================================================== -->
+ <!-- ===================================================== -->
+<!-- SECTION 10 - FREQUENTLY ASKED QUESTIONS -->
+<!-- ===================================================== -->
+
+<section class="faq-section">
+
+    <div class="container">
+
+        <!-- Section Badge -->
+       <div class="hero-badge">
+
+    <img
+        src="images/icons/circle-question-mark.svg"
+        alt="Frequently Asked Questions"
+        class="badge-icon">
+
+    <span>Frequently Asked Questions</span>
+
+</div>
+
+        <!-- Section Heading -->
+        <h2 class="section-title">
+            GOT QUESTIONS?<br>
+            <span>WE HAVE ANSWERS.</span>
+        </h2>
+
+        <!-- Section Description -->
+        <p class="section-description">
+            Everything beginners ask before starting their fitness journey.
+            Find quick answers about workouts, nutrition, calculators,
+            and future resources.
+        </p>
+
+        <!-- FAQ Container -->
+        <div class="faq-container">
+
+            <!-- FAQ Item 1 -->
+            <div class="faq-item">
+
+                <button class="faq-question">
+                    <span>Is all your fitness content free?</span>
+                  <span class="faq-icon">
+
+    <img
+        src="images/icons/plus.svg"
+        alt="Expand">
+
+</span>
+                </button>
+
+                <div class="faq-answer">
+                    <p>
+                        Yes. Most workout tutorials, nutrition guides, fitness calculators,
+                        and educational content are completely free for everyone.
+                    </p>
+                </div>
+
+            </div>
+
+            <!-- FAQ Item 2 -->
+            <div class="faq-item">
+
+                <button class="faq-question">
+                    <span>Can beginners follow your workouts?</span>
+                <span class="faq-icon">
+
+    <img
+        src="images/icons/plus.svg"
+        alt="Expand">
+
+</span>
+                </button>
+
+                <div class="faq-answer">
+                    <p>
+                        Absolutely. Every workout is explained step by step with
+                        proper exercise form, technique, and beginner-friendly guidance.
+                    </p>
+                </div>
+
+            </div>
+
+            <!-- FAQ Item 3 -->
+            <div class="faq-item">
+
+                <button class="faq-question">
+                    <span>Do I need a gym membership?</span>
+                   <span class="faq-icon">
+
+    <img
+        src="images/icons/plus.svg"
+        alt="Expand">
+
+</span>
+                </button>
+
+                <div class="faq-answer">
+                    <p>
+                        No. You'll find both gym workouts and home workout routines
+                        suitable for different fitness levels.
+                    </p>
+                </div>
+
+            </div>
+
+            <!-- FAQ Item 4 -->
+            <div class="faq-item">
+
+                <button class="faq-question">
+                    <span>Are your nutrition guides vegetarian friendly?</span>
+                  <span class="faq-icon">
+
+    <img
+        src="images/icons/plus.svg"
+        alt="Expand">
+
+</span>
+                </button>
+
+                <div class="faq-answer">
+                    <p>
+                        Yes. We provide practical nutrition advice for both vegetarian
+                        and non-vegetarian diets to suit different lifestyles.
+                    </p>
+                </div>
+
+            </div>
+
+            <!-- FAQ Item 5 -->
+            <div class="faq-item">
+
+                <button class="faq-question">
+                    <span>Will you provide downloadable PDF guides?</span>
+                  <span class="faq-icon">
+
+    <img
+        src="images/icons/plus.svg"
+        alt="Expand">
+
+</span>
+                </button>
+
+                <div class="faq-answer">
+                    <p>
+                        Yes. Workout plans, nutrition guides, and fitness resources
+                        will be available as downloadable PDFs in the future.
+                    </p>
+                </div>
+
+            </div>
+
+            <!-- FAQ Item 6 -->
+            <div class="faq-item">
+
+                <button class="faq-question">
+                    <span>How often do you upload new content?</span>
+                   <span class="faq-icon">
+
+    <img
+        src="images/icons/plus.svg"
+        alt="Expand">
+
+</span>
+                </button>
+
+                <div class="faq-answer">
+                    <p>
+                        New workout tutorials, nutrition articles, fitness calculators,
+                        and educational content are added regularly.
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+<!-- ===================================================== -->
+<!-- END OF SECTION 10 -->
+<!-- ===================================================== -->
+
+<!-- ================================================= -->
+<!-- SECTION 11 : FOOTER -->
+<!-- STATUS : COMPLETE -->
+<!-- ================================================= -->
+
+<footer class="footer">
+
+    <div class="container">
+<div class="footer-top">
+
+    <div class="footer-logo-wrapper">
+        <img src="images/horizontal-logo.png"
+             alt="Atul Tomar Fitness Logo"
+             class="footer-logo">
+    </div>
+
+    <p class="footer-description">
+        Helping beginners build muscle, lose fat, and learn fitness the right way
+        through simple workout tutorials, nutrition education, and practical fitness tools.
+    </p>
+
+    <div class="footer-socials">
+              <a href="https://www.instagram.com/atulfitness84/" target="_blank"   rel="noopener noreferrer">Instagram</a>
+
+<a href="https://www.youtube.com/@AtulTomarFitness" target="_blank"    rel="noopener noreferrer">YouTube</a>
+
+<a href="https://www.facebook.com/AtulTomarFitness" target="_blank"    rel="noopener noreferrer">Facebook</a>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-grid">
+
+            <div class="footer-column">
+
+                <h3>Quick Links</h3>
+
+                <a href="index.html">Home</a>
+
+<a href="workouts.html">Workouts</a>
+
+<a href="nutrition.html">Nutrition</a>
+
+<a href="learn.html">Learn</a>
+
+            </div>
+
+
+            <div class="footer-column">
+
+                <h3>Resources</h3>
+
+                <a href="workouts.html">Workout Library</a>
+
+<a href="calculators.html">Fitness Calculators</a>
+
+<a href="nutrition.html">Nutrition Guides</a>
+
+<a href="learn.html">FAQs</a>
+
+            </div>
+
+
+            <div class="footer-column">
+
+                <h3>Contact</h3>
+<a href="https://www.youtube.com/@AtulTomarFitness" target="_blank"   rel="noopener noreferrer">YouTube</a>
+
+<a href="https://www.instagram.com/atulfitness84/" target="_blank"   rel="noopener noreferrer">Instagram</a>
+
+<a href="https://www.facebook.com/AtulTomarFitness" target="_blank"   rel="noopener noreferrer">Facebook</a>
+
+<a href="contact.html">Contact</a>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-bottom">
+
+            <p>
+                © 2026 Atul Tomar Fitness. All Rights Reserved.
+            </p>
+
+            <p>
+                Built with ❤️ by Atul Tomar
+            </p>
+
+        </div>
+
+    </div>
+
+</footer>
+
+<!-- ================================================= -->
+<!-- END OF SECTION 11 -->
+<!-- ================================================= -->
+    <script src="javascript/script.js"></script>
 </body>
 </html>
+
