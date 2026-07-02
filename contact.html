@@ -16,16 +16,17 @@
 <!-- ===================================
      HEADER / NAVIGATION
 ==================================== -->
-
 <header class="site-header">
 
-    <nav class="main-nav">
+    <div class="container">
 
-        <!-- Logo -->
+        <nav class="main-nav" aria-label="Primary Navigation">
 
-        <div class="nav-logo">
+            <!-- ==================================================
+                 LOGO
+            =================================================== -->
 
-            <a href="index.html">
+            <a href="index.html" class="nav-logo">
 
                 <img
                     src="images/horizontal-logo.png"
@@ -34,66 +35,96 @@
 
             </a>
 
-        </div>
+            <!-- ==================================================
+                 PRIMARY NAVIGATION
+            =================================================== -->
 
-        <!-- Desktop Navigation -->
+            <ul
+                class="nav-menu"
+                id="primary-menu">
 
-       <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">
+                        Home
+                    </a>
+                </li>
 
-    <li class="nav-item">
-        <a href="index.html" class="nav-link">Home</a>
-    </li>
+                <li class="nav-item">
+                    <a href="workouts.html" class="nav-link">
+                        Workouts
+                    </a>
+                </li>
 
-    <li class="nav-item">
-        <a href="workouts.html" class="nav-link">Workouts</a>
-    </li>
+                <li class="nav-item">
+                    <a href="nutrition.html" class="nav-link">
+                        Nutrition
+                    </a>
+                </li>
 
-    <li class="nav-item">
-        <a href="nutrition.html" class="nav-link">Nutrition</a>
-    </li>
+                <li class="nav-item">
+                    <a href="calculators.html" class="nav-link">
+                        Calculators
+                    </a>
+                </li>
 
-    <li class="nav-item">
-               <a href="calculators.html" class="nav-link">
-    Calculators
-</a>
-            </li>
+                <li class="nav-item">
+                    <a href="learn.html" class="nav-link">
+                        Learn
+                    </a>
+                </li>
 
-    <li class="nav-item">
-        <a href="learn.html" class="nav-link">Learn</a>
-    </li>
+                <li class="nav-item">
+                    <a href="about.html" class="nav-link">
+                        About
+                    </a>
+                </li>
 
-    <li class="nav-item">
-        <a href="about.html" class="nav-link">About</a>
-    </li>
+                <li class="nav-item">
+                    <a href="contact.html" class="nav-link active">
+                        Contact
+                    </a>
+                </li>
 
-    <li class="nav-item">
-        <a href="contact.html" class="nav-link active">Contact</a>
-    </li>
+            </ul>
 
-</ul>
-        <!-- Navigation Right -->
+            <!-- ==================================================
+                 NAVIGATION ACTIONS
+            =================================================== -->
 
-        <div class="nav-actions">
+            <div class="nav-actions">
 
-            <a
-                href="https://www.youtube.com/@AtulTomarFitness"
-                target="_blank"
-                class="subscribe-btn">
-              ▶  Subscribe
+                <a
+                    href="https://www.youtube.com/@AtulTomarFitness"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="subscribe-btn">
 
-            </a>
+                    ▶ Subscribe
 
-            <button
-                class="menu-toggle"
-                aria-label="Open Navigation">
+                </a>
 
-                ☰
+                <!-- Mobile Menu Button -->
 
-            </button>
+                <button
+                    class="menu-toggle"
+                    type="button"
+                    aria-label="Toggle navigation"
+                    aria-expanded="false"
+                    aria-controls="primary-menu">
 
-        </div>
+                    <img
+                        src="images/icons/menu.svg"
+                        alt=""
+                        class="menu-icon"
+                        aria-hidden="true">
 
-    </nav>
+                </button>
+
+            </div>
+
+        </nav>
+
+    </div>
 
 </header>
 <!-- ==========================================================
@@ -247,7 +278,7 @@
                 </p>
 
                 <a
-                    href="#"
+                    href="https://www.instagram.com/atulfitness84/"
                     target="_blank"
                     rel="noopener noreferrer">
 
@@ -283,7 +314,7 @@
                 </p>
 
                 <a
-                    href="#"
+                    href="https://www.youtube.com/@AtultomarFitness"
                     target="_blank"
                     rel="noopener noreferrer">
 
@@ -421,7 +452,7 @@
 
                     <button
                         type="submit"
-                        class="primary-btn">
+                        class="btn-primary">
 
                         <span>Send Message</span>
 

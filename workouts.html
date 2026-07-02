@@ -19,13 +19,15 @@
 
 <header class="site-header">
 
-    <nav class="main-nav">
+    <div class="container">
 
-        <!-- Logo -->
+        <nav class="main-nav" aria-label="Primary Navigation">
 
-        <div class="nav-logo">
+            <!-- ==================================================
+                 LOGO
+            =================================================== -->
 
-            <a href="index.html">
+            <a href="index.html" class="nav-logo">
 
                 <img
                     src="images/horizontal-logo.png"
@@ -34,67 +36,96 @@
 
             </a>
 
-        </div>
+            <!-- ==================================================
+                 PRIMARY NAVIGATION
+            =================================================== -->
 
-        <!-- Desktop Navigation -->
+            <ul
+                class="nav-menu"
+                id="primary-menu">
 
-       <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link ">
+                        Home
+                    </a>
+                </li>
 
-    <li class="nav-item">
-        <a href="index.html" class="nav-link">Home</a>
-    </li>
+                <li class="nav-item">
+                    <a href="workouts.html" class="nav-link active">
+                        Workouts
+                    </a>
+                </li>
 
-    <li class="nav-item">
-        <a href="workouts.html" class="nav-link active">Workouts</a>
-    </li>
+                <li class="nav-item">
+                    <a href="nutrition.html" class="nav-link">
+                        Nutrition
+                    </a>
+                </li>
 
-    <li class="nav-item">
-        <a href="nutrition.html" class="nav-link">Nutrition</a>
-    </li>
+                <li class="nav-item">
+                    <a href="calculators.html" class="nav-link">
+                        Calculators
+                    </a>
+                </li>
 
-    <li class="nav-item">
-                <a href="calculators.html" class="nav-link">
-                    Calculators
+                <li class="nav-item">
+                    <a href="learn.html" class="nav-link">
+                        Learn
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="about.html" class="nav-link">
+                        About
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="contact.html" class="nav-link">
+                        Contact
+                    </a>
+                </li>
+
+            </ul>
+
+            <!-- ==================================================
+                 NAVIGATION ACTIONS
+            =================================================== -->
+
+            <div class="nav-actions">
+
+                <a
+                    href="https://www.youtube.com/@AtulTomarFitness"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="subscribe-btn">
+
+                    ▶ Subscribe
+
                 </a>
-            </li>
 
-    <li class="nav-item">
-        <a href="learn.html" class="nav-link">Learn</a>
-    </li>
+                <!-- Mobile Menu Button -->
 
-    <li class="nav-item">
-        <a href="about.html" class="nav-link">About</a>
-    </li>
+                <button
+                    class="menu-toggle"
+                    type="button"
+                    aria-label="Toggle navigation"
+                    aria-expanded="false"
+                    aria-controls="primary-menu">
 
-    <li class="nav-item">
-        <a href="contact.html" class="nav-link">Contact</a>
-    </li>
+                    <img
+                        src="images/icons/menu.svg"
+                        alt=""
+                        class="menu-icon"
+                        aria-hidden="true">
 
-</ul>
+                </button>
 
-        <!-- Navigation Right -->
+            </div>
 
-        <div class="nav-actions">
+        </nav>
 
-            <a
-                href="https://www.youtube.com/@AtulTomarFitness"
-                target="_blank"
-                class="subscribe-btn">
-              ▶  Subscribe
-
-            </a>
-
-            <button
-                class="menu-toggle"
-                aria-label="Open Navigation">
-
-                ☰
-
-            </button>
-
-        </div>
-
-    </nav>
+    </div>
 
 </header>
 <!-- ======================================================
@@ -117,57 +148,83 @@
      Status : 🚧 In Progress
 ======================================================= -->
 
+<!-- ======================================================
+     WORKOUT HERO
+     VERSION : 2.0
+====================================================== -->
+
 <section class="workout-hero">
 
     <div class="container">
 
         <div class="workout-hero-content">
 
-            <!-- Hero Text -->
+            <!-- ==================================================
+                 HERO CONTENT
+            =================================================== -->
 
             <div class="workout-text">
 
-             <div class="section-badge">
+                <!-- Badge -->
 
-    <img
-        src="images/icons/dumbbell.svg"
-        alt=""
-        aria-hidden="true">
+                <div class="section-badge">
 
-    Workout Library
+                    <img
+                        src="images/icons/dumbbell.svg"
+                        alt=""
+                        class="badge-icon"
+                        aria-hidden="true">
 
-</div>
-
-                <h1>
-                    MASTER EVERY EXERCISE
-                    <span>WITH PERFECT FORM.</span>
-                </h1>
-
-                <p>
-                    Discover step-by-step workout tutorials designed to help
-                    you build muscle, improve technique, and train safely.
-                    Whether you're a beginner or an experienced lifter,
-                    you'll find exercises for every muscle group.
-                </p>
-
-                <!-- Hero Buttons -->
-
-                <div class="hero-buttons">
-
-                    <a href="#exercise-library" class="primary-btn">
-                        Browse Exercises →
-                    </a>
-
-                  <a href="https://www.youtube.com/@AtultomarFitness"
-   class="secondary-btn"
-   target="_blank"
-   rel="noopener noreferrer">
-    ▶ Watch Tutorials
-</a>
+                    Workout Library
 
                 </div>
 
-                <!-- Hero Statistics -->
+                <!-- Title -->
+
+                <h1 class="hero-title">
+
+                    MASTER EVERY EXERCISE
+
+                    <span>WITH PERFECT FORM.</span>
+
+                </h1>
+
+                <!-- Description -->
+
+                <p class="hero-description">
+
+                    Discover step-by-step workout tutorials designed to help
+                    you build muscle, improve technique, and train safely.
+                    Whether you're a beginner or an experienced lifter,
+                    you'll find exercises for every major muscle group.
+
+                </p>
+
+                <!-- Buttons -->
+
+                <div class="hero-buttons">
+
+                    <a
+                        href="#exercise-library"
+                        class="primary-btn">
+
+                        Browse Exercises
+
+                    </a>
+
+                    <a
+                        href="https://www.youtube.com/@AtultomarFitness"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="secondary-btn">
+
+                        ▶ Watch Tutorials
+
+                    </a>
+
+                </div>
+
+                <!-- Statistics -->
 
                 <div class="hero-stats">
 
@@ -199,13 +256,15 @@
 
             </div>
 
-            <!-- Hero Image -->
+            <!-- ==================================================
+                 HERO IMAGE
+            =================================================== -->
 
             <div class="workout-image">
 
                 <img
                     src="images/workout-hero.png"
-                    alt="Person performing strength training exercises">
+                    alt="Coach demonstrating strength training exercises">
 
             </div>
 
@@ -416,293 +475,420 @@
      Status : COMPLETE
 ======================================================= -->
 
-<section class="featured-workouts" id="featured-workouts">
+<!-- ======================================================
+     SECTION 03 : FEATURED WORKOUTS
+     STATUS : UPDATED
+====================================================== -->
+
+<section
+    id="featured-workouts"
+    class="featured-workouts">
 
     <div class="container">
 
-        <!-- Section Heading -->
+        <!-- ==================================================
+             SECTION HEADER
+        =================================================== -->
 
-        <div class="section-heading">
+        <div class="section-header">
 
-           <span class="section-badge">
+            <div class="section-badge">
 
-    <img
-        src="images/icons/play.svg"
-        alt=""
-        aria-hidden="true">
+                <img
+                    src="images/icons/play.svg"
+                    alt=""
+                    class="badge-icon"
+                    aria-hidden="true">
 
-    Featured Workouts
+                Featured Workouts
 
-</span>
+            </div>
 
-            <h2>
+            <h2 class="section-title">
+
                 MASTER THE MOST
+
                 <span>IMPORTANT EXERCISES</span>
+
             </h2>
 
-            <p>
-                Learn proper exercise technique with step-by-step tutorials.
-                Improve your form, build muscle safely, and maximize your
+            <p class="section-description">
+
+                Learn proper exercise technique through
+                step-by-step tutorials. Improve your form,
+                build muscle safely, and maximize your
                 training results.
+
             </p>
 
         </div>
 
-
-        <!-- Workout Grid -->
+        <!-- ==================================================
+             WORKOUT GRID
+        =================================================== -->
 
         <div class="workout-grid">
 
-            <!-- Workout Card 01 -->
+            <!-- ==========================================
+                 Bench Press
+            =========================================== -->
 
-            <div class="workout-card">
+            <article class="workout-card card-hover">
 
                 <div class="workout-thumbnail">
 
-                    <img src="images/bench-press.jpeg"
-                         alt="Bench Press"   loading="lazy">
+                    <img
+                        src="images/bench-press.jpeg"
+                        alt="Bench Press Exercise"
+                        loading="lazy">
 
-                    <div class="difficulty-badge">
+                    <span class="difficulty-badge">
+
                         Beginner
-                    </div>
+
+                    </span>
 
                 </div>
 
                 <div class="workout-content">
 
-                    <h3>Bench Press</h3>
+                    <h3>
+
+                        Bench Press
+
+                    </h3>
 
                     <p>
-                        Learn proper bench press form to build a stronger
-                        chest, shoulders, and triceps.
+
+                        Learn proper bench press form to
+                        build a stronger chest, shoulders,
+                        and triceps.
+
                     </p>
 
-                  <div class="workout-meta">
+                    <div class="workout-meta">
 
-    <span>
+                        <span>
 
-        <img
-            src="images/icons/dumbbell.svg"
-            alt=""
-            aria-hidden="true">
+                            <img
+                                src="images/icons/dumbbell.svg"
+                                alt=""
+                                aria-hidden="true">
 
-        Chest
+                            Chest
 
-    </span>
+                        </span>
 
-    <span>
+                        <span>
 
-        <img
-            src="images/icons/clock.svg"
-            alt=""
-            aria-hidden="true">
+                            <img
+                                src="images/icons/clock.svg"
+                                alt=""
+                                aria-hidden="true">
 
-        8 min
+                            8 min
 
-    </span>
+                        </span>
 
-</div>
-                    <a href="exercises/bench-press.html" class="workout-btn">
-    View Exercise →
-</a>
-
-                </div>
-
-            </div>
-
-
-            <!-- Workout Card 02 -->
-
-            <div class="workout-card">
-
-                <div class="workout-thumbnail">
-
-                    <img src="images/lat-pull-down.jpeg"
-                         alt="Lat Pulldown"    loading="lazy">
-
-                    <div class="difficulty-badge">
-                        Beginner
                     </div>
 
-                </div>
+                    <a
+                        href="exercises/bench-press.html"
+                        class="workout-btn">
 
-                <div class="workout-content">
+                        <span>
 
-                    <h3>Lat Pulldown</h3>
+                            View Exercise
 
-                    <p>
-                        Build a wider, stronger back while learning proper
-                        pulling technique.
-                    </p>
+                        </span>
 
-                  <div class="workout-meta">
+                        <img
+                            src="images/icons/arrow-right.svg"
+                            alt=""
+                            class="icon-arrow"
+                            aria-hidden="true">
 
-    <span>
-
-        <img
-            src="images/icons/dumbbell.svg"
-            alt=""
-            aria-hidden="true">
-
-        Back
-
-    </span>
-
-    <span>
-
-        <img
-            src="images/icons/clock.svg"
-            alt=""
-            aria-hidden="true">
-
-        7 min
-
-    </span>
-
-</div>
-
-                    <a href="#" class="workout-btn">
-                       View Exercise →
                     </a>
 
                 </div>
 
-            </div>
+            </article>
 
+            <!-- ==========================================
+                 Lat Pulldown
+            =========================================== -->
 
-            <!-- Workout Card 03 -->
-
-            <div class="workout-card">
+            <article class="workout-card card-hover">
 
                 <div class="workout-thumbnail">
 
-                    <img src="images/lateral-raise.jpeg"
-                         alt="Lateral Raise"    loading="lazy">
+                    <img
+                        src="images/lat-pull-down.jpeg"
+                        alt="Lat Pulldown Exercise"
+                        loading="lazy">
 
-                    <div class="difficulty-badge">
+                    <span class="difficulty-badge">
+
+                        Beginner
+
+                    </span>
+
+                </div>
+
+                <div class="workout-content">
+
+                    <h3>
+
+                        Lat Pulldown
+
+                    </h3>
+
+                    <p>
+
+                        Build a wider, stronger back while
+                        learning proper pulling technique.
+
+                    </p>
+
+                    <div class="workout-meta">
+
+                        <span>
+
+                            <img
+                                src="images/icons/dumbbell.svg"
+                                alt=""
+                                aria-hidden="true">
+
+                            Back
+
+                        </span>
+
+                        <span>
+
+                            <img
+                                src="images/icons/clock.svg"
+                                alt=""
+                                aria-hidden="true">
+
+                            7 min
+
+                        </span>
+
+                    </div>
+
+                    <a
+                        href="exercises/lat-pulldown.html"
+                        class="workout-btn">
+
+                        <span>
+
+                            View Exercise
+
+                        </span>
+
+                        <img
+                            src="images/icons/arrow-right.svg"
+                            alt=""
+                            class="icon-arrow"
+                            aria-hidden="true">
+
+                    </a>
+
+                </div>
+
+            </article>
+
+            <!-- ==========================================
+                 Lateral Raise
+            =========================================== -->
+
+            <article class="workout-card card-hover">
+
+                <div class="workout-thumbnail">
+
+                    <img
+                        src="images/lateral-raise.jpeg"
+                        alt="Lateral Raise Exercise"
+                        loading="lazy">
+
+                    <span class="difficulty-badge">
+
                         Intermediate
-                    </div>
+
+                    </span>
 
                 </div>
 
                 <div class="workout-content">
 
-                    <h3>Lateral Raise</h3>
+                    <h3>
+
+                        Lateral Raise
+
+                    </h3>
 
                     <p>
-                        Build broader shoulders with correct lateral raise
-                        technique and avoid common mistakes.
+
+                        Build broader shoulders with proper
+                        lateral raise technique and avoid
+                        common mistakes.
+
                     </p>
 
-                 <div class="workout-meta">
+                    <div class="workout-meta">
 
-    <span>
+                        <span>
 
-        <img
-            src="images/icons/dumbbell.svg"
-            alt=""
-            aria-hidden="true">
+                            <img
+                                src="images/icons/dumbbell.svg"
+                                alt=""
+                                aria-hidden="true">
 
-        Shoulders
+                            Shoulders
 
-    </span>
+                        </span>
 
-    <span>
+                        <span>
 
-        <img
-            src="images/icons/clock.svg"
-            alt=""
-            aria-hidden="true">
+                            <img
+                                src="images/icons/clock.svg"
+                                alt=""
+                                aria-hidden="true">
 
-        6 min
+                            6 min
 
-    </span>
+                        </span>
 
-</div>
+                    </div>
 
-                    <a href="#" class="workout-btn">
-                       View Exercise →
+                    <a
+                        href="exercises/lateral-raise.html"
+                        class="workout-btn">
+
+                        <span>
+
+                            View Exercise
+
+                        </span>
+
+                        <img
+                            src="images/icons/arrow-right.svg"
+                            alt=""
+                            class="icon-arrow"
+                            aria-hidden="true">
+
                     </a>
 
                 </div>
 
-            </div>
+            </article>
 
+            <!-- ==========================================
+                 Leg Press
+            =========================================== -->
 
-            <!-- Workout Card 04 -->
-
-            <div class="workout-card">
+            <article class="workout-card card-hover">
 
                 <div class="workout-thumbnail">
 
-                    <img src="images/leg-press.jpeg"
-                         alt="Leg Press"    loading="lazy">
+                    <img
+                        src="images/leg-press.jpeg"
+                        alt="Leg Press Exercise"
+                        loading="lazy">
 
-                    <div class="difficulty-badge">
+                    <span class="difficulty-badge">
+
                         Beginner
-                    </div>
+
+                    </span>
 
                 </div>
 
                 <div class="workout-content">
 
-                    <h3>Leg Press</h3>
+                    <h3>
+
+                        Leg Press
+
+                    </h3>
 
                     <p>
-                        Strengthen your quads, glutes, and hamstrings while
-                        improving lower-body power.
+
+                        Strengthen your quads, glutes,
+                        and hamstrings while improving
+                        lower-body power.
+
                     </p>
-<div class="workout-meta">
 
-    <span>
+                    <div class="workout-meta">
 
-        <img
-            src="images/icons/footprints.svg"
-            alt=""
-            aria-hidden="true">
+                        <span>
 
-        Legs
+                            <img
+                                src="images/icons/footprints.svg"
+                                alt=""
+                                aria-hidden="true">
 
-    </span>
+                            Legs
 
-    <span>
+                        </span>
 
-        <img
-            src="images/icons/clock.svg"
-            alt=""
-            aria-hidden="true">
+                        <span>
 
-        9 min
+                            <img
+                                src="images/icons/clock.svg"
+                                alt=""
+                                aria-hidden="true">
 
-    </span>
+                            9 min
 
-</div>
+                        </span>
 
-                    <a href="#" class="workout-btn">
-                    View Exercise →
+                    </div>
+
+                    <a
+                        href="exercises/leg-press.html"
+                        class="workout-btn">
+
+                        <span>
+
+                            View Exercise
+
+                        </span>
+
+                        <img
+                            src="images/icons/arrow-right.svg"
+                            alt=""
+                            class="icon-arrow"
+                            aria-hidden="true">
+
                     </a>
 
                 </div>
 
-            </div>
+            </article>
 
         </div>
 
-
-        <!-- View All Button -->
+        <!-- ==================================================
+             CTA
+        =================================================== -->
 
         <div class="workout-action">
 
-          <a href="exercise-library.html" class="primary-btn">
-    Browse Exercise Library →
-</a>
+            <a
+                href="exercise-library.html"
+                class="primary-btn">
+
+                Browse Exercise Library
+
+            </a>
 
         </div>
 
     </div>
 
 </section>
-
 <!-- =======================================================
      END OF SECTION 03
 ======================================================= -->
@@ -725,277 +911,367 @@
      Status : COMPLETE
 ======================================================= -->
 
-<section class="workout-programs" id="workout-programs">
+<!-- ==========================================================
+     SECTION 04 : WORKOUT PROGRAMS
+========================================================== -->
+
+<section class="workout-programs" id="workout-programs" aria-labelledby="programs-title">
 
     <div class="container">
 
-        <!-- Section Heading -->
+        <!-- =========================
+             Section Heading
+        ========================== -->
 
         <div class="section-heading">
 
-           <span class="section-badge">
+            <span class="section-badge">
 
-    <img
-        src="images/icons/clipboard-list.svg"
-        alt=""
-        aria-hidden="true">
+                <img
+                    src="images/icons/clipboard-list.svg"
+                    alt=""
+                    aria-hidden="true">
 
-    Workout Programs
+                Workout Programs
 
-</span>
+            </span>
 
-            <h2>
+            <h2 id="programs-title">
+
                 CHOOSE YOUR
+
                 <span>FITNESS JOURNEY</span>
+
             </h2>
 
             <p>
+
                 Whether your goal is building muscle, losing fat, or improving
-                overall fitness, choose a structured program designed to help
-                you train consistently and achieve better results.
+                overall fitness, choose a structured workout program designed
+                to help you train consistently and achieve long-term results.
+
             </p>
 
         </div>
 
-        <!-- Program Grid -->
+        <!-- =========================
+             Program Grid
+        ========================== -->
 
         <div class="program-grid">
 
-            <!-- Program 01 -->
+            <!-- =========================
+                 Program 01
+            ========================== -->
 
-            <div class="program-card">
+            <article class="program-card">
 
-             <div class="program-icon icon-circle">
+                <div class="program-icon icon-circle">
 
-    <img
-        src="images/icons/dumbbell.svg"
-        alt="Muscle Gain">
+                    <img
+                        src="images/icons/dumbbell.svg"
+                        alt="Dumbbell icon">
 
-</div>
+                </div>
 
                 <h3>Muscle Gain</h3>
 
                 <p>
+
                     Progressive strength training focused on building lean
-                    muscle and increasing overall size.
-                </p>
+                    muscle, increasing overall size, and improving strength.
 
-                <ul class="program-features">
-
-                  <li>
-
-    <img
-        src="images/icons/check.svg"
-        alt=""
-        aria-hidden="true">
-
-    Progressive Overload
-
-</li>
-
-<li>
-
-    <img
-        src="images/icons/check.svg"
-        alt=""
-        aria-hidden="true">
-
-    Strength Focus
-
-</li>
-
-<li>
-
-    <img
-        src="images/icons/check.svg"
-        alt=""
-        aria-hidden="true">
-
-    4–5 Days / Week
-
-</li>
-
-                </ul>
-<a href="#muscle-gain.html" class="program-btn">
-    View Program →
-</a>
-
-            </div>
-
-            <!-- Program 02 -->
-
-            <div class="program-card">
-
-                <div class="program-icon icon-circle">
-
-    <img
-        src="images/icons/flame.svg"
-        alt="Muscle Gain">
-
-</div>
-
-                <h3>Fat Loss</h3>
-
-                <p>
-                    Burn calories, improve conditioning, and maintain muscle
-                    while reducing body fat.
                 </p>
 
                 <ul class="program-features">
 
                     <li>
-    <img
-        src="images/icons/check.svg"
-        alt=""
-        aria-hidden="true">
-    Fat Burning Workouts
-</li>
 
-<li>
-    <img
-        src="images/icons/check.svg"
-        alt=""
-        aria-hidden="true">
-    Cardio Included
-</li>
+                        <img
+                            src="images/icons/check.svg"
+                            alt=""
+                            aria-hidden="true">
 
-<li>
-    <img
-        src="images/icons/check.svg"
-        alt=""
-        aria-hidden="true">
-    Beginner Friendly
-</li>
+                        Progressive Overload
+
+                    </li>
+
+                    <li>
+
+                        <img
+                            src="images/icons/check.svg"
+                            alt=""
+                            aria-hidden="true">
+
+                        Strength Focus
+
+                    </li>
+
+                    <li>
+
+                        <img
+                            src="images/icons/check.svg"
+                            alt=""
+                            aria-hidden="true">
+
+                        4–5 Days / Week
+
+                    </li>
 
                 </ul>
 
-   <a href="#fat-loss.html" class="program-btn">
-    View Program →
-</a>
+                <a href="#muscle-gain.html" class="program-btn">
 
-            </div>
+                    View Program
 
-            <!-- Program 03 -->
+                    <img
+                        src="images/icons/arrow-right.svg"
+                        alt=""
+                        aria-hidden="true">
 
-            <div class="program-card">
+                </a>
 
-            <div class="program-icon icon-circle">
+            </article>
 
-    <img
-        src="images/icons/house.svg"
-        alt="Muscle Gain">
+            <!-- =========================
+                 Program 02
+            ========================== -->
 
-</div>
+            <article class="program-card">
+
+                <div class="program-icon icon-circle">
+
+                    <img
+                        src="images/icons/flame.svg"
+                        alt="Flame icon">
+
+                </div>
+
+                <h3>Fat Loss</h3>
+
+                <p>
+
+                    Burn calories, improve conditioning, and preserve muscle
+                    while following an effective fat-loss training plan.
+
+                </p>
+
+                <ul class="program-features">
+
+                    <li>
+
+                        <img
+                            src="images/icons/check.svg"
+                            alt=""
+                            aria-hidden="true">
+
+                        Fat Burning Workouts
+
+                    </li>
+
+                    <li>
+
+                        <img
+                            src="images/icons/check.svg"
+                            alt=""
+                            aria-hidden="true">
+
+                        Cardio Included
+
+                    </li>
+
+                    <li>
+
+                        <img
+                            src="images/icons/check.svg"
+                            alt=""
+                            aria-hidden="true">
+
+                        Beginner Friendly
+
+                    </li>
+
+                </ul>
+
+                <a href="#fat-loss.html" class="program-btn">
+
+                    View Program
+
+                    <img
+                        src="images/icons/arrow-right.svg"
+                        alt=""
+                        aria-hidden="true">
+
+                </a>
+
+            </article>
+
+            <!-- =========================
+                 Program 03
+            ========================== -->
+
+            <article class="program-card">
+
+                <div class="program-icon icon-circle">
+
+                    <img
+                        src="images/icons/house.svg"
+                        alt="Home icon">
+
+                </div>
 
                 <h3>Home Workout</h3>
 
                 <p>
-                    Train effectively from home using bodyweight exercises
-                    and minimal equipment.
+
+                    Train effectively at home using bodyweight exercises and
+                    minimal equipment without sacrificing results.
+
                 </p>
 
                 <ul class="program-features">
-<li>
-    <img
-        src="images/icons/check.svg"
-        alt=""
-        aria-hidden="true">
-    No Gym Required
-</li>
 
-<li>
-    <img
-        src="images/icons/check.svg"
-        alt=""
-        aria-hidden="true">
-    Minimal Equipment
-</li>
+                    <li>
 
-<li>
-    <img
-        src="images/icons/check.svg"
-        alt=""
-        aria-hidden="true">
-    Easy to Follow
-</li>
+                        <img
+                            src="images/icons/check.svg"
+                            alt=""
+                            aria-hidden="true">
+
+                        No Gym Required
+
+                    </li>
+
+                    <li>
+
+                        <img
+                            src="images/icons/check.svg"
+                            alt=""
+                            aria-hidden="true">
+
+                        Minimal Equipment
+
+                    </li>
+
+                    <li>
+
+                        <img
+                            src="images/icons/check.svg"
+                            alt=""
+                            aria-hidden="true">
+
+                        Easy to Follow
+
+                    </li>
 
                 </ul>
 
-<a href="#home-workout.html" class="program-btn">
-    View Program →
-</a>
+                <a href="#home-workout.html" class="program-btn">
 
-            </div>
+                    View Program
 
-            <!-- Program 04 -->
+                    <img
+                        src="images/icons/arrow-right.svg"
+                        alt=""
+                        aria-hidden="true">
 
-            <div class="program-card">
+                </a>
 
-               <div class="program-icon icon-circle">
+            </article>
 
-    <img
-        src="images/icons/graduation-cap.svg"
-        alt="Muscle Gain">
+            <!-- =========================
+                 Program 04
+            ========================== -->
 
-</div>
+            <article class="program-card">
+
+                <div class="program-icon icon-circle">
+
+                    <img
+                        src="images/icons/graduation-cap.svg"
+                        alt="Graduation cap icon">
+
+                </div>
 
                 <h3>Beginner Full Body</h3>
 
                 <p>
-                    A complete full-body routine designed for beginners to
+
+                    A structured full-body workout designed to help beginners
                     build strength, confidence, and proper exercise technique.
+
                 </p>
 
                 <ul class="program-features">
-<li>
-    <img
-        src="images/icons/check.svg"
-        alt=""
-        aria-hidden="true">
-    Full Body Routine
-</li>
 
-<li>
-    <img
-        src="images/icons/check.svg"
-        alt=""
-        aria-hidden="true">
-    Learn Proper Form
-</li>
+                    <li>
 
-<li>
-    <img
-        src="images/icons/check.svg"
-        alt=""
-        aria-hidden="true">
-    3 Days / Week
-</li>
+                        <img
+                            src="images/icons/check.svg"
+                            alt=""
+                            aria-hidden="true">
+
+                        Full Body Routine
+
+                    </li>
+
+                    <li>
+
+                        <img
+                            src="images/icons/check.svg"
+                            alt=""
+                            aria-hidden="true">
+
+                        Learn Proper Form
+
+                    </li>
+
+                    <li>
+
+                        <img
+                            src="images/icons/check.svg"
+                            alt=""
+                            aria-hidden="true">
+
+                        3 Days / Week
+
+                    </li>
+
                 </ul>
 
- <a href="#beginner-full-body.html" class="program-btn">
-    View Program →
-</a>
+                <a href="#beginner-full-body.html" class="program-btn">
 
-            </div>
+                    View Program
+
+                    <img
+                        src="images/icons/arrow-right.svg"
+                        alt=""
+                        aria-hidden="true">
+
+                </a>
+
+            </article>
 
         </div>
 
-        <!-- Bottom CTA -->
+        <!-- =========================
+             Section CTA
+        ========================== -->
 
-      <div class="program-action">
+        <div class="program-action">
 
-    <a href="#workout-programs" class="primary-btn">
+            <a href="#programs.html" class="primary-btn">
 
-        Explore All Programs
+                Explore All Programs
 
-        <img
-            src="images/icons/arrow-right.svg"
-            alt=""
-            aria-hidden="true">
+                <img
+                    src="images/icons/arrow-right.svg"
+                    alt=""
+                    aria-hidden="true">
 
-    </a>
+            </a>
 
-</div>
+        </div>
 
     </div>
 
@@ -1023,141 +1299,206 @@
      Status : COMPLETE
 ======================================================= -->
 
-<section class="training-principles" id="training-principles">
+<!-- ==========================================================
+     SECTION 05 : TRAINING PRINCIPLES
+========================================================== -->
+
+<section
+    class="training-principles"
+    id="training-principles"
+    aria-labelledby="training-principles-title">
 
     <div class="container">
 
-        <!-- Section Heading -->
+        <!-- =========================
+             Section Heading
+        ========================== -->
 
         <div class="section-heading">
 
             <span class="section-badge">
 
-    <img
-        src="images/icons/book-open.svg"
-        alt=""
-        aria-hidden="true">
+                <img
+                    src="images/icons/book-open.svg"
+                    alt=""
+                    aria-hidden="true">
 
-    Training Principles
+                Training Principles
 
-</span>
+            </span>
 
-            <h2>
+            <h2 id="training-principles-title">
+
                 TRAIN SMART.
+
                 <span>GET BETTER RESULTS.</span>
+
             </h2>
 
             <p>
+
                 Before lifting heavier weights, master these essential
                 training principles. They will help you build muscle,
-                reduce injuries, and achieve long-term fitness success.
+                reduce injury risk, and achieve long-term fitness success.
+
             </p>
 
         </div>
 
-        <!-- Principles Grid -->
+        <!-- =========================
+             Principles Grid
+        ========================== -->
 
         <div class="principles-grid">
 
-            <!-- Principle 01 -->
+            <!-- =========================
+                 Principle 01
+            ========================== -->
 
-            <div class="principle-card">
+            <article class="principle-card">
 
-               <div class="principle-icon icon-circle">
+                <span class="principle-number">
 
-    <img
-        src="images/icons/chart-column.svg"
-        alt="Progressive Overload">
+                    01
 
-</div>
+                </span>
+
+                <div class="principle-icon icon-circle">
+
+                    <img
+                        src="images/icons/chart-column.svg"
+                        alt="Chart icon">
+
+                </div>
 
                 <h3>Progressive Overload</h3>
 
                 <p>
+
                     Gradually increase weight, repetitions, or training
-                    volume to stimulate muscle growth and strength.
+                    volume over time to continuously stimulate muscle
+                    growth and strength gains.
+
                 </p>
 
-            </div>
+            </article>
 
-            <!-- Principle 02 -->
+            <!-- =========================
+                 Principle 02
+            ========================== -->
 
-            <div class="principle-card">
-<div class="principle-icon icon-circle">
+            <article class="principle-card">
 
-    <img
-        src="images/icons/target.svg"
-        alt="Perfect Form">
+                <span class="principle-number">
 
-</div>
+                    02
+
+                </span>
+
+                <div class="principle-icon icon-circle">
+
+                    <img
+                        src="images/icons/target.svg"
+                        alt="Target icon">
+
+                </div>
 
                 <h3>Perfect Form</h3>
 
                 <p>
-                    Focus on proper technique before increasing weight.
-                    Good form prevents injuries and improves results.
+
+                    Focus on proper exercise technique before increasing
+                    the weight. Good form reduces injury risk and improves
+                    long-term progress.
+
                 </p>
 
-            </div>
+            </article>
 
-            <!-- Principle 03 -->
+            <!-- =========================
+                 Principle 03
+            ========================== -->
 
-            <div class="principle-card">
-<div class="principle-icon icon-circle">
+            <article class="principle-card">
 
-    <img
-        src="images/icons/moon.svg"
-        alt="Recovery and Sleep">
+                <span class="principle-number">
 
-</div>
+                    03
+
+                </span>
+
+                <div class="principle-icon icon-circle">
+
+                    <img
+                        src="images/icons/moon.svg"
+                        alt="Moon icon">
+
+                </div>
 
                 <h3>Recovery & Sleep</h3>
 
                 <p>
+
                     Muscles grow while you recover. Prioritize quality
-                    sleep, hydration, and rest days every week.
+                    sleep, proper hydration, and regular rest days every
+                    week.
+
                 </p>
 
-            </div>
+            </article>
 
-            <!-- Principle 04 -->
+            <!-- =========================
+                 Principle 04
+            ========================== -->
 
-            <div class="principle-card">
-<div class="principle-icon icon-circle">
+            <article class="principle-card">
 
-    <img
-        src="images/icons/apple.svg"
-        alt="Nutrition Matters">
+                <span class="principle-number">
 
-</div>
+                    04
+
+                </span>
+
+                <div class="principle-icon icon-circle">
+
+                    <img
+                        src="images/icons/apple.svg"
+                        alt="Apple icon">
+
+                </div>
 
                 <h3>Nutrition Matters</h3>
 
                 <p>
-                    Support your workouts with enough protein, calories,
-                    and balanced nutrition to maximize performance.
+
+                    Fuel your body with enough protein, calories, and
+                    balanced nutrition to maximize performance, recovery,
+                    and muscle growth.
+
                 </p>
 
-            </div>
+            </article>
 
         </div>
 
-        <!-- Bottom CTA -->
+        <!-- =========================
+             Section CTA
+        ========================== -->
 
-       <div class="principle-action">
+        <div class="principle-action">
 
-    <a href="learn.html" class="primary-btn">
+            <a href="#" class="primary-btn">
 
-        <span>Learn More About Training</span>
+                Learn More About Training
 
-        <img
-            src="images/icons/arrow-right.svg"
-            alt=""
-            aria-hidden="true">
+                <img
+                    src="images/icons/arrow-right.svg"
+                    alt=""
+                    aria-hidden="true">
 
-    </a>
+            </a>
 
-</div>
+        </div>
 
     </div>
 
@@ -1184,65 +1525,143 @@
      Status : COMPLETE
 ======================================================= -->
 
-<section class="workout-cta">
+<!-- ==========================================================
+     SECTION 06 : WORKOUT CTA
+========================================================== -->
+
+<section
+    class="workout-cta"
+    id="workout-cta"
+    aria-labelledby="workout-cta-title">
 
     <div class="container">
 
+        <!-- =========================
+             Section Heading
+        ========================== -->
+
         <span class="section-badge">
 
-    <img
-        src="images/icons/rocket.svg"
-        alt=""
-        aria-hidden="true">
+            <img
+                src="images/icons/rocket.svg"
+                alt=""
+                aria-hidden="true">
 
-    Start Your Journey
+            Start Your Journey
 
-</span>
+        </span>
 
-        <h2>
+        <h2 id="workout-cta-title">
+
             READY TO BUILD YOUR
+
             <span>STRONGEST VERSION?</span>
+
         </h2>
 
         <p>
-            Explore beginner-friendly workout tutorials, learn proper
+
+            Explore beginner-friendly workout tutorials, master proper
             exercise technique, and take the next step toward building
             strength, confidence, and a healthier lifestyle.
+
         </p>
+
+        <!-- =========================
+             Trust Highlights
+        ========================== -->
+
+        <div class="cta-highlights">
+
+            <article class="highlight-item">
+
+                <div class="highlight-icon icon-circle">
+
+                    <img
+                        src="images/icons/dumbbell.svg"
+                        alt="Dumbbell icon">
+
+                </div>
+
+                <h3>Beginner Friendly</h3>
+
+                <p>Easy-to-follow workouts for every fitness level.</p>
+
+            </article>
+
+            <article class="highlight-item">
+
+                <div class="highlight-icon icon-circle">
+
+                    <img
+                        src="images/icons/book-open.svg"
+                        alt="Book icon">
+
+                </div>
+
+                <h3>Science Based</h3>
+
+                <p>Evidence-based fitness education you can trust.</p>
+
+            </article>
+
+            <article class="highlight-item">
+
+                <div class="highlight-icon icon-circle">
+
+                    <img
+                        src="images/icons/badge-check.svg"
+                        alt="Badge icon">
+
+                </div>
+
+                <h3>100% Free</h3>
+
+                <p>Access free workouts, guides, and fitness resources.</p>
+
+            </article>
+
+        </div>
+
+        <!-- =========================
+             CTA Buttons
+        ========================== -->
 
         <div class="cta-buttons">
 
-           <a
-    href="https://www.youtube.com/@AtultomarFitness"
-    class="primary-btn"
-    target="_blank"
-    rel="noopener noreferrer">
+            <a
+                href="https://www.youtube.com/@AtultomarFitness"
+                class="primary-btn"
+                target="_blank"
+                rel="noopener noreferrer">
 
-    <img
-        src="images/icons/play.svg"
-        alt=""
-        aria-hidden="true">
+                <img
+                    src="images/icons/play.svg"
+                    alt=""
+                    aria-hidden="true">
 
-    Subscribe on YouTube
+                Subscribe on YouTube
 
-</a>
+            </a>
 
-          <a href="index.html" class="secondary-btn">
+            <a
+                href="index.html"
+                class="secondary-btn">
 
-    <span>Explore More</span>
+                Browse Exercise Library
 
-    <img
-        src="images/icons/arrow-right.svg"
-        alt=""
-        aria-hidden="true">
+                <img
+                    src="images/icons/arrow-right.svg"
+                    alt=""
+                    aria-hidden="true">
 
-</a>
+            </a>
+
         </div>
 
     </div>
 
 </section>
-
 <!-- =======================================================
      END OF SECTION 06
 ======================================================= -->

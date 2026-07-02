@@ -61,6 +61,81 @@ faqItems.forEach(item => {
 /* ===================================================== */
 /* END OF SECTION 10 */
 /* ===================================================== */
+/* ======================================================
+   NAVBAR V2.0
+====================================================== */
+
+const menuToggle = document.querySelector(".menu-toggle");
+const navMenu = document.querySelector(".nav-menu");
+const menuIcon = document.querySelector(".menu-icon");
+const navLinks = document.querySelectorAll(".nav-link");
+
+if (menuToggle && navMenu) {
+
+    // Open / Close Menu
+    menuToggle.addEventListener("click", () => {
+
+        const isOpen = navMenu.classList.toggle("active");
+
+        menuToggle.setAttribute("aria-expanded", isOpen);
+
+        document.body.classList.toggle("menu-open", isOpen);
+
+        if (menuIcon) {
+
+            menuIcon.src = isOpen
+                ? "images/icons/x.svg"
+                : "images/icons/menu.svg";
+
+        }
+
+    });
+
+    // Close menu after clicking a navigation link
+    navLinks.forEach(link => {
+
+        link.addEventListener("click", () => {
+
+            navMenu.classList.remove("active");
+
+            menuToggle.setAttribute("aria-expanded", "false");
+
+            document.body.classList.remove("menu-open");
+
+            if (menuIcon) {
+
+                menuIcon.src = "images/icons/menu.svg";
+
+            }
+
+        });
+
+    });
+
+    // Close menu when clicking outside
+    document.addEventListener("click", (event) => {
+
+        const isInsideNav = event.target.closest(".main-nav");
+
+        if (!isInsideNav && navMenu.classList.contains("active")) {
+
+            navMenu.classList.remove("active");
+
+            menuToggle.setAttribute("aria-expanded", "false");
+
+            document.body.classList.remove("menu-open");
+
+            if (menuIcon) {
+
+                menuIcon.src = "images/icons/menu.svg";
+
+            }
+
+        }
+
+    });
+
+}
 
 /* ==========================================================
    BMI CALCULATOR

@@ -20,13 +20,15 @@
 
 <header class="site-header">
 
-    <nav class="main-nav">
+    <div class="container">
 
-        <!-- Logo -->
+        <nav class="main-nav" aria-label="Primary Navigation">
 
-        <div class="nav-logo">
+            <!-- ==================================================
+                 LOGO
+            =================================================== -->
 
-            <a href="../index.html">
+            <a href="../index.html" class="nav-logo">
 
                 <img
                     src="../images/horizontal-logo.png"
@@ -35,69 +37,102 @@
 
             </a>
 
-        </div>
+            <!-- ==================================================
+                 PRIMARY NAVIGATION
+            =================================================== -->
 
-        <!-- Desktop Navigation -->
+            <ul
+                class="nav-menu"
+                id="primary-menu">
 
-       <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="../index.html" class="nav-link">
+                        Home
+                    </a>
+                </li>
 
-    <li class="nav-item">
-        <a href="../index.html" class="nav-link">Home</a>
-    </li>
+                <li class="nav-item">
+                    <a href="../workouts.html" class="nav-link active">
+                        Workouts
+                    </a>
+                </li>
 
-    <li class="nav-item">
-        <a href="../workouts.html" class="nav-link active">Workouts</a>
-    </li>
+                <li class="nav-item">
+                    <a href="../nutrition.html" class="nav-link">
+                        Nutrition
+                    </a>
+                </li>
 
-    <li class="nav-item">
-        <a href="../nutrition.html" class="nav-link">Nutrition</a>
-    </li>
+                <li class="nav-item">
+                    <a href="../calculators.html" class="nav-link">
+                        Calculators
+                    </a>
+                </li>
 
-    <li class="nav-item">
-                <a href="../calculators.html" class="nav-link">
-                    Calculators
+                <li class="nav-item">
+                    <a href="../learn.html" class="nav-link">
+                        Learn
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="../about.html" class="nav-link">
+                        About
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="../contact.html" class="nav-link">
+                        Contact
+                    </a>
+                </li>
+
+            </ul>
+
+            <!-- ==================================================
+                 NAVIGATION ACTIONS
+            =================================================== -->
+
+            <div class="nav-actions">
+
+                <a
+                    href="https://www.youtube.com/@AtulTomarFitness"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="subscribe-btn">
+
+                    ▶ Subscribe
+
                 </a>
-            </li>
 
-    <li class="nav-item">
-        <a href="../learn.html" class="nav-link">Learn</a>
-    </li>
+                <!-- Mobile Menu Button -->
 
-    <li class="nav-item">
-        <a href="../about.html" class="nav-link">About</a>
-    </li>
+                <button
+                    class="menu-toggle"
+                    type="button"
+                    aria-label="Toggle navigation"
+                    aria-expanded="false"
+                    aria-controls="primary-menu">
 
-    <li class="nav-item">
-        <a href="../contact.html" class="nav-link">Contact</a>
-    </li>
+                    <img
+                        src="../images/icons/menu.svg"
+                        alt=""
+                        class="menu-icon"
+                        aria-hidden="true">
 
-</ul>
+                </button>
 
-        <!-- Navigation Right -->
+            </div>
 
-        <div class="nav-actions">
+        </nav>
 
-            <a
-                href="https://www.youtube.com/@AtulTomarFitness"
-                target="_blank"
-                class="subscribe-btn">
-              ▶  Subscribe
-
-            </a>
-
-            <button
-                class="menu-toggle"
-                aria-label="Open Navigation">
-
-                ☰
-
-            </button>
-
-        </div>
-
-    </nav>
+    </div>
 
 </header>
+<!-- ==========================================================
+     EXERCISE HERO
+========================================================== -->
+
 <!-- ==========================================================
      EXERCISE HERO
 ========================================================== -->
@@ -106,41 +141,27 @@
 
     <div class="container">
 
-        <div class="exercise-hero-wrapper">
+        <div class="hero-grid">
 
-            <!-- =====================================
+            <!-- ==========================================
                  HERO CONTENT
-            ====================================== -->
+            ========================================== -->
 
-            <div class="exercise-content">
+            <div class="hero-content">
 
                 <!-- Breadcrumb -->
 
-                <nav
-                    class="breadcrumb"
-                    aria-label="Breadcrumb">
+                <nav class="breadcrumb" aria-label="Breadcrumb">
 
-                    <a href="../index.html">
-
-                        Home
-
-                    </a>
+                    <a href="../index.html">Home</a>
 
                     <span>/</span>
 
-                    <a href="../workouts.html">
-
-                        Workouts
-
-                    </a>
+                    <a href="../workouts.html">Workouts</a>
 
                     <span>/</span>
 
-                    <a href="#">
-
-                        Chest
-
-                    </a>
+                    <a href="#">Chest</a>
 
                     <span>/</span>
 
@@ -154,38 +175,44 @@
 
                 </nav>
 
-                <!-- Section Badge -->
+                <!-- Exercise Badge -->
 
-                <span class="section-badge">
+                <div class="hero-badge">
 
                     <img
                         src="../images/icons/dumbbell.svg"
                         alt=""
                         aria-hidden="true">
 
-                    Exercise Guide
+                    <span>
 
-                </span>
+                        Exercise Guide
 
-                <!-- Exercise Title -->
+                    </span>
 
-                <h1 id="exercise-title">
+                </div>
 
-                    Bench Press
+                <!-- Heading -->
 
-                </h1>
+                <div class="hero-heading">
 
-                <!-- Hero Tagline -->
+                    <h1 id="exercise-title">
 
-                <p class="hero-tagline">
+                        Bench Press
 
-                    Master Proper Form,
-                    Build Strength &
-                    Maximize Chest Growth
+                    </h1>
 
-                </p>
+                    <p class="hero-tagline">
 
-                <!-- Hero Description -->
+                        Master Proper Form,
+                        Build Strength &
+                        Maximize Chest Growth
+
+                    </p>
+
+                </div>
+
+                <!-- Description -->
 
                 <p class="hero-description">
 
@@ -196,72 +223,85 @@
                     chest development safely.
 
                 </p>
-                <!-- Hero Highlights -->
 
-<div class="hero-highlights">
+                <!-- Highlights -->
 
-    <div class="hero-highlight">
+                <div class="hero-highlights">
 
-        <div class="icon-circle">
+                    <div class="hero-highlight">
 
-            <img
-                src="../images/icons/circle-check-big.svg"
-                alt=""
-                aria-hidden="true">
+                        <div class="icon-circle">
 
-        </div>
+                            <img
+                                src="../images/icons/circle-check-big.svg"
+                                alt=""
+                                aria-hidden="true">
 
-        <span>
+                        </div>
 
-            Step-by-Step Instructions
+                        <div class="highlight-content">
 
-        </span>
+                            <span>
 
-    </div>
+                                Step-by-Step Instructions
 
-    <div class="hero-highlight">
+                            </span>
 
-        <div class="icon-circle">
+                        </div>
 
-            <img
-                src="../images/icons/shield-check.svg"
-                alt=""
-                aria-hidden="true">
+                    </div>
 
-        </div>
+                    <div class="hero-highlight">
 
-        <span>
+                        <div class="icon-circle">
 
-            Science-Based Guidance
+                            <img
+                                src="../images/icons/shield-check.svg"
+                                alt=""
+                                aria-hidden="true">
 
-        </span>
+                        </div>
 
-    </div>
+                        <div class="highlight-content">
 
-    <div class="hero-highlight">
+                            <span>
 
-        <div class="icon-circle">
+                                Science-Based Guidance
 
-            <img
-                src="../images/icons/triangle-alert.svg"
-                alt=""
-                aria-hidden="true">
+                            </span>
 
-        </div>
+                        </div>
 
-        <span>
+                    </div>
 
-            Common Mistakes Explained
+                    <div class="hero-highlight">
 
-        </span>
+                        <div class="icon-circle">
 
-    </div>
+                            <img
+                                src="../images/icons/triangle-alert.svg"
+                                alt=""
+                                aria-hidden="true">
 
-</div>
+                        </div>
 
-                <!-- Hero Buttons -->
+                        <div class="highlight-content">
 
-                <div class="exercise-buttons">
+                            <span>
+
+                                Common Mistakes Explained
+
+                            </span>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- Buttons -->
+
+                <div class="hero-actions">
 
                     <a
                         href="#how-to"
@@ -283,15 +323,15 @@
 
             </div>
 
-            <!-- =====================================
-                 HERO SHOWCASE
-            ====================================== -->
+            <!-- ==========================================
+                 HERO MEDIA
+            ========================================== -->
 
-            <div class="exercise-showcase">
+            <div class="hero-media">
 
                 <!-- Exercise Image -->
 
-                <div class="exercise-image-card">
+                <div class="hero-image-card">
 
                     <img
                         src="images/benchpress/bench-press.jpeg"
@@ -303,11 +343,9 @@
 
                 <!-- Exercise Specifications -->
 
-                <div class="exercise-specifications">
+                <div class="hero-specifications">
 
-                    <!-- Primary Muscle -->
-
-                    <div class="specification-card">
+                    <article class="specification-card">
 
                         <div class="icon-circle">
 
@@ -318,23 +356,25 @@
 
                         </div>
 
-                        <h4>
+                        <div class="specification-content">
 
-                            Primary Muscle
+                            <h4>
 
-                        </h4>
+                                Primary Muscle
 
-                        <p>
+                            </h4>
 
-                            Chest
+                            <p>
 
-                        </p>
+                                Chest
 
-                    </div>
+                            </p>
 
-                    <!-- Equipment -->
+                        </div>
 
-                    <div class="specification-card">
+                    </article>
+
+                    <article class="specification-card">
 
                         <div class="icon-circle">
 
@@ -345,23 +385,25 @@
 
                         </div>
 
-                        <h4>
+                        <div class="specification-content">
 
-                            Equipment
+                            <h4>
 
-                        </h4>
+                                Equipment
 
-                        <p>
+                            </h4>
 
-                            Barbell
+                            <p>
 
-                        </p>
+                                Barbell
 
-                    </div>
+                            </p>
 
-                    <!-- Difficulty -->
+                        </div>
 
-                    <div class="specification-card">
+                    </article>
+
+                    <article class="specification-card">
 
                         <div class="icon-circle">
 
@@ -372,23 +414,25 @@
 
                         </div>
 
-                        <h4>
+                        <div class="specification-content">
 
-                            Difficulty
+                            <h4>
 
-                        </h4>
+                                Difficulty
 
-                        <p>
+                            </h4>
 
-                            Intermediate
+                            <p>
 
-                        </p>
+                                Intermediate
 
-                    </div>
+                            </p>
 
-                    <!-- Exercise Type -->
+                        </div>
 
-                    <div class="specification-card">
+                    </article>
+
+                    <article class="specification-card">
 
                         <div class="icon-circle">
 
@@ -399,19 +443,23 @@
 
                         </div>
 
-                        <h4>
+                        <div class="specification-content">
 
-                            Exercise Type
+                            <h4>
 
-                        </h4>
+                                Exercise Type
 
-                        <p>
+                            </h4>
 
-                            Compound
+                            <p>
 
-                        </p>
+                                Compound
 
-                    </div>
+                            </p>
+
+                        </div>
+
+                    </article>
 
                 </div>
 
@@ -430,7 +478,9 @@
 
     <div class="container">
 
-        <!-- Section Header -->
+        <!-- ==========================================
+             SECTION HEADER
+        ========================================== -->
 
         <div class="section-header">
 
@@ -438,9 +488,10 @@
 
                 <div class="icon-circle">
 
-                    <img src="../images/icons/activity.svg"
-                         alt=""
-                         aria-hidden="true">
+                    <img
+                        src="../images/icons/activity.svg"
+                        alt=""
+                        aria-hidden="true">
 
                 </div>
 
@@ -462,188 +513,254 @@
 
         </div>
 
+        <!-- ==========================================
+             CONTENT GRID
+        ========================================== -->
 
-        <div class="muscles-worked-grid">
+        <div class="muscles-grid">
 
+            <!-- ==========================================
+                 ANATOMY
+            ========================================== -->
 
-            <!-- Anatomy Card -->
+            <aside class="muscles-anatomy">
 
-            <div class="anatomy-card">
+                <figure class="anatomy-card">
 
-                <img src="../exercises/images/benchpress/bench-press-anatomy.jpeg"
-                     alt="Bench Press muscle anatomy illustration">
+                    <img
+                        src="../exercises/images/benchpress/bench-press-anatomy.jpeg"
+                        alt="Bench Press muscle anatomy illustration"
+                        loading="lazy">
 
-            </div>
+                </figure>
 
+            </aside>
 
-            <!-- Muscle Information -->
+            <!-- ==========================================
+                 MUSCLE LIST
+            ========================================== -->
 
-            <div class="muscles-content">
+            <div class="muscles-list">
 
-
-                <!-- Primary Target -->
+                <!-- ==========================
+                     PRIMARY MUSCLE
+                ========================== -->
 
                 <div class="muscle-group">
 
-                    <h3>Primary Target</h3>
+                    <div class="group-header">
 
-                    <div class="muscle-item">
+                        <h3>
 
-                        <div class="muscle-info">
+                            Primary Target
+
+                        </h3>
+
+                    </div>
+
+                    <article class="muscle-card">
+
+                        <div class="muscle-icon">
 
                             <div class="icon-circle">
 
-                                <img src="../images/icons/target.svg"
-                                     alt=""
-                                     aria-hidden="true">
-
-                            </div>
-
-                            <div class="muscle-details">
-
-                                <h4>Pectoralis Major</h4>
-
-                                <p>Main Target Muscle</p>
-
-                                <div class="activation-meter">
-
-                                    <span class="meter-fill level-5"></span>
-
-                                </div>
-
-                                <span class="activation-label">
-
-                                    High Activation
-
-                                </span>
+                                <img
+                                    src="../images/icons/target.svg"
+                                    alt=""
+                                    aria-hidden="true">
 
                             </div>
 
                         </div>
 
-                    </div>
+                        <div class="muscle-content">
+
+                            <h4>
+
+                                Pectoralis Major
+
+                            </h4>
+
+                            <p>
+
+                                Main Target Muscle
+
+                            </p>
+
+                            <div class="activation-meter">
+
+                                <span class="meter-fill level-5"></span>
+
+                            </div>
+
+                            <span class="activation-label">
+
+                                High Activation
+
+                            </span>
+
+                        </div>
+
+                    </article>
 
                 </div>
 
-
-                <!-- Supporting Muscles -->
+                <!-- ==========================
+                     SUPPORTING MUSCLES
+                ========================== -->
 
                 <div class="muscle-group">
 
-                    <h3>Supporting Muscles</h3>
+                    <div class="group-header">
 
+                        <h3>
 
-                    <div class="muscle-item">
+                            Supporting Muscles
 
-                        <div class="muscle-info">
+                        </h3>
+
+                    </div>
+
+                    <!-- Card -->
+
+                    <article class="muscle-card">
+
+                        <div class="muscle-icon">
 
                             <div class="icon-circle">
 
-                                <img src="../images/icons/armchair.svg"
-                                     alt=""
-                                     aria-hidden="true">
-
-                            </div>
-
-                            <div class="muscle-details">
-
-                                <h4>Anterior Deltoid</h4>
-
-                                <p>Shoulder</p>
-
-                                <div class="activation-meter">
-
-                                    <span class="meter-fill level-4"></span>
-
-                                </div>
-
-                                <span class="activation-label">
-
-                                    Moderate Activation
-
-                                </span>
+                                <img
+                                    src="../images/icons/armchair.svg"
+                                    alt=""
+                                    aria-hidden="true">
 
                             </div>
 
                         </div>
 
-                    </div>
+                        <div class="muscle-content">
 
+                            <h4>
 
+                                Anterior Deltoid
 
-                    <div class="muscle-item">
+                            </h4>
 
-                        <div class="muscle-info">
+                            <p>
 
-                            <div class="icon-circle">
+                                Shoulder
 
-                                <img src="../images/icons/biceps-flexed.svg"
-                                     alt=""
-                                     aria-hidden="true">
+                            </p>
+
+                            <div class="activation-meter">
+
+                                <span class="meter-fill level-4"></span>
 
                             </div>
 
-                            <div class="muscle-details">
+                            <span class="activation-label">
 
-                                <h4>Triceps Brachii</h4>
+                                Moderate Activation
 
-                                <p>Upper Arm</p>
+                            </span>
 
-                                <div class="activation-meter">
+                        </div>
 
-                                    <span class="meter-fill level-4"></span>
+                    </article>
 
-                                </div>
+                    <!-- Card -->
 
-                                <span class="activation-label">
+                    <article class="muscle-card">
 
-                                    Moderate Activation
+                        <div class="muscle-icon">
 
-                                </span>
+                            <div class="icon-circle">
+
+                                <img
+                                    src="../images/icons/biceps-flexed.svg"
+                                    alt=""
+                                    aria-hidden="true">
 
                             </div>
 
                         </div>
 
-                    </div>
+                        <div class="muscle-content">
 
+                            <h4>
 
+                                Triceps Brachii
 
-                    <div class="muscle-item">
+                            </h4>
 
-                        <div class="muscle-info">
+                            <p>
 
-                            <div class="icon-circle">
+                                Upper Arm
 
-                                <img src="../images/icons/shield.svg"
-                                     alt=""
-                                     aria-hidden="true">
+                            </p>
+
+                            <div class="activation-meter">
+
+                                <span class="meter-fill level-4"></span>
 
                             </div>
 
-                            <div class="muscle-details">
+                            <span class="activation-label">
 
-                                <h4>Serratus Anterior</h4>
+                                Moderate Activation
 
-                                <p>Stabilizer</p>
+                            </span>
 
-                                <div class="activation-meter">
+                        </div>
 
-                                    <span class="meter-fill level-3"></span>
+                    </article>
 
-                                </div>
+                    <!-- Card -->
 
-                                <span class="activation-label">
+                    <article class="muscle-card">
 
-                                    Supporting Muscle
+                        <div class="muscle-icon">
 
-                                </span>
+                            <div class="icon-circle">
+
+                                <img
+                                    src="../images/icons/shield.svg"
+                                    alt=""
+                                    aria-hidden="true">
 
                             </div>
 
                         </div>
 
-                    </div>
+                        <div class="muscle-content">
+
+                            <h4>
+
+                                Serratus Anterior
+
+                            </h4>
+
+                            <p>
+
+                                Stabilizer
+
+                            </p>
+
+                            <div class="activation-meter">
+
+                                <span class="meter-fill level-3"></span>
+
+                            </div>
+
+                            <span class="activation-label">
+
+                                Supporting Muscle
+
+                            </span>
+
+                        </div>
+
+                    </article>
 
                 </div>
 
@@ -882,11 +999,13 @@
      HOW TO PERFORM
 ========================================================== -->
 
-<section class="exercise-steps" id="how-to-perform">
+<section class="exercise-technique" id="how-to">
 
     <div class="container">
 
-        <!-- Section Header -->
+        <!-- ==========================================
+             SECTION HEADER
+        ========================================== -->
 
         <div class="section-header">
 
@@ -894,9 +1013,10 @@
 
                 <div class="icon-circle">
 
-                    <img src="../images/icons/list-ordered.svg"
-                         alt=""
-                         aria-hidden="true">
+                    <img
+                        src="../images/icons/list-ordered.svg"
+                        alt=""
+                        aria-hidden="true">
 
                 </div>
 
@@ -918,49 +1038,74 @@
 
         </div>
 
-
-        <!-- Timeline -->
+        <!-- ==========================================
+             TIMELINE
+        ========================================== -->
 
         <div class="exercise-timeline">
 
-
-            <!-- Step 1 -->
+            <!-- ==========================================
+                 STEP 01
+            ========================================== -->
 
             <article class="timeline-step">
 
                 <div class="timeline-marker">
 
-                    <span>1</span>
+                    <span class="step-label">
+
+                        STEP
+
+                    </span>
+
+                    <span class="step-number">
+
+                        01
+
+                    </span>
 
                 </div>
 
-                <div class="timeline-content">
+                <div class="timeline-card">
 
-                    <h3>
+                    <div class="timeline-header">
 
-                        Set Up Your Position
+                        <h3>
 
-                    </h3>
+                            Set Up Your Position
 
-                    <p>
+                        </h3>
 
-                        Lie flat on the bench with your eyes directly underneath the barbell. Keep your feet firmly planted on the floor and maintain a natural arch in your lower back.
+                    </div>
 
-                    </p>
+                    <div class="timeline-description">
+
+                        <p>
+
+                            Lie flat on the bench with your eyes directly underneath the barbell. Keep your feet firmly planted on the floor and maintain a natural arch in your lower back.
+
+                        </p>
+
+                    </div>
 
                     <div class="coach-tip">
 
                         <div class="icon-circle">
 
-                            <img src="../images/icons/lightbulb.svg"
-                                 alt=""
-                                 aria-hidden="true">
+                            <img
+                                src="../images/icons/lightbulb.svg"
+                                alt=""
+                                aria-hidden="true">
 
                         </div>
 
-                        <div>
+                        <div class="coach-tip-content">
 
-                            <h4>Coach Tip</h4>
+                            <span class="coach-tip-title">
+
+                                Coach Tip
+
+                            </span>
 
                             <p>
 
@@ -976,44 +1121,68 @@
 
             </article>
 
-
-            <!-- Step 2 -->
+            <!-- ==========================================
+                 STEP 02
+            ========================================== -->
 
             <article class="timeline-step">
 
                 <div class="timeline-marker">
 
-                    <span>2</span>
+                    <span class="step-label">
+
+                        STEP
+
+                    </span>
+
+                    <span class="step-number">
+
+                        02
+
+                    </span>
 
                 </div>
 
-                <div class="timeline-content">
+                <div class="timeline-card">
 
-                    <h3>
+                    <div class="timeline-header">
 
-                        Grip the Bar Correctly
+                        <h3>
 
-                    </h3>
+                            Grip the Bar Correctly
 
-                    <p>
+                        </h3>
 
-                        Grip the bar slightly wider than shoulder-width. Wrap your thumbs around the bar and keep your wrists straight throughout the movement.
+                    </div>
 
-                    </p>
+                    <div class="timeline-description">
+
+                        <p>
+
+                            Grip the bar slightly wider than shoulder-width. Wrap your thumbs around the bar and keep your wrists straight throughout the movement.
+
+                        </p>
+
+                    </div>
 
                     <div class="coach-tip">
 
                         <div class="icon-circle">
 
-                            <img src="../images/icons/lightbulb.svg"
-                                 alt=""
-                                 aria-hidden="true">
+                            <img
+                                src="../images/icons/lightbulb.svg"
+                                alt=""
+                                aria-hidden="true">
 
                         </div>
 
-                        <div>
+                        <div class="coach-tip-content">
 
-                            <h4>Coach Tip</h4>
+                            <span class="coach-tip-title">
+
+                                Coach Tip
+
+                            </span>
 
                             <p>
 
@@ -1029,44 +1198,68 @@
 
             </article>
 
-
-            <!-- Step 3 -->
+            <!-- ==========================================
+                 STEP 03
+            ========================================== -->
 
             <article class="timeline-step">
 
                 <div class="timeline-marker">
 
-                    <span>3</span>
+                    <span class="step-label">
+
+                        STEP
+
+                    </span>
+
+                    <span class="step-number">
+
+                        03
+
+                    </span>
 
                 </div>
 
-                <div class="timeline-content">
+                <div class="timeline-card">
 
-                    <h3>
+                    <div class="timeline-header">
 
-                        Lower the Bar Under Control
+                        <h3>
 
-                    </h3>
+                            Lower the Bar Under Control
 
-                    <p>
+                        </h3>
 
-                        Slowly lower the bar toward the middle of your chest while keeping your elbows slightly tucked and maintaining full-body tension.
+                    </div>
 
-                    </p>
+                    <div class="timeline-description">
+
+                        <p>
+
+                            Slowly lower the bar toward the middle of your chest while keeping your elbows slightly tucked and maintaining full-body tension.
+
+                        </p>
+
+                    </div>
 
                     <div class="coach-tip">
 
                         <div class="icon-circle">
 
-                            <img src="../images/icons/lightbulb.svg"
-                                 alt=""
-                                 aria-hidden="true">
+                            <img
+                                src="../images/icons/lightbulb.svg"
+                                alt=""
+                                aria-hidden="true">
 
                         </div>
 
-                        <div>
+                        <div class="coach-tip-content">
 
-                            <h4>Coach Tip</h4>
+                            <span class="coach-tip-title">
+
+                                Coach Tip
+
+                            </span>
 
                             <p>
 
@@ -1081,49 +1274,72 @@
                 </div>
 
             </article>
-
-
-            <!-- Step 4 -->
+                        <!-- ==========================================
+                 STEP 04
+            ========================================== -->
 
             <article class="timeline-step">
 
                 <div class="timeline-marker">
 
-                    <span>4</span>
+                    <span class="step-label">
+
+                        STEP
+
+                    </span>
+
+                    <span class="step-number">
+
+                        04
+
+                    </span>
 
                 </div>
 
-                <div class="timeline-content">
+                <div class="timeline-card">
 
-                    <h3>
+                    <div class="timeline-header">
 
-                        Press the Bar Up
+                        <h3>
 
-                    </h3>
+                            Press the Bar Up
 
-                    <p>
+                        </h3>
 
-                        Push the bar upward in a controlled path until your arms are fully extended without locking your elbows aggressively.
+                    </div>
 
-                    </p>
+                    <div class="timeline-description">
+
+                        <p>
+
+                            Push the bar upward in a controlled path until your arms are fully extended without aggressively locking your elbows. Maintain full-body tension and keep your shoulders retracted throughout the lift.
+
+                        </p>
+
+                    </div>
 
                     <div class="coach-tip">
 
                         <div class="icon-circle">
 
-                            <img src="../images/icons/lightbulb.svg"
-                                 alt=""
-                                 aria-hidden="true">
+                            <img
+                                src="../images/icons/lightbulb.svg"
+                                alt=""
+                                aria-hidden="true">
 
                         </div>
 
-                        <div>
+                        <div class="coach-tip-content">
 
-                            <h4>Coach Tip</h4>
+                            <span class="coach-tip-title">
+
+                                Coach Tip
+
+                            </span>
 
                             <p>
 
-                                Exhale as you press and keep your shoulders pulled back throughout the movement.
+                                Exhale as you press the bar and focus on driving the weight upward using your chest, shoulders, and triceps together.
 
                             </p>
 
@@ -1136,47 +1352,72 @@
             </article>
 
 
-            <!-- Step 5 -->
+            <!-- ==========================================
+                 STEP 05
+            ========================================== -->
 
             <article class="timeline-step">
 
                 <div class="timeline-marker">
 
-                    <span>5</span>
+                    <span class="step-label">
+
+                        STEP
+
+                    </span>
+
+                    <span class="step-number">
+
+                        05
+
+                    </span>
 
                 </div>
 
-                <div class="timeline-content">
+                <div class="timeline-card">
 
-                    <h3>
+                    <div class="timeline-header">
 
-                        Repeat with Proper Form
+                        <h3>
 
-                    </h3>
+                            Repeat with Proper Form
 
-                    <p>
+                        </h3>
 
-                        Continue performing controlled repetitions while maintaining consistent technique, breathing, and full-body stability.
+                    </div>
 
-                    </p>
+                    <div class="timeline-description">
+
+                        <p>
+
+                            Continue performing smooth, controlled repetitions while maintaining proper breathing, a stable body position, and consistent bar path. Finish the set before your technique begins to deteriorate.
+
+                        </p>
+
+                    </div>
 
                     <div class="coach-tip">
 
                         <div class="icon-circle">
 
-                            <img src="../images/icons/lightbulb.svg"
-                                 alt=""
-                                 aria-hidden="true">
+                            <img
+                                src="../images/icons/lightbulb.svg"
+                                alt=""
+                                aria-hidden="true">
 
                         </div>
 
-                        <div>
+                        <div class="coach-tip-content">
 
-                            <h4>Coach Tip</h4>
+                            <span class="coach-tip-title">
+
+                                Coach Tip
+
+                            </span>
 
                             <p>
 
-                                Stop the set if your technique begins to break down. Quality repetitions are always better than extra repetitions.
+                                Prioritize perfect repetitions over lifting heavier weights. Consistent technique produces better long-term strength and muscle development.
 
                             </p>
 
@@ -2755,6 +2996,6 @@
 <!-- ================================================= -->
 <!-- END OF SECTION 11 -->
 <!-- ================================================= -->
-    <script src="../javascript/script.js"></script>
+    <script src="js/exercise.js"></script>
 </body>
 </html>

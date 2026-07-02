@@ -19,13 +19,15 @@
 
 <header class="site-header">
 
-    <nav class="main-nav">
+    <div class="container">
 
-        <!-- Logo -->
+        <nav class="main-nav" aria-label="Primary Navigation">
 
-        <div class="nav-logo">
+            <!-- ==================================================
+                 LOGO
+            =================================================== -->
 
-            <a href="index.html">
+            <a href="index.html" class="nav-logo">
 
                 <img
                     src="images/horizontal-logo.png"
@@ -34,66 +36,96 @@
 
             </a>
 
-        </div>
+            <!-- ==================================================
+                 PRIMARY NAVIGATION
+            =================================================== -->
 
-        <!-- Desktop Navigation -->
-<ul class="nav-menu">
+            <ul
+                class="nav-menu"
+                id="primary-menu">
 
-    <li class="nav-item">
-        <a href="index.html" class="nav-link">Home</a>
-    </li>
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link ">
+                        Home
+                    </a>
+                </li>
 
-    <li class="nav-item">
-        <a href="workouts.html" class="nav-link">Workouts</a>
-    </li>
+                <li class="nav-item">
+                    <a href="workouts.html" class="nav-link">
+                        Workouts
+                    </a>
+                </li>
 
-    <li class="nav-item">
-        <a href="nutrition.html" class="nav-link">Nutrition</a>
-    </li>
+                <li class="nav-item">
+                    <a href="nutrition.html" class="nav-link">
+                        Nutrition
+                    </a>
+                </li>
 
-    <li class="nav-item">
-                <a href="calculators.html" class="nav-link">
-                    Calculators
+                <li class="nav-item">
+                    <a href="calculators.html" class="nav-link">
+                        Calculators
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="learn.html" class="nav-link">
+                        Learn
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="about.html" class="nav-link active">
+                        About
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="contact.html" class="nav-link">
+                        Contact
+                    </a>
+                </li>
+
+            </ul>
+
+            <!-- ==================================================
+                 NAVIGATION ACTIONS
+            =================================================== -->
+
+            <div class="nav-actions">
+
+                <a
+                    href="https://www.youtube.com/@AtulTomarFitness"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="subscribe-btn">
+
+                    ▶ Subscribe
+
                 </a>
-            </li>
 
-    <li class="nav-item">
-        <a href="learn.html" class="nav-link">Learn</a>
-    </li>
+                <!-- Mobile Menu Button -->
 
-    <li class="nav-item">
-        <a href="about.html" class="nav-link active">About</a>
-    </li>
+                <button
+                    class="menu-toggle"
+                    type="button"
+                    aria-label="Toggle navigation"
+                    aria-expanded="false"
+                    aria-controls="primary-menu">
 
-    <li class="nav-item">
-        <a href="contact.html" class="nav-link">Contact</a>
-    </li>
+                    <img
+                        src="images/icons/menu.svg"
+                        alt=""
+                        class="menu-icon"
+                        aria-hidden="true">
 
-</ul>
+                </button>
 
-        <!-- Navigation Right -->
+            </div>
 
-        <div class="nav-actions">
+        </nav>
 
-            <a
-                href="https://www.youtube.com/@AtulTomarFitness"
-                target="_blank"
-                class="subscribe-btn">
-              ▶  Subscribe
-
-            </a>
-
-            <button
-                class="menu-toggle"
-                aria-label="Open Navigation">
-
-                ☰
-
-            </button>
-
-        </div>
-
-    </nav>
+    </div>
 
 </header>
 <!-- ==========================================
@@ -125,7 +157,7 @@
 
                 Empowering People to Build
 
-                <span>Healthier & Stronger Lives</span>
+                <span>Healthier &amp; Stronger Lives</span>
 
             </h1>
 
@@ -146,7 +178,9 @@
 
             <div class="about-buttons">
 
-                <a href="workouts.html" class="primary-btn">
+                <a
+                    href="workouts.html"
+                    class="btn-primary">
 
                     <span>Explore Workouts</span>
 
@@ -157,7 +191,9 @@
 
                 </a>
 
-                <a href="learn.html" class="secondary-btn">
+                <a
+                    href="learn.html"
+                    class="btn-secondary">
 
                     <span>Learn More</span>
 
@@ -170,9 +206,11 @@
 
             </div>
 
-            <!-- Website Statistics -->
+            <!-- Website Highlights -->
 
-            <div class="about-stats" aria-label="Website Highlights">
+            <div
+                class="about-stats"
+                aria-label="Website Highlights">
 
                 <article class="about-stat">
 
@@ -186,7 +224,7 @@
 
                     <h3>120+</h3>
 
-                    <p>Exercises</p>
+                    <p>Exercise Guides</p>
 
                 </article>
 

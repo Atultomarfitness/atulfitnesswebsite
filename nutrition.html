@@ -19,13 +19,15 @@
 
 <header class="site-header">
 
-    <nav class="main-nav">
+    <div class="container">
 
-        <!-- Logo -->
+        <nav class="main-nav" aria-label="Primary Navigation">
 
-        <div class="nav-logo">
+            <!-- ==================================================
+                 LOGO
+            =================================================== -->
 
-            <a href="index.html">
+            <a href="index.html" class="nav-logo">
 
                 <img
                     src="images/horizontal-logo.png"
@@ -34,66 +36,96 @@
 
             </a>
 
-        </div>
+            <!-- ==================================================
+                 PRIMARY NAVIGATION
+            =================================================== -->
 
-        <!-- Desktop Navigation -->
+            <ul
+                class="nav-menu"
+                id="primary-menu">
 
-       <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">
+                        Home
+                    </a>
+                </li>
 
-    <li class="nav-item">
-        <a href="index.html" class="nav-link">Home</a>
-    </li>
+                <li class="nav-item">
+                    <a href="workouts.html" class="nav-link">
+                        Workouts
+                    </a>
+                </li>
 
-    <li class="nav-item">
-        <a href="workouts.html" class="nav-link">Workouts</a>
-    </li>
+                <li class="nav-item">
+                    <a href="nutrition.html" class="nav-link active">
+                        Nutrition
+                    </a>
+                </li>
 
-    <li class="nav-item">
-        <a href="nutrition.html" class="nav-link active">Nutrition</a>
-    </li>
+                <li class="nav-item">
+                    <a href="calculators.html" class="nav-link">
+                        Calculators
+                    </a>
+                </li>
 
-    <li class="nav-item">
-               <a href="calculators.html" class="nav-link">
-    Calculators
-</a>
-            </li>
-    <li class="nav-item">
-        <a href="learn.html" class="nav-link">Learn</a>
-    </li>
+                <li class="nav-item">
+                    <a href="learn.html" class="nav-link">
+                        Learn
+                    </a>
+                </li>
 
-    <li class="nav-item">
-        <a href="about.html" class="nav-link">About</a>
-    </li>
+                <li class="nav-item">
+                    <a href="about.html" class="nav-link">
+                        About
+                    </a>
+                </li>
 
-    <li class="nav-item">
-        <a href="contact.html" class="nav-link">Contact</a>
-    </li>
+                <li class="nav-item">
+                    <a href="contact.html" class="nav-link">
+                        Contact
+                    </a>
+                </li>
 
-</ul>
+            </ul>
 
-        <!-- Navigation Right -->
+            <!-- ==================================================
+                 NAVIGATION ACTIONS
+            =================================================== -->
 
-        <div class="nav-actions">
+            <div class="nav-actions">
 
-            <a
-                href="https://www.youtube.com/@AtulTomarFitness"
-                target="_blank"
-                class="subscribe-btn">
-              ▶  Subscribe
+                <a
+                    href="https://www.youtube.com/@AtulTomarFitness"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="subscribe-btn">
 
-            </a>
+                    ▶ Subscribe
 
-            <button
-                class="menu-toggle"
-                aria-label="Open Navigation">
+                </a>
 
-                ☰
+                <!-- Mobile Menu Button -->
 
-            </button>
+                <button
+                    class="menu-toggle"
+                    type="button"
+                    aria-label="Toggle navigation"
+                    aria-expanded="false"
+                    aria-controls="primary-menu">
 
-        </div>
+                    <img
+                        src="images/icons/menu.svg"
+                        alt=""
+                        class="menu-icon"
+                        aria-hidden="true">
 
-    </nav>
+                </button>
+
+            </div>
+
+        </nav>
+
+    </div>
 
 </header>
 
@@ -117,28 +149,40 @@
      Status : COMPLETE
 ======================================================= -->
 
-<section class="nutrition-hero">
+<!-- ==========================================================
+     SECTION 01 : NUTRITION HERO
+========================================================== -->
 
-    <div class="nutrition-hero-container">
+<section
+    class="nutrition-hero"
+    id="nutrition-hero"
+    aria-labelledby="nutrition-title">
 
-        <!-- Hero Content -->
+    <div class="container nutrition-hero-container">
+
+        <!-- =========================
+             Hero Content
+        ========================== -->
 
         <div class="nutrition-content">
 
-         <div class="section-badge">
+            <span class="section-badge">
 
-    <img
-        src="images/icons/utensils.svg"
-        alt=""
-        aria-hidden="true">
+                <img
+                    src="images/icons/utensils.svg"
+                    alt=""
+                    aria-hidden="true">
 
-    Nutrition Hub
+                Nutrition Hub
 
-</div>
+            </span>
 
-            <h1 class="nutrition-title">
+            <h1
+                class="nutrition-title"
+                id="nutrition-title">
 
                 EAT SMART.
+
                 <br>
 
                 <span>BUILD MUSCLE.</span>
@@ -147,76 +191,120 @@
 
             <p class="nutrition-description">
 
-                Learn the science of nutrition with easy-to-follow guides,
-                healthy meal plans, protein-rich foods, and practical tips
-                to build muscle, lose fat, and improve your overall health.
+                Learn the science of nutrition through practical guides,
+                balanced meal plans, healthy food choices, and evidence-based
+                advice to build muscle, lose fat, and improve your overall
+                health.
 
             </p>
 
-            <!-- Hero Buttons -->
+            <!-- =========================
+                 Hero Buttons
+            ========================== -->
 
             <div class="hero-buttons">
-<a
-    href="#nutrition-categories"
-    class="primary-btn">
 
-    <span>Explore Nutrition</span>
+                <a
+                    href="#nutrition-categories"
+                    class="primary-btn">
 
-    <img
-        src="images/icons/arrow-right.svg"
-        alt=""
-        aria-hidden="true">
+                    Browse Nutrition Guides
 
-</a>
+                    <img
+                        src="images/icons/arrow-right.svg"
+                        alt=""
+                        aria-hidden="true">
 
-              <a
-    href="#meal-plans"
-    class="secondary-btn">
+                </a>
 
-    <span>View Meal Plans</span>
+                <a
+                    href="#meal-plans"
+                    class="secondary-btn">
 
-    <img
-        src="images/icons/arrow-right.svg"
-        alt=""
-        aria-hidden="true">
+                    View Meal Plans
 
-</a>
+                    <img
+                        src="images/icons/arrow-right.svg"
+                        alt=""
+                        aria-hidden="true">
+
+                </a>
 
             </div>
 
-            <!-- Nutrition Statistics -->
+            <!-- =========================
+                 Trust Highlights
+            ========================== -->
 
-            <div class="nutrition-stats">
+            <div class="nutrition-highlights">
 
-                <div class="stat-box">
+                <article class="nutrition-highlight">
 
-                    <h3>100+</h3>
+                    <div class="highlight-icon icon-circle">
 
-                    <span>Nutrition Guides</span>
+                        <img
+                            src="images/icons/flask-conical.svg"
+                            alt="Science icon">
 
-                </div>
+                    </div>
 
-                <div class="stat-box">
+                    <div>
 
-                    <h3>50+</h3>
+                        <h3>Evidence Based</h3>
 
-                    <span>Healthy Foods</span>
+                        <p>Nutrition guidance backed by science.</p>
 
-                </div>
+                    </div>
 
-                <div class="stat-box">
+                </article>
 
-                    <h3>20+</h3>
+                <article class="nutrition-highlight">
 
-                    <span>Meal Plans</span>
+                    <div class="highlight-icon icon-circle">
 
-                </div>
+                        <img
+                            src="images/icons/sprout.svg"
+                            alt="Leaf icon">
+
+                    </div>
+
+                    <div>
+
+                        <h3>Beginner Friendly</h3>
+
+                        <p>Simple advice that's easy to follow.</p>
+
+                    </div>
+
+                </article>
+
+                <article class="nutrition-highlight">
+
+                    <div class="highlight-icon icon-circle">
+
+                        <img
+                            src="images/icons/check.svg"
+                            alt="Check icon">
+
+                    </div>
+
+                    <div>
+
+                        <h3>100% Free</h3>
+
+                        <p>Free meal plans, guides, and resources.</p>
+
+                    </div>
+
+                </article>
 
             </div>
 
         </div>
 
-        <!-- Hero Image -->
+        <!-- =========================
+             Hero Image
+        ========================== -->
 
         <div class="nutrition-image">
 
@@ -224,8 +312,10 @@
 
                 <img
                     src="images/nutrition-hero.jpeg"
-                    alt="Healthy meal preparation and balanced nutrition"
-                    class="nutrition-image"  loading="eager" decoding="async">
+                    alt="Healthy meal preparation with balanced nutritious foods"
+                    class="nutrition-hero-image"
+                    loading="eager"
+                    decoding="async">
 
             </div>
 
@@ -234,55 +324,68 @@
     </div>
 
 </section>
-
 <!-- =======================================================
      END OF SECTION 01
 ======================================================= -->
-<!-- ==========================================
-     Nutrition Categories
-=========================================== -->
+<!-- ==========================================================
+     SECTION 02 : NUTRITION CATEGORIES
+========================================================== -->
 
-<section class="nutrition-categories">
+<section
+    class="nutrition-categories"
+    id="nutrition-categories"
+    aria-labelledby="nutrition-categories-title">
 
     <div class="container">
 
-        <!-- Section Heading -->
+        <!-- =========================
+             Section Heading
+        ========================== -->
+
         <div class="section-heading">
 
             <span class="section-badge">
 
-    <img
-        src="images/icons/utensils.svg"
-        alt=""
-        aria-hidden="true">
+                <img
+                    src="images/icons/utensils.svg"
+                    alt=""
+                    aria-hidden="true">
 
-    Nutrition Categories
+                Nutrition Categories
 
-</span>
-            <h2>
-                DISCOVER THE RIGHT NUTRITION GUIDE
+            </span>
+
+            <h2 id="nutrition-categories-title">
+
+                DISCOVER THE RIGHT NUTRITION GUIDES
+
             </h2>
 
             <p>
+
                 Explore expert nutrition advice for muscle gain, fat loss,
                 healthy eating, supplements, hydration, and more.
+
             </p>
 
         </div>
 
-        <!-- Categories Grid -->
+        <!-- =========================
+             Categories Grid
+        ========================== -->
+
         <div class="nutrition-grid">
 
-            <!-- Card 1 -->
-            <div class="nutrition-card card-hover">
-                
-<div class="nutrition-icon icon-circle">
+            <!-- Card 01 -->
+            <article class="nutrition-card card-hover">
 
-    <img
-        src="images/icons/dumbbell.svg"
-        alt="Muscle Gain">
+                <div class="nutrition-icon icon-circle">
 
-</div>
+                    <img
+                        src="images/icons/dumbbell.svg"
+                        alt="Dumbbell icon">
+
+                </div>
 
                 <h3>Muscle Gain</h3>
 
@@ -291,22 +394,29 @@
                     balanced calories and protein-rich meals.
                 </p>
 
-                <a href="#muscle-gain-nutrition.html" class="card-btn">
-    View Guide →
-</a>
+                <a href="#" class="card-btn">
 
-            </div>
+                    View Guide
 
-            <!-- Card 2 -->
-            <div class="nutrition-card card-hover">
+                    <img
+                        src="images/icons/arrow-right.svg"
+                        alt=""
+                        aria-hidden="true">
+
+                </a>
+
+            </article>
+
+            <!-- Card 02 -->
+            <article class="nutrition-card card-hover">
 
                 <div class="nutrition-icon icon-circle">
 
-    <img
-        src="images/icons/flame.svg"
-        alt="Fat Loss">
+                    <img
+                        src="images/icons/flame.svg"
+                        alt="Flame icon">
 
-</div>
+                </div>
 
                 <h3>Fat Loss</h3>
 
@@ -315,21 +425,29 @@
                     and sustainable weight-loss strategies.
                 </p>
 
-              <a href="#fat-loss-nutrition.html" class="card-btn">
-    View Guide →
-</a>
-            </div>
+                <a href="#" class="card-btn">
 
-            <!-- Card 3 -->
-            <div class="nutrition-card card-hover">
+                    View Guide
+
+                    <img
+                        src="images/icons/arrow-right.svg"
+                        alt=""
+                        aria-hidden="true">
+
+                </a>
+
+            </article>
+
+            <!-- Card 03 -->
+            <article class="nutrition-card card-hover">
 
                 <div class="nutrition-icon icon-circle">
 
-    <img
-        src="images/icons/egg.svg"
-        alt="High Protein Foods">
+                    <img
+                        src="images/icons/egg.svg"
+                        alt="Egg icon">
 
-</div>
+                </div>
 
                 <h3>High Protein Foods</h3>
 
@@ -338,22 +456,29 @@
                     muscle recovery and strength.
                 </p>
 
-                <a href="#protein-foods.html" class="card-btn">
-    View Guide →
-</a>
+                <a href="#" class="card-btn">
 
-            </div>
+                    View Guide
 
-            <!-- Card 4 -->
-            <div class="nutrition-card card-hover">
+                    <img
+                        src="images/icons/arrow-right.svg"
+                        alt=""
+                        aria-hidden="true">
 
-              <div class="nutrition-icon icon-circle">
+                </a>
 
-    <img
-        src="images/icons/utensils.svg"
-        alt="Healthy Meal Plans">
+            </article>
 
-</div>
+            <!-- Card 04 -->
+            <article class="nutrition-card card-hover">
+
+                <div class="nutrition-icon icon-circle">
+
+                    <img
+                        src="images/icons/utensils.svg"
+                        alt="Utensils icon">
+
+                </div>
 
                 <h3>Healthy Meal Plans</h3>
 
@@ -362,22 +487,29 @@
                     athletes, and busy professionals.
                 </p>
 
-                <a href="#meal-plans.html" class="card-btn">
-    View Guide →
-</a>
+                <a href="#" class="card-btn">
 
-            </div>
+                    View Guide
 
-            <!-- Card 5 -->
-            <div class="nutrition-card card-hover">
+                    <img
+                        src="images/icons/arrow-right.svg"
+                        alt=""
+                        aria-hidden="true">
 
-              <div class="nutrition-icon icon-circle">
+                </a>
 
-    <img
-        src="images/icons/pill.svg"
-        alt="Supplements">
+            </article>
 
-</div>
+            <!-- Card 05 -->
+            <article class="nutrition-card card-hover">
+
+                <div class="nutrition-icon icon-circle">
+
+                    <img
+                        src="images/icons/pill.svg"
+                        alt="Pill icon">
+
+                </div>
 
                 <h3>Supplements</h3>
 
@@ -386,22 +518,29 @@
                     and supplements backed by science.
                 </p>
 
-                <a href="#supplements.html" class="card-btn">
-    View Guide →
-</a>
+                <a href="#" class="card-btn">
 
-            </div>
+                    View Guide
 
-            <!-- Card 6 -->
-            <div class="nutrition-card card-hover">
+                    <img
+                        src="images/icons/arrow-right.svg"
+                        alt=""
+                        aria-hidden="true">
+
+                </a>
+
+            </article>
+
+            <!-- Card 06 -->
+            <article class="nutrition-card card-hover">
 
                 <div class="nutrition-icon icon-circle">
 
-    <img
-        src="images/icons/droplets.svg"
-        alt="Hydration">
+                    <img
+                        src="images/icons/droplets.svg"
+                        alt="Droplets icon">
 
-</div>
+                </div>
 
                 <h3>Hydration</h3>
 
@@ -410,11 +549,18 @@
                     recovery, and overall health.
                 </p>
 
-               <a href="#hydration.html" class="card-btn">
-    View Guide →
-</a>
+                <a href="#" class="card-btn">
 
-            </div>
+                    View Guide
+
+                    <img
+                        src="images/icons/arrow-right.svg"
+                        alt=""
+                        aria-hidden="true">
+
+                </a>
+
+            </article>
 
         </div>
 
@@ -423,67 +569,68 @@
 </section>
 <!-- =======================================================
      SECTION 03 : FEATURED MEAL PLANS
-     -------------------------------------------------------
-     Purpose:
-     • Showcase the most popular nutrition plans.
-     • Help visitors choose a diet based on their goal.
-     • Encourage users to explore detailed meal plans.
-
-     Components:
-     ✓ Section Badge
-     ✓ Main Heading
-     ✓ Description
-     ✓ Meal Plan Cards
-     ✓ Explore Button
-
-     Status : COMPLETE
 ======================================================= -->
 
-<section class="featured-meals" id="featured-meals">
+<section
+    class="featured-meals"
+    id="featured-meals"
+    aria-labelledby="featured-meals-title">
 
     <div class="container">
 
-        <!-- Section Heading -->
+        <!-- =========================
+             Section Heading
+        ========================== -->
 
         <div class="section-heading">
 
             <span class="section-badge">
 
-    <img
-        src="images/icons/utensils.svg"
-        alt=""
-        aria-hidden="true">
+                <img
+                    src="images/icons/utensils.svg"
+                    alt=""
+                    aria-hidden="true">
 
-    Featured Meal Plans
+                Featured Meal Plans
 
-</span>
+            </span>
 
-            <h2>
+            <h2 id="featured-meals-title">
+
                 EAT FOR YOUR
+
                 <span>FITNESS GOAL</span>
+
             </h2>
 
             <p>
+
                 Choose a meal plan that matches your fitness journey.
                 Whether your goal is building muscle, losing fat, or
                 eating healthier, we've got you covered.
+
             </p>
 
         </div>
 
-        <!-- Meal Plans Grid -->
+        <!-- =========================
+             Meal Grid
+        ========================== -->
 
         <div class="meal-grid">
 
-            <!-- Meal Plan 01 -->
+            <!-- =========================
+                 Meal Card 01
+            ========================== -->
 
-            <div class="meal-card">
+            <article class="meal-card card-hover">
 
                 <div class="meal-image">
 
                     <img
                         src="images/muslce-gain-meal.jpeg"
-                        alt="Muscle Gain Diet" loading="lazy">
+                        alt="Muscle gain meal plan"
+                        loading="lazy">
 
                     <div class="meal-badge">
                         Popular
@@ -502,38 +649,50 @@
 
                     <div class="meal-meta">
 
-                  <span>
+                        <span>
 
-    <img
-        src="images/icons/dumbbell.svg"
-        alt=""
-        aria-hidden="true">
+                            <img
+                                src="images/icons/dumbbell.svg"
+                                alt=""
+                                aria-hidden="true">
 
-    Muscle Gain
+                            Muscle Gain
 
-</span>
+                        </span>
 
-                        <span>High Protein</span>
+                        <span>
+                            High Protein
+                        </span>
 
                     </div>
 
-                   <a href="##muscle-gain-meal-plan.html" class="card-btn">
-    View Meal Plan →
-</a>
+                    <a href="#" class="card-btn">
+
+                        View Meal Plan
+
+                        <img
+                            src="images/icons/arrow-right.svg"
+                            alt=""
+                            aria-hidden="true">
+
+                    </a>
 
                 </div>
 
-            </div>
+            </article>
 
-            <!-- Meal Plan 02 -->
+            <!-- =========================
+                 Meal Card 02
+            ========================== -->
 
-            <div class="meal-card">
+            <article class="meal-card card-hover">
 
                 <div class="meal-image">
 
                     <img
                         src="images/fat-loss-meal.jpeg"
-                        alt="Fat Loss Diet"   loading="lazy">
+                        alt="Fat loss meal plan"
+                        loading="lazy">
 
                     <div class="meal-badge">
                         Beginner
@@ -552,38 +711,50 @@
 
                     <div class="meal-meta">
 
-                       <span>
+                        <span>
 
-    <img
-        src="images/icons/flame.svg"
-        alt=" "
-        aria-hidden="true">
+                            <img
+                                src="images/icons/flame.svg"
+                                alt=""
+                                aria-hidden="true">
 
-    Fat Loss
+                            Fat Loss
 
-</span>
+                        </span>
 
-                        <span>Low Calorie</span>
+                        <span>
+                            Low Calorie
+                        </span>
 
                     </div>
 
-                  <a href="#fat-loss-meal-plan.html" class="card-btn">
-    View Meal Plan →
-</a>
+                    <a href="#" class="card-btn">
+
+                        View Meal Plan
+
+                        <img
+                            src="images/icons/arrow-right.svg"
+                            alt=""
+                            aria-hidden="true">
+
+                    </a>
 
                 </div>
 
-            </div>
+            </article>
 
-            <!-- Meal Plan 03 -->
+            <!-- =========================
+                 Meal Card 03
+            ========================== -->
 
-            <div class="meal-card">
+            <article class="meal-card card-hover">
 
                 <div class="meal-image">
 
                     <img
                         src="images/high-protein-meal.jpeg"
-                        alt="High Protein Vegetarian" loading="lazy">
+                        alt="High protein vegetarian meal"
+                        loading="lazy">
 
                     <div class="meal-badge">
                         Vegetarian
@@ -602,38 +773,50 @@
 
                     <div class="meal-meta">
 
-                     <span>
+                        <span>
 
-    <img
-        src="images/icons/egg.svg"
-        alt=""
-        aria-hidden="true">
+                            <img
+                                src="images/icons/egg.svg"
+                                alt=""
+                                aria-hidden="true">
 
-    High Protein
+                            High Protein
 
-</span>
+                        </span>
 
-                        <span>Vegetarian</span>
+                        <span>
+                            Vegetarian
+                        </span>
 
                     </div>
 
-                 <a href="#high-protein-meal-plan.html" class="card-btn">
-    View Meal Plan →
-</a>
+                    <a href="#" class="card-btn">
+
+                        View Meal Plan
+
+                        <img
+                            src="images/icons/arrow-right.svg"
+                            alt=""
+                            aria-hidden="true">
+
+                    </a>
 
                 </div>
 
-            </div>
+            </article>
 
-            <!-- Meal Plan 04 -->
+            <!-- =========================
+                 Meal Card 04
+            ========================== -->
 
-            <div class="meal-card">
+            <article class="meal-card card-hover">
 
                 <div class="meal-image">
 
                     <img
                         src="images/budget-diet.jpeg"
-                        alt="Budget Meal Plan" loading="lazy">
+                        alt="Budget meal plan"
+                        loading="lazy">
 
                     <div class="meal-badge">
                         Budget
@@ -652,45 +835,56 @@
 
                     <div class="meal-meta">
 
-                      <span>
+                        <span>
 
-    <img
-        src="images/icons/badge-indian-rupee.svg"
-        alt=""
-        aria-hidden="true">
+                            <img
+                                src="images/icons/badge-indian-rupee.svg"
+                                alt=""
+                                aria-hidden="true">
 
-    Budget Friendly
+                            Budget Friendly
 
-</span>
+                        </span>
 
-                        <span>Easy to Cook</span>
+                        <span>
+                            Easy to Cook
+                        </span>
 
                     </div>
 
-                   <a href="#budget-meal-plan.html" class="card-btn">
-    View Meal Plan →
-</a>
+                    <a href="#" class="card-btn">
+
+                        View Meal Plan
+
+                        <img
+                            src="images/icons/arrow-right.svg"
+                            alt=""
+                            aria-hidden="true">
+
+                    </a>
 
                 </div>
 
-            </div>
+            </article>
 
         </div>
 
-        <!-- Bottom Button -->
+        <!-- =========================
+             Bottom CTA
+        ========================== -->
 
         <div class="meal-action">
 
-           <a href="#meal-plans.html" class="primary-btn">
+            <a href="#meal-plans" class="primary-btn">
 
-    <span>Explore All Meal Plans</span>
+                Explore All Meal Plans
 
-    <img
-        src="images/icons/arrow-right.svg"
-        alt=""
-        aria-hidden="true">
+                <img
+                    src="images/icons/arrow-right.svg"
+                    alt=""
+                    aria-hidden="true">
 
-</a>
+            </a>
 
         </div>
 
@@ -1112,39 +1306,51 @@
      SECTION 05 : LATEST NUTRITION GUIDES
 ======================================================= -->
 
-<section class="nutrition-guides" id="nutrition-guides">
+<section
+    class="nutrition-guides"
+    id="nutrition-guides"
+    aria-labelledby="nutrition-guides-title">
 
     <div class="container">
 
-        <!-- Section Heading -->
+        <!-- =========================
+             Section Heading
+        ========================== -->
 
         <div class="section-heading">
 
             <span class="section-badge">
 
-    <img
-        src="images/icons/book-open.svg"
-        alt=""
-        aria-hidden="true">
+                <img
+                    src="images/icons/book-open.svg"
+                    alt=""
+                    aria-hidden="true">
 
-    Nutrition Guides
+                Nutrition Guides
 
-</span>
+            </span>
 
-            <h2>
+            <h2 id="nutrition-guides-title">
+
                 LEARN THE SCIENCE OF
+
                 <span>NUTRITION</span>
+
             </h2>
 
             <p>
+
                 Explore expert articles on muscle gain, fat loss,
                 protein, hydration, supplements, and healthy eating
                 to achieve your fitness goals.
+
             </p>
 
         </div>
 
-        <!-- Guides Grid -->
+        <!-- =========================
+             Guides Grid
+        ========================== -->
 
         <div class="guides-grid">
 
@@ -1156,28 +1362,42 @@
 
                     <img
                         src="images/pre-workout-meal.jpeg"
-                        alt="What to Eat Before a Workout" loading="lazy">
+                        alt="Pre-workout meal guide"
+                        loading="lazy">
 
                 </div>
 
                 <div class="guide-content">
 
                     <span class="guide-category">
+
                         Pre Workout
+
                     </span>
 
                     <h3>
+
                         What to Eat Before a Workout
+
                     </h3>
 
                     <p>
+
                         Learn the best foods to boost energy,
                         improve endurance, and maximize your workout.
+
                     </p>
 
-                    <a href="#pre-workout-meal.html" class="card-btn">
-    Read Article →
-</a>
+                    <a href="#" class="card-btn">
+
+                        Read Article
+
+                        <img
+                            src="images/icons/arrow-right.svg"
+                            alt=""
+                            aria-hidden="true">
+
+                    </a>
 
                 </div>
 
@@ -1191,28 +1411,43 @@
 
                     <img
                         src="images/post-workout-meal.jpeg"
-                        alt="What to Eat After a Workout" loading="lazy">
+                        alt="Post-workout meal guide"
+                        loading="lazy">
 
                 </div>
 
                 <div class="guide-content">
 
                     <span class="guide-category">
+
                         Recovery
+
                     </span>
 
                     <h3>
+
                         What to Eat After a Workout
+
                     </h3>
 
                     <p>
-                        Discover the ideal balance of protein and carbs
+
+                        Discover the ideal balance of protein and carbohydrates
                         for faster recovery and muscle growth.
+
                     </p>
 
-                  <a href="#post-workout-meal.html" class="card-btn">
-    Read Article →
-</a>
+                    <a href="#" class="card-btn">
+
+                        Read Article
+
+                        <img
+                            src="images/icons/arrow-right.svg"
+                            alt=""
+                            aria-hidden="true">
+
+                    </a>
+
                 </div>
 
             </article>
@@ -1225,28 +1460,42 @@
 
                     <img
                         src="images/sugar-cravings.jpeg"
-                        alt="Why Do You Crave Sugar" loading="lazy">
+                        alt="Sugar cravings guide"
+                        loading="lazy">
 
                 </div>
 
                 <div class="guide-content">
 
                     <span class="guide-category">
+
                         Nutrition Science
+
                     </span>
 
                     <h3>
+
                         Why Do You Crave Sugar?
+
                     </h3>
 
                     <p>
+
                         Understand why sugar cravings happen and how
                         to control them naturally.
+
                     </p>
 
-                   <a href="#why-do-you-crave-sugar.html" class="card-btn">
-    Read Article →
-</a>
+                    <a href="#" class="card-btn">
+
+                        Read Article
+
+                        <img
+                            src="images/icons/arrow-right.svg"
+                            alt=""
+                            aria-hidden="true">
+
+                    </a>
 
                 </div>
 
@@ -1260,28 +1509,42 @@
 
                     <img
                         src="images/hydration-guide.jpeg"
-                        alt="Hydration Guide" loading="lazy">
+                        alt="Hydration guide"
+                        loading="lazy">
 
                 </div>
 
                 <div class="guide-content">
 
                     <span class="guide-category">
+
                         Hydration
+
                     </span>
 
                     <h3>
+
                         How Much Water Should You Drink?
+
                     </h3>
 
                     <p>
+
                         Learn how hydration affects strength,
                         endurance, recovery, and overall health.
+
                     </p>
 
-                   <a href="#hydration-guide.html" class="card-btn">
-    Read Article →
-</a>
+                    <a href="#" class="card-btn">
+
+                        Read Article
+
+                        <img
+                            src="images/icons/arrow-right.svg"
+                            alt=""
+                            aria-hidden="true">
+
+                    </a>
 
                 </div>
 
@@ -1295,28 +1558,42 @@
 
                     <img
                         src="images/vegetarian-protein.jpeg"
-                        alt="Vegetarian Protein Guide" loading="lazy">
+                        alt="Vegetarian protein guide"
+                        loading="lazy">
 
                 </div>
 
                 <div class="guide-content">
 
                     <span class="guide-category">
+
                         Protein
+
                     </span>
 
                     <h3>
+
                         Best Vegetarian Protein Sources
+
                     </h3>
 
                     <p>
+
                         Discover affordable, high-protein vegetarian
                         foods for muscle building.
+
                     </p>
 
-                   <a href="#vegetarian-protein-guide.html" class="card-btn">
-    Read Article →
-</a>
+                    <a href="#" class="card-btn">
+
+                        Read Article
+
+                        <img
+                            src="images/icons/arrow-right.svg"
+                            alt=""
+                            aria-hidden="true">
+
+                    </a>
 
                 </div>
 
@@ -1330,28 +1607,42 @@
 
                     <img
                         src="images/creatine-vs-cofee.jpeg"
-                        alt="Creatine vs Coffee" loading="lazy">
+                        alt="Creatine versus coffee guide"
+                        loading="lazy">
 
                 </div>
 
                 <div class="guide-content">
 
                     <span class="guide-category">
+
                         Supplements
+
                     </span>
 
                     <h3>
+
                         Creatine vs Coffee
+
                     </h3>
 
                     <p>
+
                         Compare their benefits, timing,
                         performance effects, and common myths.
+
                     </p>
 
-                 <a href="#creatine-vs-coffee.html" class="card-btn">
-    Read Article →
-</a>
+                    <a href="#" class="card-btn">
+
+                        Read Article
+
+                        <img
+                            src="images/icons/arrow-right.svg"
+                            alt=""
+                            aria-hidden="true">
+
+                    </a>
 
                 </div>
 
@@ -1359,20 +1650,22 @@
 
         </div>
 
-        <!-- Bottom Button -->
+        <!-- =========================
+             Bottom CTA
+        ========================== -->
 
         <div class="guides-action">
 
-           <a href="learn.html" class="primary-btn">
+            <a href="#nutrition-guides" class="primary-btn">
 
-    <span>Explore All Articles</span>
+                Explore All Articles
 
-    <img
-        src="images/icons/arrow-right.svg"
-        alt=""
-        aria-hidden="true">
+                <img
+                    src="images/icons/arrow-right.svg"
+                    alt=""
+                    aria-hidden="true">
 
-</a>
+            </a>
 
         </div>
 
@@ -1401,54 +1694,68 @@
      Status : COMPLETE
 ======================================================= -->
 
-<section class="nutrition-calculators" id="nutrition-calculators">
+<!-- =======================================================
+   SECTION 06 : NUTRITION CALCULATORS
+======================================================= -->
+
+<section
+    class="nutrition-calculators"
+    id="nutrition-calculators"
+    aria-labelledby="nutrition-calculators-title">
 
     <div class="container">
 
-        <!-- Section Heading -->
+        <!-- =========================
+             Section Heading
+        ========================== -->
 
         <div class="section-heading">
 
             <span class="section-badge">
 
-    <img
-        src="images/icons/calculator.svg"
-        alt=""
-        aria-hidden="true">
+                <img
+                    src="images/icons/calculator.svg"
+                    alt=""
+                    aria-hidden="true">
 
-    Nutrition Calculators
+                Nutrition Calculators
 
-</span>
+            </span>
 
-            <h2>
+            <h2 id="nutrition-calculators-title">
+
                 MAKE SMARTER
+
                 <span>NUTRITION DECISIONS</span>
+
             </h2>
 
             <p>
+
                 Stop guessing your nutrition. Use our free fitness
                 calculators to estimate calories, protein needs,
                 hydration, and more in just a few seconds.
+
             </p>
 
         </div>
 
-        <!-- Calculator Grid -->
+        <!-- =========================
+             Calculator Grid
+        ========================== -->
 
         <div class="calculator-grid">
 
             <!-- Calculator 01 -->
+            <article class="calculator-card card-hover">
 
-            <div class="calculator-card">
+                <div class="calculator-icon icon-circle">
 
-               <div class="calculator-icon icon-circle">
+                    <img
+                        src="images/icons/flame.svg"
+                        alt="Calorie icon">
 
-    <img
-        src="images/icons/flame.svg"
-        alt=""
-        aria-hidden="true">
-
-</div>
+                </div>
 
                 <h3>Calorie Calculator</h3>
 
@@ -1457,26 +1764,29 @@
                     your age, weight, height, and activity level.
                 </p>
 
-                <a href="calorie-calculator.html" class="card-btn">
+                <a href="#" class="card-btn">
 
-                    Calculate →
+                    Calculate
+
+                    <img
+                        src="images/icons/arrow-right.svg"
+                        alt=""
+                        aria-hidden="true">
 
                 </a>
 
-            </div>
+            </article>
 
             <!-- Calculator 02 -->
-
-            <div class="calculator-card">
+            <article class="calculator-card card-hover">
 
                 <div class="calculator-icon icon-circle">
 
-    <img
-        src="images/icons/dumbbell.svg"
-        alt=""
-        aria-hidden="true">
+                    <img
+                        src="images/icons/dumbbell.svg"
+                        alt="Protein icon">
 
-</div>
+                </div>
 
                 <h3>Protein Calculator</h3>
 
@@ -1485,26 +1795,29 @@
                     for muscle gain, recovery, and better performance.
                 </p>
 
-                <a href="protein-calculator.html" class="card-btn">
+                <a href="#" class="card-btn">
 
-                    Calculate →
+                    Calculate
+
+                    <img
+                        src="images/icons/arrow-right.svg"
+                        alt=""
+                        aria-hidden="true">
 
                 </a>
 
-            </div>
+            </article>
 
             <!-- Calculator 03 -->
-
-            <div class="calculator-card">
+            <article class="calculator-card card-hover">
 
                 <div class="calculator-icon icon-circle">
 
-    <img
-        src="images/icons/scale.svg"
-        alt=""
-        aria-hidden="true">
+                    <img
+                        src="images/icons/scale.svg"
+                        alt="BMI icon">
 
-</div>
+                </div>
 
                 <h3>BMI Calculator</h3>
 
@@ -1513,26 +1826,29 @@
                     whether you're underweight, healthy, or overweight.
                 </p>
 
-                <a href="bmi-calculator.html" class="card-btn">
+                <a href="#" class="card-btn">
 
-                    Calculate →
+                    Calculate
+
+                    <img
+                        src="images/icons/arrow-right.svg"
+                        alt=""
+                        aria-hidden="true">
 
                 </a>
 
-            </div>
+            </article>
 
             <!-- Calculator 04 -->
+            <article class="calculator-card card-hover">
 
-            <div class="calculator-card">
+                <div class="calculator-icon icon-circle">
 
-               <div class="calculator-icon icon-circle">
+                    <img
+                        src="images/icons/droplets.svg"
+                        alt="Water icon">
 
-    <img
-        src="images/icons/droplets.svg"
-        alt=""
-        aria-hidden="true">
-
-</div>
+                </div>
 
                 <h3>Water Intake Calculator</h3>
 
@@ -1541,37 +1857,43 @@
                     based on your body weight and lifestyle.
                 </p>
 
-                <a href="water-intake-calculator.html" class="card-btn">
+                <a href="#" class="card-btn">
 
-                    Calculate →
+                    Calculate
+
+                    <img
+                        src="images/icons/arrow-right.svg"
+                        alt=""
+                        aria-hidden="true">
 
                 </a>
 
-            </div>
+            </article>
 
         </div>
 
-        <!-- Bottom CTA -->
+        <!-- =========================
+             Bottom CTA
+        ========================== -->
 
         <div class="calculator-action">
 
-            <a href="calculator.html" class="primary-btn">
+            <a href="#calculators" class="primary-btn">
 
-    <span>Explore All Calculators</span>
+                Explore All Calculators
 
-    <img
-        src="images/icons/arrow-right.svg"
-        alt=""
-        aria-hidden="true">
+                <img
+                    src="images/icons/arrow-right.svg"
+                    alt=""
+                    aria-hidden="true">
 
-</a>
+            </a>
 
         </div>
 
     </div>
 
 </section>
-
 <!-- =======================================================
      END OF SECTION 06
 ======================================================= -->

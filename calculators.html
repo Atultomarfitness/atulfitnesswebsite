@@ -19,13 +19,15 @@
 
 <header class="site-header">
 
-    <nav class="main-nav">
+    <div class="container">
 
-        <!-- Logo -->
+        <nav class="main-nav" aria-label="Primary Navigation">
 
-        <div class="nav-logo">
+            <!-- ==================================================
+                 LOGO
+            =================================================== -->
 
-            <a href="index.html">
+            <a href="index.html" class="nav-logo">
 
                 <img
                     src="images/horizontal-logo.png"
@@ -34,146 +36,264 @@
 
             </a>
 
-        </div>
+            <!-- ==================================================
+                 PRIMARY NAVIGATION
+            =================================================== -->
 
-        <!-- Desktop Navigation -->
+            <ul
+                class="nav-menu"
+                id="primary-menu">
 
-      <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">
+                        Home
+                    </a>
+                </li>
 
-    <li class="nav-item">
-        <a href="index.html" class="nav-link">Home</a>
-    </li>
+                <li class="nav-item">
+                    <a href="workouts.html" class="nav-link">
+                        Workouts
+                    </a>
+                </li>
 
-    <li class="nav-item">
-        <a href="workouts.html" class="nav-link">Workouts</a>
-    </li>
+                <li class="nav-item">
+                    <a href="nutrition.html" class="nav-link">
+                        Nutrition
+                    </a>
+                </li>
 
-    <li class="nav-item">
-        <a href="nutrition.html" class="nav-link">Nutrition</a>
-    </li>
+                <li class="nav-item">
+                    <a href="calculators.html" class="nav-link active">
+                        Calculators
+                    </a>
+                </li>
 
-    <li class="nav-item">
-                <a href="calculators.html" class="nav-link active">
-                    Calculators
+                <li class="nav-item">
+                    <a href="learn.html" class="nav-link">
+                        Learn
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="about.html" class="nav-link">
+                        About
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="contact.html" class="nav-link">
+                        Contact
+                    </a>
+                </li>
+
+            </ul>
+
+            <!-- ==================================================
+                 NAVIGATION ACTIONS
+            =================================================== -->
+
+            <div class="nav-actions">
+
+                <a
+                    href="https://www.youtube.com/@AtulTomarFitness"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="subscribe-btn">
+
+                    ▶ Subscribe
+
                 </a>
-            </li>
 
-    <li class="nav-item">
-        <a href="learn.html" class="nav-link">Learn</a>
-    </li>
+                <!-- Mobile Menu Button -->
 
-    <li class="nav-item">
-        <a href="about.html" class="nav-link">About</a>
-    </li>
+                <button
+                    class="menu-toggle"
+                    type="button"
+                    aria-label="Toggle navigation"
+                    aria-expanded="false"
+                    aria-controls="primary-menu">
 
-    <li class="nav-item">
-        <a href="contact.html" class="nav-link">Contact</a>
-    </li>
+                    <img
+                        src="images/icons/menu.svg"
+                        alt=""
+                        class="menu-icon"
+                        aria-hidden="true">
 
-</ul>
-
-        <!-- Navigation Right -->
-
-        <div class="nav-actions">
-
-            <a
-                href="https://www.youtube.com/@AtulTomarFitness"
-                target="_blank"
-                class="subscribe-btn">
-              ▶  Subscribe
-
-            </a>
-
-            <button
-                class="menu-toggle"
-                aria-label="Open Navigation">
-
-                ☰
-
-            </button>
-
-        </div>
-
-    </nav>
-
-</header>
-<!-- =========================================
-     CALCULATOR HERO
-========================================= -->
-
-<section class="calculator-hero">
-
-    <div class="calculator-hero-container">
-
-        <!-- Left Content -->
-
-        <div class="calculator-content">
-
-           <span class="section-badge">
-
-    <img
-        src="images/icons/calculator.svg"
-        alt=""
-        aria-hidden="true">
-
-    Fitness Calculators
-
-</span>
-
-            <h1>
-    Calculate Your
-    <span>Perfect Fitness Plan</span>
-</h1>
-
-            <p>
-            Estimate your calories, BMI, protein intake, water needs, body fat, 
-            and more using our free, science-based fitness calculators.
-            </p>
-
-            <div class="hero-buttons">
-
-            <a href="#calculators" class="btn-primary">
-
-    <span>Start Calculating</span>
-
-    <img
-        src="images/icons/arrow-right.svg"
-        alt=""
-        aria-hidden="true">
-
-</a>
-                <a href="#tools" class="btn-secondary">
-                    Explore Tools
-                </a>
+                </button>
 
             </div>
 
-        </div>
+        </nav>
 
-        <!-- Right Dashboard -->
+    </div>
 
-        <div class="calculator-dashboard">
+</header>
+<!-- ==========================================================
+     CALCULATOR HERO
+========================================================== -->
 
-            <div class="dashboard-card">
+<section class="calculator-hero">
 
-                <div class="dashboard-item">
-                    <span>BMI</span>
-                    <strong>22.4</strong>
+    <div class="container">
+
+        <div class="calculator-hero-wrapper">
+
+            <!-- =====================================
+                 HERO CONTENT
+            ====================================== -->
+
+            <div class="calculator-content">
+
+                <!-- Section Badge -->
+
+                <span class="section-badge">
+
+                    <img
+                        src="images/icons/calculator.svg"
+                        alt=""
+                        aria-hidden="true">
+
+                    Fitness Calculators
+
+                </span>
+
+                <!-- Hero Title -->
+
+                <h1>
+
+                    Calculate Your
+
+                    <span>Perfect Fitness Plan</span>
+
+                </h1>
+
+                <!-- Hero Description -->
+
+                <p>
+
+                    Estimate your daily calories, BMI, body fat percentage,
+                    protein intake, water requirements, and other essential
+                    fitness metrics using our free science-based calculators.
+
+                </p>
+
+                <!-- Hero Buttons -->
+
+                <div class="hero-buttons">
+
+                    <a
+                        href="#calculators"
+                        class="primary-btn">
+
+                        Start Calculating
+
+                    </a>
+
+                    <a
+                        href="#tools"
+                        class="secondary-btn">
+
+                        Explore Tools
+
+                    </a>
+
                 </div>
 
-                <div class="dashboard-item">
-                    <span>Calories</span>
-                    <strong>2450 kcal</strong>
-                </div>
+            </div>
 
-                <div class="dashboard-item">
-                    <span>Protein</span>
-                    <strong>140 g</strong>
-                </div>
 
-                <div class="dashboard-item">
-                    <span>Water</span>
-                    <strong>3.4 L</strong>
+            <!-- =====================================
+                 CALCULATOR DASHBOARD
+            ====================================== -->
+
+            <div class="calculator-dashboard">
+
+                <div class="dashboard-card">
+
+                    <div class="dashboard-header">
+
+                        <h3>
+
+                            Fitness Overview
+
+                        </h3>
+
+                        <span>
+
+                            Sample Results
+
+                        </span>
+
+                    </div>
+
+                    <div class="dashboard-metrics">
+
+                        <article class="dashboard-item">
+
+                            <span>
+
+                                BMI
+
+                            </span>
+
+                            <strong>
+
+                                22.4
+
+                            </strong>
+
+                        </article>
+
+                        <article class="dashboard-item">
+
+                            <span>
+
+                                Calories
+
+                            </span>
+
+                            <strong>
+
+                                2450 kcal
+
+                            </strong>
+
+                        </article>
+
+                        <article class="dashboard-item">
+
+                            <span>
+
+                                Protein
+
+                            </span>
+
+                            <strong>
+
+                                140 g
+
+                            </strong>
+
+                        </article>
+
+                        <article class="dashboard-item">
+
+                            <span>
+
+                                Water
+
+                            </span>
+
+                            <strong>
+
+                                3.4 L
+
+                            </strong>
+
+                        </article>
+
+                    </div>
+
                 </div>
 
             </div>
